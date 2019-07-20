@@ -1,0 +1,7 @@
+; devmfc.def : DLL 用のモジュール パラメータ宣言
+
+LIBRARY      "devmfc"
+DESCRIPTION  'devmfc Windows Dynamic Link Library'
+
+EXPORTS
+    ; 明示的なエクスポートはここへ記述できます

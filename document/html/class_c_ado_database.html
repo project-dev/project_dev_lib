@@ -1,0 +1,807 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=Shift_JIS">
+<title>Project D.E.V Libraly: クラス CAdoDatabase</title>
+<link href="help.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 作成： Doxygen 1.4.1 -->
+<h1>クラス CAdoDatabase</h1>ADOを利用したデータベースアクセスクラス.  
+<a href="#_details">[詳細]</a>
+<p>
+<code>#include &lt;AdoDatabase.h&gt;</code>
+<p>
+<a href="class_c_ado_database-members.html">すべてのメンバ一覧</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ado_database.html#a0">CheckCommandType</a> (LPCTSTR pszCmd)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">コマンドリストと比較を行ないます。  <a href="#a0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">_RecordsetPtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ado_database.html#a1">GetProcedures</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ストアドプロシージャの一覧を取得します。(SQLServer/MSDE専用)  <a href="#a1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">eDBType&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ado_database.html#a2">GetDBType</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">接続中のデータベースの種別を返します。  <a href="#a2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">LPCTSTR&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ado_database.html#a3">GetError</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">最後に発生したエラーのメッセージを取得します。<br>
+ DispError関数で設定されたメッセージが返されます。  <a href="#a3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ado_database.html#a4">SetErrorOut</a> (BOOL bOut=TRUE)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">エラーを出力するかどうかの設定<br>
+ DispError関数でエラーメッセージを設定した場合に表汁かどうかの設定を行ないます。  <a href="#a4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ado_database.html#a5">Connect</a> (LPCTSTR pszCommand, eDBType eDB)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">データベースに接続します。  <a href="#a5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ado_database.html#a6">ConnectSqlServer</a> (LPCTSTR pszServer="(local)", LPCTSTR pszUser="sa", LPCTSTR pszPass="", LPCTSTR pszDBName="master")</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">SQLServer/MSDEに接続します。.  <a href="#a6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ado_database.html#a7">ConnectODBC</a> (LPCTSTR pszServer="(local)", LPCTSTR pszUser="sa", LPCTSTR pszPass="", LPCTSTR pszDBName="master")</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ODBCでデータベースに接続します。.  <a href="#a7"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a8" doxytag="CAdoDatabase::ConnectOracle"></a>
+BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ado_database.html#a8">ConnectOracle</a> (LPCTSTR pszServer="(local)", LPCTSTR pszUser="scott", LPCTSTR pszPass="tiger")</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Oracleに接続します。(未完成). <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">_RecordsetPtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ado_database.html#a9">GetDatabases</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">DB一覧の取得(SQLServer/MSDE専用).  <a href="#a9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">_RecordsetPtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ado_database.html#a10">GetColumns</a> (LPCTSTR pszTable)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">カラム一覧の取得(SQLServer/MSDE専用)  <a href="#a10"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">_RecordsetPtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ado_database.html#a11">GetTables</a> (LPCTSTR pszDBName=NULL)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">テーブル一覧の取得(SQLServer/MSDE専用)  <a href="#a11"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="structtag_t_a_b_l_e_i_n_f_o.html">PTABLEINFO</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ado_database.html#a12">GetTableInfo</a> (LPCTSTR pszTableName)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">テーブルの情報を取得します。  <a href="#a12"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">_variant_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ado_database.html#a13">GetFieldValue</a> (_RecordsetPtr rs, LPCTSTR pszName)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">レコードセットから値を取得します。  <a href="#a13"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">_RecordsetPtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ado_database.html#a14">OpenEditRecordSet</a> (LPCTSTR pszSql)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">編集可能なレコードセットの取得  <a href="#a14"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">_RecordsetPtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ado_database.html#a15">OpenRecordSet</a> (LPCTSTR pszSql)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">参照用のレコードセットの取得。  <a href="#a15"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">_RecordsetPtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ado_database.html#a16">ExecSQL</a> (LPCTSTR pszSql)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">SQLを実行します。.  <a href="#a16"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ado_database.html#a17">Close</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">接続を閉じます。  <a href="#a17"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ado_database.html#a18">IsConnect</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">データベースに接続中か調べます。  <a href="#a18"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ado_database.html#a19">Create</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">生成  <a href="#a19"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a20" doxytag="CAdoDatabase::CAdoDatabase"></a>
+&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ado_database.html#a20">CAdoDatabase</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">コンストラクタ <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a21" doxytag="CAdoDatabase::~CAdoDatabase"></a>
+virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_ado_database.html#a21">~CAdoDatabase</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">デストラクタ <br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>説明</h2>
+ADOを利用したデータベースアクセスクラス. 
+<p>
+<hr><h2>関数</h2>
+<a class="anchor" name="a0" doxytag="CAdoDatabase::CheckCommandType"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int CAdoDatabase::CheckCommandType           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">LPCTSTR&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>pszCmd</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+コマンドリストと比較を行ないます。 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszCmd</em>&nbsp;</td><td>SQLコマンド </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>一致するコマンドがあり、参照コマンド(SELECT)であれば1、参照でなければ 0、一致するコマンドが無い場合は0を返します。 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a17" doxytag="CAdoDatabase::Close"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">BOOL CAdoDatabase::Close           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+接続を閉じます。 
+<p>
+<dl compact><dt><b>戻り値:</b></dt><dd>正常に閉じた場合はTRUEを返します。 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a5" doxytag="CAdoDatabase::Connect"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">BOOL CAdoDatabase::Connect           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">LPCTSTR&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszCommand</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>eDBType&nbsp;</td>
+          <td class="mdname" nowrap> <em>eDB</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+データベースに接続します。 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszCommand</em>&nbsp;</td><td>接続文字列 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>eDB</em>&nbsp;</td><td>接続するデータベースの種別 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>接続に成功した場合はTRUEを返します。 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a7" doxytag="CAdoDatabase::ConnectODBC"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">BOOL CAdoDatabase::ConnectODBC           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">LPCTSTR&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszServer</em> = <code>"(local)"</code>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>LPCTSTR&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszUser</em> = <code>"sa"</code>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>LPCTSTR&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszPass</em> = <code>""</code>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>LPCTSTR&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszDBName</em> = <code>"master"</code></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+ODBCでデータベースに接続します。. 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszServer</em>&nbsp;</td><td>サーバ名 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pszUser</em>&nbsp;</td><td>ユーザー名 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pszPass</em>&nbsp;</td><td>パスワード </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pszDBName</em>&nbsp;</td><td>データソース名 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>接続に成功した場合はTRUEを返します。 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a6" doxytag="CAdoDatabase::ConnectSqlServer"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">BOOL CAdoDatabase::ConnectSqlServer           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">LPCTSTR&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszServer</em> = <code>"(local)"</code>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>LPCTSTR&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszUser</em> = <code>"sa"</code>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>LPCTSTR&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszPass</em> = <code>""</code>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>LPCTSTR&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszDBName</em> = <code>"master"</code></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+SQLServer/MSDEに接続します。. 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszServer</em>&nbsp;</td><td>サーバ名 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pszUser</em>&nbsp;</td><td>ユーザー名 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pszPass</em>&nbsp;</td><td>パスワード </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pszDBName</em>&nbsp;</td><td>データベース名 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>接続に成功した場合はTRUEを返します。 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a19" doxytag="CAdoDatabase::Create"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">BOOL CAdoDatabase::Create           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+生成 
+<p>
+<dl compact><dt><b>戻り値:</b></dt><dd>生成に成功した場合はTRUEを返します。 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a16" doxytag="CAdoDatabase::ExecSQL"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">_RecordsetPtr CAdoDatabase::ExecSQL           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">LPCTSTR&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>pszSql</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+SQLを実行します。. 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszSql</em>&nbsp;</td><td>SQL文 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>レコードセット </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a10" doxytag="CAdoDatabase::GetColumns"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">_RecordsetPtr CAdoDatabase::GetColumns           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">LPCTSTR&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>pszTable</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+カラム一覧の取得(SQLServer/MSDE専用) 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszTable</em>&nbsp;</td><td>テーブル名 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>レコードセット </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a9" doxytag="CAdoDatabase::GetDatabases"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">_RecordsetPtr CAdoDatabase::GetDatabases           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+DB一覧の取得(SQLServer/MSDE専用). 
+<p>
+<dl compact><dt><b>戻り値:</b></dt><dd>レコードセット </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a2" doxytag="CAdoDatabase::GetDBType"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">eDBType CAdoDatabase::GetDBType           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+接続中のデータベースの種別を返します。 
+<p>
+<dl compact><dt><b>戻り値:</b></dt><dd>データベースの種別 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a3" doxytag="CAdoDatabase::GetError"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">LPCTSTR CAdoDatabase::GetError           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+最後に発生したエラーのメッセージを取得します。<br>
+ DispError関数で設定されたメッセージが返されます。 
+<p>
+<dl compact><dt><b>戻り値:</b></dt><dd>エラーメッセージ </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a13" doxytag="CAdoDatabase::GetFieldValue"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">_variant_t CAdoDatabase::GetFieldValue           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">_RecordsetPtr&nbsp;</td>
+          <td class="mdname" nowrap> <em>rs</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>LPCTSTR&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszName</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+レコードセットから値を取得します。 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>rs</em>&nbsp;</td><td>レコードセット </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pszName</em>&nbsp;</td><td>フィールド名 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>値 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a1" doxytag="CAdoDatabase::GetProcedures"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">_RecordsetPtr CAdoDatabase::GetProcedures           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+ストアドプロシージャの一覧を取得します。(SQLServer/MSDE専用) 
+<p>
+<dl compact><dt><b>戻り値:</b></dt><dd>レコードセット </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a12" doxytag="CAdoDatabase::GetTableInfo"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"><a class="el" href="structtag_t_a_b_l_e_i_n_f_o.html">PTABLEINFO</a> CAdoDatabase::GetTableInfo           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">LPCTSTR&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>pszTableName</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+テーブルの情報を取得します。 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszTableName</em>&nbsp;</td><td>テーブル名 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>テーブルの情報を格納するPTABLEINFO。情報の取得に失敗した場合はNULLを返す。 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a11" doxytag="CAdoDatabase::GetTables"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">_RecordsetPtr CAdoDatabase::GetTables           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">LPCTSTR&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>pszDBName</em> = <code>NULL</code>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+テーブル一覧の取得(SQLServer/MSDE専用) 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszDBName</em>&nbsp;</td><td>データベース名 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>レコードセット </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a18" doxytag="CAdoDatabase::IsConnect"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">BOOL CAdoDatabase::IsConnect           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+データベースに接続中か調べます。 
+<p>
+<dl compact><dt><b>戻り値:</b></dt><dd>接続中の場合はTRUEを返します。 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a14" doxytag="CAdoDatabase::OpenEditRecordSet"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">_RecordsetPtr CAdoDatabase::OpenEditRecordSet           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">LPCTSTR&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>pszSql</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+編集可能なレコードセットの取得 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszSql</em>&nbsp;</td><td>SQL文 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>レコードセット </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a15" doxytag="CAdoDatabase::OpenRecordSet"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">_RecordsetPtr CAdoDatabase::OpenRecordSet           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">LPCTSTR&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>pszSql</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+参照用のレコードセットの取得。 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszSql</em>&nbsp;</td><td>SQL文 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>レコードセット </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a4" doxytag="CAdoDatabase::SetErrorOut"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">BOOL CAdoDatabase::SetErrorOut           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">BOOL&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>bOut</em> = <code>TRUE</code>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+エラーを出力するかどうかの設定<br>
+ DispError関数でエラーメッセージを設定した場合に表汁かどうかの設定を行ないます。 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>bOut</em>&nbsp;</td><td>エラーを出力する場合はTRUEを設定します。 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>変更前の状態 </dd></dl>
+    </td>
+  </tr>
+</table>
+<hr size="1"><address style="align: right;"><small>Project D.E.V Libralyに対してFri Jan 21 17:15:14 2005に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.1 </small></address>
+</body>
+</html>

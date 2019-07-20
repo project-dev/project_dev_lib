@@ -1,0 +1,7 @@
+; devMsof.def : DLL 用のモジュール パラメータ宣言
+
+LIBRARY      "devMsof"
+DESCRIPTION  'devMsof Windows Dynamic Link Library'
+
+EXPORTS
+    ; 明示的なエクスポートはここへ記述できます

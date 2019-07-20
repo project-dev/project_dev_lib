@@ -1,0 +1,966 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=Shift_JIS">
+<title>Project D.E.V Libraly: devlib.h</title>
+<link href="help.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 作成： Doxygen 1.4.1 -->
+<h1>devlib.h</h1>グローバル関数が宣言されています。<br>
+ Windows API の移植/拡張版関数などがあります。 <a href="#_details">[詳細]</a>
+<p>
+<code>#include &lt;windows.h&gt;</code><br>
+<code>#include &lt;stdio.h&gt;</code><br>
+<code>#include "devtypedef.h"</code><br>
+
+<p>
+devlib.hのインクルード依存関係図<p><center><img src="devlib_8h__incl.png" border="0" usemap="#devlib.h_map" alt=""></center>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>型定義</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a2" doxytag="devlib.h::EnumFilesProcFunc"></a>
+typedef bool(CALLBACK *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="devlib_8h.html#a2">EnumFilesProcFunc</a> )(const char *, WIN32_FIND_DATA *, LPARAM)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">EnumFile 関数のコールバック関数の書式です。. <br></td></tr>
+<tr><td colspan="2"><br><h2>関数</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">DEV_EXT_CLASS BOOL WINAPI&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="devlib_8h.html#a3">CreateDir</a> (LPCTSTR lpPathName, LPSECURITY_ATTRIBUTES lpSecurityAttributes)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ディレクトリを作成する  <a href="#a3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">DEV_EXT_CLASS void WINAPI&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="devlib_8h.html#a4">AddDirLastSepalator</a> (char *pszDir)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">末尾に\を追加する。  <a href="#a4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">DEV_EXT_CLASS BOOL WINAPI&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="devlib_8h.html#a5">RemoveDirectoryEx</a> (LPCTSTR lpDir, BOOL bChildDelete)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ファイルを削除する  <a href="#a5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">DEV_EXT_CLASS BOOL WINAPI&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="devlib_8h.html#a6">IsFileExsist</a> (LPCTSTR pszFileName)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ファイルの存在チェック  <a href="#a6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">DEV_EXT_CLASS BOOL WINAPI&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="devlib_8h.html#a7">IsDir</a> (LPCTSTR pszFileName)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ディレクトリかどうかの確認  <a href="#a7"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">DEV_EXT_CLASS BOOL WINAPI&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="devlib_8h.html#a8">DeleteFileEx</a> (LPCTSTR pszFileName)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ファイルを削除する  <a href="#a8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">DEV_EXT_CLASS char *WINAPI&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="devlib_8h.html#a9">GetNowTimeText</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">書式化された時間を取得する  <a href="#a9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">DEV_EXT_CLASS DWORD WINAPI&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="devlib_8h.html#a10">GetInifileString</a> (const char *lpAppName, const char *lpKeyName, const char *lpDefault, char *lpRetValue, int nLen, const char *lpFileName)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">iniファイルから文字列を読み込む  <a href="#a10"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">DEV_EXT_CLASS int WINAPI&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="devlib_8h.html#a11">GetInifileInt</a> (const char *lpAppName, const char *lpKeyName, int nDefault, const char *lpFileName)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">iniファイルから整数値を取得する  <a href="#a11"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">DEV_EXT_CLASS BOOL WINAPI&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="devlib_8h.html#a12">WriteInifileString</a> (const char *lpAppName, const char *lpKeyName, const char *lpString, const char *lpFileName)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">iniファイルに文字列を書き込む  <a href="#a12"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">DEV_EXT_CLASS BOOL WINAPI&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="devlib_8h.html#a13">WriteInifileInt</a> (const char *lpAppName, const char *lpKeyName, int nValue, const char *lpFileName)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">iniファイルに整数値を書き込む  <a href="#a13"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">DEV_EXT_CLASS BOOL WINAPI&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="devlib_8h.html#a14">EnumFiles</a> (<a class="el" href="devlib_8h.html#a2">EnumFilesProcFunc</a> EnumFilesProc, const char *strFileName, LPARAM lParam)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ファイルを列挙する。  <a href="#a14"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">DEV_EXT_CLASS BOOL WINAPI&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="devlib_8h.html#a15">SetTextToClipBoard</a> (HWND hWnd, LPCTSTR pszText, int nLen)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">文字列をクリップボードに転送する  <a href="#a15"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">DEV_EXT_CLASS int WINAPI&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="devlib_8h.html#a18">MsgBoxInfo</a> (HWND hWnd, LPCTSTR lpText, LPCTSTR lpCaption, UINT uType=MB_OK)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">メッセージボックスの表示(インフォメーション用)  <a href="#a18"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">DEV_EXT_CLASS int WINAPI&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="devlib_8h.html#a19">MsgBoxWarning</a> (HWND hWnd, LPCTSTR lpText, LPCTSTR lpCaption, UINT uType=MB_OK)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">メッセージボックスの表示(警告用)  <a href="#a19"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">DEV_EXT_CLASS int WINAPI&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="devlib_8h.html#a20">MsgBoxQuestion</a> (HWND hWnd, LPCTSTR lpText, LPCTSTR lpCaption, UINT uType=MB_OK)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">メッセージボックスの表示(確認用)  <a href="#a20"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">DEV_EXT_CLASS int WINAPI&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="devlib_8h.html#a21">MsgBoxErr</a> (HWND hWnd, LPCTSTR lpText, LPCTSTR lpCaption, UINT uType=MB_OK)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">メッセージボックスの表示(エラー用)  <a href="#a21"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>説明</h2>
+グローバル関数が宣言されています。<br>
+ Windows API の移植/拡張版関数などがあります。 
+<p>
+<hr><h2>関数</h2>
+<a class="anchor" name="a4" doxytag="devlib.h::AddDirLastSepalator"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">DEV_EXT_CLASS void WINAPI AddDirLastSepalator           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">char *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>pszDir</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+末尾に\を追加する。 
+<p>
+引数は\を加えることを考慮して長さを+1しておく必要がある。 <dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszDir</em>&nbsp;</td><td>\を追加するパス </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>なし </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a3" doxytag="devlib.h::CreateDir"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">DEV_EXT_CLASS BOOL WINAPI CreateDir           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">LPCTSTR&nbsp;</td>
+          <td class="mdname" nowrap> <em>lpPathName</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>LPSECURITY_ATTRIBUTES&nbsp;</td>
+          <td class="mdname" nowrap> <em>lpSecurityAttributes</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+ディレクトリを作成する 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>lpPathName</em>&nbsp;</td><td>作成するパス </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lpSecurityAttributes</em>&nbsp;</td><td>LPSECURITY_ATTRIBUTES </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>作成に成功すればTRUE </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a8" doxytag="devlib.h::DeleteFileEx"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">DEV_EXT_CLASS BOOL WINAPI DeleteFileEx           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">LPCTSTR&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>pszFileName</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+ファイルを削除する 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszFileName</em>&nbsp;</td><td>削除するファイルのパス </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>削除に成功すればTRUE </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a14" doxytag="devlib.h::EnumFiles"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">DEV_EXT_CLASS BOOL WINAPI EnumFiles           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="devlib_8h.html#a2">EnumFilesProcFunc</a>&nbsp;</td>
+          <td class="mdname" nowrap> <em>EnumFilesProc</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>const char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>strFileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>LPARAM&nbsp;</td>
+          <td class="mdname" nowrap> <em>lParam</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+ファイルを列挙する。 
+<p>
+ただ単に、FindFirstFileとFindNextFileを呼び出すだけ<br>
+ EnumWindowsのファイル版 <ul>
+<li>
+EnumFilesProcの引数の解説 <ul>
+<li>
+第1引数 EnumFilesの第2引数と同じ </li>
+<li>
+第2引数 WIN32_FIND_DATAのポインタ </li>
+<li>
+第3引数 EnumFilesの第3引数と同じ </li>
+</ul>
+</li>
+<li>
+EnumFilesProcの戻り値の解説 <ul>
+<li>
+検索を続ける場合はTRUE,中止する場合はFALSEを返す </li>
+</ul>
+</li>
+</ul>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>EnumFilesProc</em>&nbsp;</td><td>コールバック関数 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>strFileName</em>&nbsp;</td><td>検索するファイル名 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lParam</em>&nbsp;</td><td>データ </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>取得に成功すればTRUEを返す。取得に失敗した場合はFALSEを返す FindFirstFileでINVALID_HANDLE_VALUEが返ってきてもFALSEを返します) </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a11" doxytag="devlib.h::GetInifileInt"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">DEV_EXT_CLASS int WINAPI GetInifileInt           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>lpAppName</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>const char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>lpKeyName</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>nDefault</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>const char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>lpFileName</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+iniファイルから整数値を取得する 
+<p>
+Windows APIのGetPrivateProfileIntのように扱える <dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>lpAppName</em>&nbsp;</td><td>セクション名 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lpKeyName</em>&nbsp;</td><td>キー名 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nDefault</em>&nbsp;</td><td>デフォルト値 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lpFileName</em>&nbsp;</td><td>iniファイル名 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>取得に成功すればその取得したデータを返す。失敗した場合はデフォルトを返す </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a10" doxytag="devlib.h::GetInifileString"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">DEV_EXT_CLASS DWORD WINAPI GetInifileString           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>lpAppName</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>const char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>lpKeyName</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>const char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>lpDefault</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>lpRetValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>nLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>const char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>lpFileName</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+iniファイルから文字列を読み込む 
+<p>
+Windows APIのGetPrivateProfileStringのように扱える <dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>lpAppName</em>&nbsp;</td><td>セクション名 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lpKeyName</em>&nbsp;</td><td>キー名 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lpDefault</em>&nbsp;</td><td>デフォルト値 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lpRetValue</em>&nbsp;</td><td>値の格納用引数 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nLen</em>&nbsp;</td><td>lpRetValueの長さ </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lpFileName</em>&nbsp;</td><td>iniファイル名 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>取得に成功すればその取得したデータの長さを返す。失敗した場合は0 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a9" doxytag="devlib.h::GetNowTimeText"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">DEV_EXT_CLASS char* WINAPI GetNowTimeText           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+書式化された時間を取得する 
+<p>
+<dl compact><dt><b>戻り値:</b></dt><dd>時間文字列 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a7" doxytag="devlib.h::IsDir"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">DEV_EXT_CLASS BOOL WINAPI IsDir           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">LPCTSTR&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>pszFileName</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+ディレクトリかどうかの確認 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszFileName</em>&nbsp;</td><td>確認するパス </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>ディレクトリであればTRUE </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a6" doxytag="devlib.h::IsFileExsist"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">DEV_EXT_CLASS BOOL WINAPI IsFileExsist           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">LPCTSTR&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>pszFileName</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+ファイルの存在チェック 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszFileName</em>&nbsp;</td><td>チェックするファイルのパス </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>存在していればTRUE </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a21" doxytag="devlib.h::MsgBoxErr"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">DEV_EXT_CLASS int WINAPI MsgBoxErr           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">HWND&nbsp;</td>
+          <td class="mdname" nowrap> <em>hWnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>LPCTSTR&nbsp;</td>
+          <td class="mdname" nowrap> <em>lpText</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>LPCTSTR&nbsp;</td>
+          <td class="mdname" nowrap> <em>lpCaption</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>UINT&nbsp;</td>
+          <td class="mdname" nowrap> <em>uType</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+メッセージボックスの表示(エラー用) 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>hWnd</em>&nbsp;</td><td>ウィンドウハンドル </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pszText</em>&nbsp;</td><td>表示メッセージ </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lpCaption</em>&nbsp;</td><td>メッセージボックスのタイトル </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>uType</em>&nbsp;</td><td>ボタンのタイプ </td></tr>
+  </table>
+</dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a18" doxytag="devlib.h::MsgBoxInfo"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">DEV_EXT_CLASS int WINAPI MsgBoxInfo           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">HWND&nbsp;</td>
+          <td class="mdname" nowrap> <em>hWnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>LPCTSTR&nbsp;</td>
+          <td class="mdname" nowrap> <em>lpText</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>LPCTSTR&nbsp;</td>
+          <td class="mdname" nowrap> <em>lpCaption</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>UINT&nbsp;</td>
+          <td class="mdname" nowrap> <em>uType</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+メッセージボックスの表示(インフォメーション用) 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>hWnd</em>&nbsp;</td><td>ウィンドウハンドル </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pszText</em>&nbsp;</td><td>表示メッセージ </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lpCaption</em>&nbsp;</td><td>メッセージボックスのタイトル </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>uType</em>&nbsp;</td><td>ボタンのタイプ </td></tr>
+  </table>
+</dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a20" doxytag="devlib.h::MsgBoxQuestion"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">DEV_EXT_CLASS int WINAPI MsgBoxQuestion           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">HWND&nbsp;</td>
+          <td class="mdname" nowrap> <em>hWnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>LPCTSTR&nbsp;</td>
+          <td class="mdname" nowrap> <em>lpText</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>LPCTSTR&nbsp;</td>
+          <td class="mdname" nowrap> <em>lpCaption</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>UINT&nbsp;</td>
+          <td class="mdname" nowrap> <em>uType</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+メッセージボックスの表示(確認用) 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>hWnd</em>&nbsp;</td><td>ウィンドウハンドル </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pszText</em>&nbsp;</td><td>表示メッセージ </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lpCaption</em>&nbsp;</td><td>メッセージボックスのタイトル </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>uType</em>&nbsp;</td><td>ボタンのタイプ </td></tr>
+  </table>
+</dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a19" doxytag="devlib.h::MsgBoxWarning"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">DEV_EXT_CLASS int WINAPI MsgBoxWarning           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">HWND&nbsp;</td>
+          <td class="mdname" nowrap> <em>hWnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>LPCTSTR&nbsp;</td>
+          <td class="mdname" nowrap> <em>lpText</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>LPCTSTR&nbsp;</td>
+          <td class="mdname" nowrap> <em>lpCaption</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>UINT&nbsp;</td>
+          <td class="mdname" nowrap> <em>uType</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+メッセージボックスの表示(警告用) 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>hWnd</em>&nbsp;</td><td>ウィンドウハンドル </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pszText</em>&nbsp;</td><td>表示メッセージ </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lpCaption</em>&nbsp;</td><td>メッセージボックスのタイトル </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>uType</em>&nbsp;</td><td>ボタンのタイプ </td></tr>
+  </table>
+</dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a5" doxytag="devlib.h::RemoveDirectoryEx"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">DEV_EXT_CLASS BOOL WINAPI RemoveDirectoryEx           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">LPCTSTR&nbsp;</td>
+          <td class="mdname" nowrap> <em>lpDir</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>BOOL&nbsp;</td>
+          <td class="mdname" nowrap> <em>bChildDelete</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+ファイルを削除する 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>lpDir</em>&nbsp;</td><td>削除するパス </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>bChildDelete</em>&nbsp;</td><td>lpDirに子階層が存在する場合に子階層も削除する場合はTRUE </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>削除に成功すればTRUE </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a15" doxytag="devlib.h::SetTextToClipBoard"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">DEV_EXT_CLASS BOOL WINAPI SetTextToClipBoard           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">HWND&nbsp;</td>
+          <td class="mdname" nowrap> <em>hWnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>LPCTSTR&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszText</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>nLen</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+文字列をクリップボードに転送する 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>hWnd</em>&nbsp;</td><td>ウィンドウハンドル </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pszText</em>&nbsp;</td><td>クリップボードに転送する文字列 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nLen</em>&nbsp;</td><td>文字列の長さ </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>成功した場合は trueを返す </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a13" doxytag="devlib.h::WriteInifileInt"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">DEV_EXT_CLASS BOOL WINAPI WriteInifileInt           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>lpAppName</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>const char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>lpKeyName</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>nValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>const char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>lpFileName</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+iniファイルに整数値を書き込む 
+<p>
+Windows APIのWritePrivateProfileStringのように扱える <dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>lpAppName</em>&nbsp;</td><td>セクション名 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lpKeyName</em>&nbsp;</td><td>キー名 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nValue</em>&nbsp;</td><td>書き込む値 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lpFileName</em>&nbsp;</td><td>iniファイル名 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>取得に成功すればTRUEを返す。 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a12" doxytag="devlib.h::WriteInifileString"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">DEV_EXT_CLASS BOOL WINAPI WriteInifileString           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>lpAppName</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>const char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>lpKeyName</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>const char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>lpString</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>const char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>lpFileName</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+iniファイルに文字列を書き込む 
+<p>
+Windows APIのWritePrivateProfileStringのように扱える 文字列の長さの制限は無い。 <dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>lpAppName</em>&nbsp;</td><td>セクション名 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lpKeyName</em>&nbsp;</td><td>キー名 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lpString</em>&nbsp;</td><td>書き込む値 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lpFileName</em>&nbsp;</td><td>iniファイル名 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>取得に成功すればTRUEを返す。 </dd></dl>
+    </td>
+  </tr>
+</table>
+<hr size="1"><address style="align: right;"><small>Project D.E.V Libralyに対してFri Jan 21 17:15:14 2005に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.1 </small></address>
+</body>
+</html>

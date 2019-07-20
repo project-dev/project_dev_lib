@@ -1,0 +1,3253 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.9782.0 (54e01e46).
+//
+// GRJP50.tlh
+//
+// C++ source equivalent of Win16 type library C:\Program Files\Microsoft Office\OFFICE11\GRJP50.OLB
+// compiler-generated file created 02/16/06 at 07:16:17 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace Graph {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("000208fc-0000-0000-c000-000000000046"))
+/* dispinterface */ _Global;
+struct __declspec(uuid("000208ec-0000-0000-c000-000000000046"))
+/* dispinterface */ Application;
+struct __declspec(uuid("000208f3-0000-0000-c000-000000000046"))
+/* dispinterface */ Font;
+struct __declspec(uuid("000208ee-0000-0000-c000-000000000046"))
+/* dispinterface */ Border;
+struct __declspec(uuid("000208ed-0000-0000-c000-000000000046"))
+/* dispinterface */ Interior;
+struct __declspec(uuid("000208e2-0000-0000-c000-000000000046"))
+/* dispinterface */ Corners;
+struct __declspec(uuid("000208e1-0000-0000-c000-000000000046"))
+/* dispinterface */ SeriesLines;
+struct __declspec(uuid("000208e0-0000-0000-c000-000000000046"))
+/* dispinterface */ HiLoLines;
+struct __declspec(uuid("00024700-0000-0000-c000-000000000046"))
+/* dispinterface */ Gridlines;
+struct __declspec(uuid("00024701-0000-0000-c000-000000000046"))
+/* dispinterface */ DropLines;
+struct __declspec(uuid("0002470a-0000-0000-c000-000000000046"))
+/* dispinterface */ ErrorBars;
+struct __declspec(uuid("00024702-0000-0000-c000-000000000046"))
+/* dispinterface */ UpBars;
+struct __declspec(uuid("00024703-0000-0000-c000-000000000046"))
+/* dispinterface */ DownBars;
+struct __declspec(uuid("000208f8-0000-0000-c000-000000000046"))
+/* dispinterface */ ChartTitle;
+struct __declspec(uuid("000208f7-0000-0000-c000-000000000046"))
+/* dispinterface */ AxisTitle;
+struct __declspec(uuid("00024704-0000-0000-c000-000000000046"))
+/* dispinterface */ Floor;
+struct __declspec(uuid("00024705-0000-0000-c000-000000000046"))
+/* dispinterface */ Walls;
+struct __declspec(uuid("00024707-0000-0000-c000-000000000046"))
+/* dispinterface */ PlotArea;
+struct __declspec(uuid("00024708-0000-0000-c000-000000000046"))
+/* dispinterface */ ChartArea;
+struct __declspec(uuid("00024709-0000-0000-c000-000000000046"))
+/* dispinterface */ Legend;
+struct __declspec(uuid("00024706-0000-0000-c000-000000000046"))
+/* dispinterface */ TickLabels;
+struct __declspec(uuid("000208fb-0000-0000-c000-000000000046"))
+/* dispinterface */ Chart;
+struct __declspec(uuid("000208f6-0000-0000-c000-000000000046"))
+/* dispinterface */ ChartGroup;
+struct __declspec(uuid("000208f5-0000-0000-c000-000000000046"))
+/* dispinterface */ ChartGroups;
+struct __declspec(uuid("000208f9-0000-0000-c000-000000000046"))
+/* dispinterface */ Axis;
+struct __declspec(uuid("000208f4-0000-0000-c000-000000000046"))
+/* dispinterface */ Axes;
+struct __declspec(uuid("000208e9-0000-0000-c000-000000000046"))
+/* dispinterface */ DataLabel;
+struct __declspec(uuid("000208e8-0000-0000-c000-000000000046"))
+/* dispinterface */ DataLabels;
+struct __declspec(uuid("000208f1-0000-0000-c000-000000000046"))
+/* dispinterface */ Point;
+struct __declspec(uuid("000208f2-0000-0000-c000-000000000046"))
+/* dispinterface */ Points;
+struct __declspec(uuid("000208f0-0000-0000-c000-000000000046"))
+/* dispinterface */ Series;
+struct __declspec(uuid("000208ef-0000-0000-c000-000000000046"))
+/* dispinterface */ SeriesCollection;
+struct __declspec(uuid("000208e7-0000-0000-c000-000000000046"))
+/* dispinterface */ LegendEntry;
+struct __declspec(uuid("000208e6-0000-0000-c000-000000000046"))
+/* dispinterface */ LegendEntries;
+struct __declspec(uuid("000208e5-0000-0000-c000-000000000046"))
+/* dispinterface */ LegendKey;
+struct __declspec(uuid("000208e3-0000-0000-c000-000000000046"))
+/* dispinterface */ Trendline;
+struct __declspec(uuid("000208e4-0000-0000-c000-000000000046"))
+/* dispinterface */ Trendlines;
+struct /* coclass */ _GraphApplication;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_Global, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(Application, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(Font, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(Border, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(Interior, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(Corners, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(SeriesLines, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(HiLoLines, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(Gridlines, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(DropLines, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(ErrorBars, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(UpBars, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(DownBars, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(ChartTitle, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(AxisTitle, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(Floor, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(Walls, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(PlotArea, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(ChartArea, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(Legend, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(TickLabels, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(Chart, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(ChartGroup, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(ChartGroups, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(Axis, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(Axes, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(DataLabel, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(DataLabels, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(Point, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(Points, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(Series, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(SeriesCollection, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(LegendEntry, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(LegendEntries, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(LegendKey, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(Trendline, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(Trendlines, __uuidof(IDispatch));
+
+//
+// Type library items
+//
+
+enum Constants
+{
+    xlZero = 2,
+    xlY = 1,
+    xlXYScatter = -4169,
+    xlX = -4168,
+    xlWizardDisplayNever = 2,
+    xlWizardDisplayDefault = 0,
+    xlWizardDisplayAlways = 1,
+    xlVertical = -4166,
+    xlValue = 2,
+    xlUpward = -4171,
+    xlUp = -4162,
+    xlTriangle = 3,
+    xlTransparent = 2,
+    xlTop = -4160,
+    xlThin = 2,
+    xlThick = 4,
+    xlStretch = 1,
+    xlStError = 4,
+    xlStDev = -4155,
+    xlStar = 5,
+    xlStack = 2,
+    xlSquare = 1,
+    xlSolid = 1,
+    xlSingleAccounting = 4,
+    xlSingle = 2,
+    xlShowValue = 2,
+    xlShowPercent = 3,
+    xlShowLabelAndPercent = 5,
+    xlShowLabel = 4,
+    xlSeries = 3,
+    xlSemiGray75 = 10,
+    xlSecondary = 2,
+    xlScale = 3,
+    xlRows = 1,
+    xlRight = -4152,
+    xlRadar = -4151,
+    xlPrimary = 1,
+    xlPower = 4,
+    xlPolynomial = 3,
+    xlPlusValues = 2,
+    xlPlus = 9,
+    xlPie = 5,
+    xlPicture = -4147,
+    xlPercent = 2,
+    xlOutside = 3,
+    xlOpaque = 3,
+    xlNotPlotted = 1,
+    xlNormal = -4143,
+    xlNone = -4142,
+    xlNoCap = 2,
+    xlNextToAxis = 4,
+    xlMovingAvg = 6,
+    xlMinusValues = 3,
+    xlMinimum = 2,
+    xlMinimized = -4140,
+    xlMedium = -4138,
+    xlMaximum = 2,
+    xlMaximized = -4137,
+    xlLow = -4134,
+    xlLogarithmic = -4133,
+    xlLinear = -4132,
+    xlLine = 4,
+    xlLightVertical = 12,
+    xlLightUp = 14,
+    xlLightHorizontal = 11,
+    xlLightDown = 13,
+    xlLeft = -4131,
+    xlJustify = -4130,
+    xlInterpolated = 3,
+    xlInside = 2,
+    xlHorizontal = -4128,
+    xlHigh = -4127,
+    xlHairline = 1,
+    xlGrid = 15,
+    xlGray8 = 18,
+    xlGray75 = -4126,
+    xlGray50 = -4125,
+    xlGray25 = -4124,
+    xlGray16 = 17,
+    xlFixedValue = 1,
+    xlExponential = 5,
+    xlDownward = -4170,
+    xlDown = -4121,
+    xlDoughnut = -4120,
+    xlDoubleAccounting = 5,
+    xlDouble = -4119,
+    xlDot = -4118,
+    xlDistributed = -4117,
+    xlDiamond = 2,
+    xlDefaultAutoFormat = -1,
+    xlDashDotDot = 5,
+    xlDashDot = 4,
+    xlDash = -4115,
+    xlCustom = -4114,
+    xlCross = 4,
+    xlCrissCross = 16,
+    xlCorner = 2,
+    xlContinuous = 1,
+    xlCombination = -4111,
+    xlColumns = 2,
+    xlColumn = 3,
+    xlCircle = 8,
+    xlChecker = 9,
+    xlCenter = -4108,
+    xlCategory = 1,
+    xlCap = 1,
+    xlBuiltIn = 0,
+    xlBottom = -4107,
+    xlBoth = 1,
+    xlBar = 2,
+    xlAutomatic = -4105,
+    xlArea = 1,
+    xl3DSurface = -4103,
+    xl3DPie = -4102,
+    xl3DLine = -4101,
+    xl3DColumn = -4100,
+    xl3DBar = -4099,
+    xl3DArea = -4098
+};
+
+struct __declspec(uuid("000208fc-0000-0000-c000-000000000046"))
+_Global : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+
+    // Properties:
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("000208ec-0000-0000-c000-000000000046"))
+Application : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetChartWizardDisplay,put=PutChartWizardDisplay))
+    _variant_t ChartWizardDisplay;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetHasLinks,put=PutHasLinks))
+    _variant_t HasLinks;
+    __declspec(property(get=GetName,put=PutName))
+    _variant_t Name;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+    __declspec(property(get=GetVisible,put=PutVisible))
+    _variant_t Visible;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t _Application ( );
+    _variant_t Chart ( );
+    _variant_t Quit ( );
+    _variant_t SaveAsOldFileFormat (
+        const _variant_t & MajorVersion = vtMissing,
+        const _variant_t & MinorVersion = vtMissing );
+
+    // Properties:
+    _variant_t GetChartWizardDisplay ( );
+    void PutChartWizardDisplay ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetHasLinks ( );
+    void PutHasLinks ( const _variant_t & _val );
+    _variant_t GetName ( );
+    void PutName ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+    _variant_t GetVisible ( );
+    void PutVisible ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("000208f3-0000-0000-c000-000000000046"))
+Font : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetBackground,put=PutBackground))
+    _variant_t Background;
+    __declspec(property(get=GetBold,put=PutBold))
+    _variant_t Bold;
+    __declspec(property(get=GetColor,put=PutColor))
+    _variant_t Color;
+    __declspec(property(get=GetColorIndex,put=PutColorIndex))
+    _variant_t ColorIndex;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetFontStyle,put=PutFontStyle))
+    _variant_t FontStyle;
+    __declspec(property(get=GetItalic,put=PutItalic))
+    _variant_t Italic;
+    __declspec(property(get=GetName,put=PutName))
+    _variant_t Name;
+    __declspec(property(get=GetOutlineFont,put=PutOutlineFont))
+    _variant_t OutlineFont;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+    __declspec(property(get=GetShadow,put=PutShadow))
+    _variant_t Shadow;
+    __declspec(property(get=GetSize,put=PutSize))
+    _variant_t Size;
+    __declspec(property(get=GetStrikethrough,put=PutStrikethrough))
+    _variant_t Strikethrough;
+    __declspec(property(get=GetSubscript,put=PutSubscript))
+    _variant_t Subscript;
+    __declspec(property(get=GetSuperscript,put=PutSuperscript))
+    _variant_t Superscript;
+    __declspec(property(get=GetUnderline,put=PutUnderline))
+    _variant_t Underline;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+
+    // Properties:
+    _variant_t GetBackground ( );
+    void PutBackground ( const _variant_t & _val );
+    _variant_t GetBold ( );
+    void PutBold ( const _variant_t & _val );
+    _variant_t GetColor ( );
+    void PutColor ( const _variant_t & _val );
+    _variant_t GetColorIndex ( );
+    void PutColorIndex ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetFontStyle ( );
+    void PutFontStyle ( const _variant_t & _val );
+    _variant_t GetItalic ( );
+    void PutItalic ( const _variant_t & _val );
+    _variant_t GetName ( );
+    void PutName ( const _variant_t & _val );
+    _variant_t GetOutlineFont ( );
+    void PutOutlineFont ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+    _variant_t GetShadow ( );
+    void PutShadow ( const _variant_t & _val );
+    _variant_t GetSize ( );
+    void PutSize ( const _variant_t & _val );
+    _variant_t GetStrikethrough ( );
+    void PutStrikethrough ( const _variant_t & _val );
+    _variant_t GetSubscript ( );
+    void PutSubscript ( const _variant_t & _val );
+    _variant_t GetSuperscript ( );
+    void PutSuperscript ( const _variant_t & _val );
+    _variant_t GetUnderline ( );
+    void PutUnderline ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("000208ee-0000-0000-c000-000000000046"))
+Border : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetColor,put=PutColor))
+    _variant_t Color;
+    __declspec(property(get=GetColorIndex,put=PutColorIndex))
+    _variant_t ColorIndex;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetLineStyle,put=PutLineStyle))
+    _variant_t LineStyle;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+    __declspec(property(get=GetWeight,put=PutWeight))
+    _variant_t Weight;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+
+    // Properties:
+    _variant_t GetColor ( );
+    void PutColor ( const _variant_t & _val );
+    _variant_t GetColorIndex ( );
+    void PutColorIndex ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetLineStyle ( );
+    void PutLineStyle ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+    _variant_t GetWeight ( );
+    void PutWeight ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("000208ed-0000-0000-c000-000000000046"))
+Interior : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetColor,put=PutColor))
+    _variant_t Color;
+    __declspec(property(get=GetColorIndex,put=PutColorIndex))
+    _variant_t ColorIndex;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetInvertIfNegative,put=PutInvertIfNegative))
+    _variant_t InvertIfNegative;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+    __declspec(property(get=GetPattern,put=PutPattern))
+    _variant_t Pattern;
+    __declspec(property(get=GetPatternColor,put=PutPatternColor))
+    _variant_t PatternColor;
+    __declspec(property(get=GetPatternColorIndex,put=PutPatternColorIndex))
+    _variant_t PatternColorIndex;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+
+    // Properties:
+    _variant_t GetColor ( );
+    void PutColor ( const _variant_t & _val );
+    _variant_t GetColorIndex ( );
+    void PutColorIndex ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetInvertIfNegative ( );
+    void PutInvertIfNegative ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+    _variant_t GetPattern ( );
+    void PutPattern ( const _variant_t & _val );
+    _variant_t GetPatternColor ( );
+    void PutPatternColor ( const _variant_t & _val );
+    _variant_t GetPatternColorIndex ( );
+    void PutPatternColorIndex ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("000208e2-0000-0000-c000-000000000046"))
+Corners : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetName,put=PutName))
+    _variant_t Name;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+
+    // Properties:
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetName ( );
+    void PutName ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("000208e1-0000-0000-c000-000000000046"))
+SeriesLines : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetBorder,put=PutBorder))
+    _variant_t Border;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetName,put=PutName))
+    _variant_t Name;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+    _variant_t Delete ( );
+
+    // Properties:
+    _variant_t GetBorder ( );
+    void PutBorder ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetName ( );
+    void PutName ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("000208e0-0000-0000-c000-000000000046"))
+HiLoLines : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetBorder,put=PutBorder))
+    _variant_t Border;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetName,put=PutName))
+    _variant_t Name;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+    _variant_t Delete ( );
+
+    // Properties:
+    _variant_t GetBorder ( );
+    void PutBorder ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetName ( );
+    void PutName ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("00024700-0000-0000-c000-000000000046"))
+Gridlines : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetBorder,put=PutBorder))
+    _variant_t Border;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetName,put=PutName))
+    _variant_t Name;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+    _variant_t Delete ( );
+
+    // Properties:
+    _variant_t GetBorder ( );
+    void PutBorder ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetName ( );
+    void PutName ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("00024701-0000-0000-c000-000000000046"))
+DropLines : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetBorder,put=PutBorder))
+    _variant_t Border;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetName,put=PutName))
+    _variant_t Name;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+    _variant_t Delete ( );
+
+    // Properties:
+    _variant_t GetBorder ( );
+    void PutBorder ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetName ( );
+    void PutName ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("0002470a-0000-0000-c000-000000000046"))
+ErrorBars : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetBorder,put=PutBorder))
+    _variant_t Border;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetEndStyle,put=PutEndStyle))
+    _variant_t EndStyle;
+    __declspec(property(get=GetName,put=PutName))
+    _variant_t Name;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+    _variant_t ClearFormats ( );
+    _variant_t Delete ( );
+
+    // Properties:
+    _variant_t GetBorder ( );
+    void PutBorder ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetEndStyle ( );
+    void PutEndStyle ( const _variant_t & _val );
+    _variant_t GetName ( );
+    void PutName ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("00024702-0000-0000-c000-000000000046"))
+UpBars : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetBorder,put=PutBorder))
+    _variant_t Border;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetInterior,put=PutInterior))
+    _variant_t Interior;
+    __declspec(property(get=GetName,put=PutName))
+    _variant_t Name;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+    _variant_t Delete ( );
+
+    // Properties:
+    _variant_t GetBorder ( );
+    void PutBorder ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetInterior ( );
+    void PutInterior ( const _variant_t & _val );
+    _variant_t GetName ( );
+    void PutName ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("00024703-0000-0000-c000-000000000046"))
+DownBars : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetBorder,put=PutBorder))
+    _variant_t Border;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetInterior,put=PutInterior))
+    _variant_t Interior;
+    __declspec(property(get=GetName,put=PutName))
+    _variant_t Name;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+    _variant_t Delete ( );
+
+    // Properties:
+    _variant_t GetBorder ( );
+    void PutBorder ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetInterior ( );
+    void PutInterior ( const _variant_t & _val );
+    _variant_t GetName ( );
+    void PutName ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("000208f8-0000-0000-c000-000000000046"))
+ChartTitle : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetBorder,put=PutBorder))
+    _variant_t Border;
+    __declspec(property(get=GetCaption,put=PutCaption))
+    _variant_t Caption;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetFont,put=PutFont))
+    _variant_t Font;
+    __declspec(property(get=GetHorizontalAlignment,put=PutHorizontalAlignment))
+    _variant_t HorizontalAlignment;
+    __declspec(property(get=GetInterior,put=PutInterior))
+    _variant_t Interior;
+    __declspec(property(get=GetLeft,put=PutLeft))
+    _variant_t Left;
+    __declspec(property(get=GetName,put=PutName))
+    _variant_t Name;
+    __declspec(property(get=GetOrientation,put=PutOrientation))
+    _variant_t Orientation;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+    __declspec(property(get=GetShadow,put=PutShadow))
+    _variant_t Shadow;
+    __declspec(property(get=GetText,put=PutText))
+    _variant_t Text;
+    __declspec(property(get=GetTop,put=PutTop))
+    _variant_t Top;
+    __declspec(property(get=GetVerticalAlignment,put=PutVerticalAlignment))
+    _variant_t VerticalAlignment;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+    _variant_t Delete ( );
+
+    // Properties:
+    _variant_t GetBorder ( );
+    void PutBorder ( const _variant_t & _val );
+    _variant_t GetCaption ( );
+    void PutCaption ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetFont ( );
+    void PutFont ( const _variant_t & _val );
+    _variant_t GetHorizontalAlignment ( );
+    void PutHorizontalAlignment ( const _variant_t & _val );
+    _variant_t GetInterior ( );
+    void PutInterior ( const _variant_t & _val );
+    _variant_t GetLeft ( );
+    void PutLeft ( const _variant_t & _val );
+    _variant_t GetName ( );
+    void PutName ( const _variant_t & _val );
+    _variant_t GetOrientation ( );
+    void PutOrientation ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+    _variant_t GetShadow ( );
+    void PutShadow ( const _variant_t & _val );
+    _variant_t GetText ( );
+    void PutText ( const _variant_t & _val );
+    _variant_t GetTop ( );
+    void PutTop ( const _variant_t & _val );
+    _variant_t GetVerticalAlignment ( );
+    void PutVerticalAlignment ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("000208f7-0000-0000-c000-000000000046"))
+AxisTitle : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetBorder,put=PutBorder))
+    _variant_t Border;
+    __declspec(property(get=GetCaption,put=PutCaption))
+    _variant_t Caption;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetFont,put=PutFont))
+    _variant_t Font;
+    __declspec(property(get=GetHorizontalAlignment,put=PutHorizontalAlignment))
+    _variant_t HorizontalAlignment;
+    __declspec(property(get=GetInterior,put=PutInterior))
+    _variant_t Interior;
+    __declspec(property(get=GetLeft,put=PutLeft))
+    _variant_t Left;
+    __declspec(property(get=GetName,put=PutName))
+    _variant_t Name;
+    __declspec(property(get=GetOrientation,put=PutOrientation))
+    _variant_t Orientation;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+    __declspec(property(get=GetShadow,put=PutShadow))
+    _variant_t Shadow;
+    __declspec(property(get=GetText,put=PutText))
+    _variant_t Text;
+    __declspec(property(get=GetTop,put=PutTop))
+    _variant_t Top;
+    __declspec(property(get=GetVerticalAlignment,put=PutVerticalAlignment))
+    _variant_t VerticalAlignment;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+    _variant_t Delete ( );
+
+    // Properties:
+    _variant_t GetBorder ( );
+    void PutBorder ( const _variant_t & _val );
+    _variant_t GetCaption ( );
+    void PutCaption ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetFont ( );
+    void PutFont ( const _variant_t & _val );
+    _variant_t GetHorizontalAlignment ( );
+    void PutHorizontalAlignment ( const _variant_t & _val );
+    _variant_t GetInterior ( );
+    void PutInterior ( const _variant_t & _val );
+    _variant_t GetLeft ( );
+    void PutLeft ( const _variant_t & _val );
+    _variant_t GetName ( );
+    void PutName ( const _variant_t & _val );
+    _variant_t GetOrientation ( );
+    void PutOrientation ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+    _variant_t GetShadow ( );
+    void PutShadow ( const _variant_t & _val );
+    _variant_t GetText ( );
+    void PutText ( const _variant_t & _val );
+    _variant_t GetTop ( );
+    void PutTop ( const _variant_t & _val );
+    _variant_t GetVerticalAlignment ( );
+    void PutVerticalAlignment ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("00024704-0000-0000-c000-000000000046"))
+Floor : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetBorder,put=PutBorder))
+    _variant_t Border;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetInterior,put=PutInterior))
+    _variant_t Interior;
+    __declspec(property(get=GetName,put=PutName))
+    _variant_t Name;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+    _variant_t ClearFormats ( );
+
+    // Properties:
+    _variant_t GetBorder ( );
+    void PutBorder ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetInterior ( );
+    void PutInterior ( const _variant_t & _val );
+    _variant_t GetName ( );
+    void PutName ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("00024705-0000-0000-c000-000000000046"))
+Walls : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetBorder,put=PutBorder))
+    _variant_t Border;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetInterior,put=PutInterior))
+    _variant_t Interior;
+    __declspec(property(get=GetName,put=PutName))
+    _variant_t Name;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+    _variant_t ClearFormats ( );
+
+    // Properties:
+    _variant_t GetBorder ( );
+    void PutBorder ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetInterior ( );
+    void PutInterior ( const _variant_t & _val );
+    _variant_t GetName ( );
+    void PutName ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("00024707-0000-0000-c000-000000000046"))
+PlotArea : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetBorder,put=PutBorder))
+    _variant_t Border;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetHeight,put=PutHeight))
+    _variant_t Height;
+    __declspec(property(get=GetInterior,put=PutInterior))
+    _variant_t Interior;
+    __declspec(property(get=GetLeft,put=PutLeft))
+    _variant_t Left;
+    __declspec(property(get=GetName,put=PutName))
+    _variant_t Name;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+    __declspec(property(get=GetTop,put=PutTop))
+    _variant_t Top;
+    __declspec(property(get=GetWidth,put=PutWidth))
+    _variant_t Width;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+    _variant_t ClearFormats ( );
+
+    // Properties:
+    _variant_t GetBorder ( );
+    void PutBorder ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetHeight ( );
+    void PutHeight ( const _variant_t & _val );
+    _variant_t GetInterior ( );
+    void PutInterior ( const _variant_t & _val );
+    _variant_t GetLeft ( );
+    void PutLeft ( const _variant_t & _val );
+    _variant_t GetName ( );
+    void PutName ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+    _variant_t GetTop ( );
+    void PutTop ( const _variant_t & _val );
+    _variant_t GetWidth ( );
+    void PutWidth ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("00024708-0000-0000-c000-000000000046"))
+ChartArea : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetBorder,put=PutBorder))
+    _variant_t Border;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetFont,put=PutFont))
+    _variant_t Font;
+    __declspec(property(get=GetHeight,put=PutHeight))
+    _variant_t Height;
+    __declspec(property(get=GetInterior,put=PutInterior))
+    _variant_t Interior;
+    __declspec(property(get=GetLeft,put=PutLeft))
+    _variant_t Left;
+    __declspec(property(get=GetName,put=PutName))
+    _variant_t Name;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+    __declspec(property(get=GetShadow,put=PutShadow))
+    _variant_t Shadow;
+    __declspec(property(get=GetTop,put=PutTop))
+    _variant_t Top;
+    __declspec(property(get=GetWidth,put=PutWidth))
+    _variant_t Width;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+    _variant_t Clear ( );
+    _variant_t ClearContents ( );
+    _variant_t ClearFormats ( );
+    _variant_t Copy ( );
+
+    // Properties:
+    _variant_t GetBorder ( );
+    void PutBorder ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetFont ( );
+    void PutFont ( const _variant_t & _val );
+    _variant_t GetHeight ( );
+    void PutHeight ( const _variant_t & _val );
+    _variant_t GetInterior ( );
+    void PutInterior ( const _variant_t & _val );
+    _variant_t GetLeft ( );
+    void PutLeft ( const _variant_t & _val );
+    _variant_t GetName ( );
+    void PutName ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+    _variant_t GetShadow ( );
+    void PutShadow ( const _variant_t & _val );
+    _variant_t GetTop ( );
+    void PutTop ( const _variant_t & _val );
+    _variant_t GetWidth ( );
+    void PutWidth ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("00024709-0000-0000-c000-000000000046"))
+Legend : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetBorder,put=PutBorder))
+    _variant_t Border;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetFont,put=PutFont))
+    _variant_t Font;
+    __declspec(property(get=GetHeight,put=PutHeight))
+    _variant_t Height;
+    __declspec(property(get=GetInterior,put=PutInterior))
+    _variant_t Interior;
+    __declspec(property(get=GetLeft,put=PutLeft))
+    _variant_t Left;
+    __declspec(property(get=GetName,put=PutName))
+    _variant_t Name;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+    __declspec(property(get=GetPosition,put=PutPosition))
+    _variant_t Position;
+    __declspec(property(get=GetShadow,put=PutShadow))
+    _variant_t Shadow;
+    __declspec(property(get=GetTop,put=PutTop))
+    _variant_t Top;
+    __declspec(property(get=GetWidth,put=PutWidth))
+    _variant_t Width;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+    _variant_t Delete ( );
+    _variant_t LegendEntries (
+        const _variant_t & Index = vtMissing );
+
+    // Properties:
+    _variant_t GetBorder ( );
+    void PutBorder ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetFont ( );
+    void PutFont ( const _variant_t & _val );
+    _variant_t GetHeight ( );
+    void PutHeight ( const _variant_t & _val );
+    _variant_t GetInterior ( );
+    void PutInterior ( const _variant_t & _val );
+    _variant_t GetLeft ( );
+    void PutLeft ( const _variant_t & _val );
+    _variant_t GetName ( );
+    void PutName ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+    _variant_t GetPosition ( );
+    void PutPosition ( const _variant_t & _val );
+    _variant_t GetShadow ( );
+    void PutShadow ( const _variant_t & _val );
+    _variant_t GetTop ( );
+    void PutTop ( const _variant_t & _val );
+    _variant_t GetWidth ( );
+    void PutWidth ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("00024706-0000-0000-c000-000000000046"))
+TickLabels : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetFont,put=PutFont))
+    _variant_t Font;
+    __declspec(property(get=GetName,put=PutName))
+    _variant_t Name;
+    __declspec(property(get=GetNumberFormat,put=PutNumberFormat))
+    _variant_t NumberFormat;
+    __declspec(property(get=GetOrientation,put=PutOrientation))
+    _variant_t Orientation;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+    _variant_t Delete ( );
+
+    // Properties:
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetFont ( );
+    void PutFont ( const _variant_t & _val );
+    _variant_t GetName ( );
+    void PutName ( const _variant_t & _val );
+    _variant_t GetNumberFormat ( );
+    void PutNumberFormat ( const _variant_t & _val );
+    _variant_t GetOrientation ( );
+    void PutOrientation ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("000208fb-0000-0000-c000-000000000046"))
+Chart : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetArea3DGroup,put=PutArea3DGroup))
+    _variant_t Area3DGroup;
+    __declspec(property(get=GetAutoScaling,put=PutAutoScaling))
+    _variant_t AutoScaling;
+    __declspec(property(get=GetBar3DGroup,put=PutBar3DGroup))
+    _variant_t Bar3DGroup;
+    __declspec(property(get=GetChartArea,put=PutChartArea))
+    _variant_t ChartArea;
+    __declspec(property(get=GetChartTitle,put=PutChartTitle))
+    _variant_t ChartTitle;
+    __declspec(property(get=GetColumn3DGroup,put=PutColumn3DGroup))
+    _variant_t Column3DGroup;
+    __declspec(property(get=GetCorners,put=PutCorners))
+    _variant_t Corners;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetDepthPercent,put=PutDepthPercent))
+    _variant_t DepthPercent;
+    __declspec(property(get=GetDisplayBlanksAs,put=PutDisplayBlanksAs))
+    _variant_t DisplayBlanksAs;
+    __declspec(property(get=GetElevation,put=PutElevation))
+    _variant_t Elevation;
+    __declspec(property(get=GetFloor,put=PutFloor))
+    _variant_t Floor;
+    __declspec(property(get=GetGapDepth,put=PutGapDepth))
+    _variant_t GapDepth;
+    __declspec(property(get=GetHasAxis,put=PutHasAxis))
+    _variant_t HasAxis;
+    __declspec(property(get=GetHasLegend,put=PutHasLegend))
+    _variant_t HasLegend;
+    __declspec(property(get=GetHasTitle,put=PutHasTitle))
+    _variant_t HasTitle;
+    __declspec(property(get=GetHeightPercent,put=PutHeightPercent))
+    _variant_t HeightPercent;
+    __declspec(property(get=GetLegend,put=PutLegend))
+    _variant_t Legend;
+    __declspec(property(get=GetLine3DGroup,put=PutLine3DGroup))
+    _variant_t Line3DGroup;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+    __declspec(property(get=GetPerspective,put=PutPerspective))
+    _variant_t Perspective;
+    __declspec(property(get=GetPie3DGroup,put=PutPie3DGroup))
+    _variant_t Pie3DGroup;
+    __declspec(property(get=GetPlotArea,put=PutPlotArea))
+    _variant_t PlotArea;
+    __declspec(property(get=GetRightAngleAxes,put=PutRightAngleAxes))
+    _variant_t RightAngleAxes;
+    __declspec(property(get=GetRotation,put=PutRotation))
+    _variant_t Rotation;
+    __declspec(property(get=GetSubType,put=PutSubType))
+    _variant_t SubType;
+    __declspec(property(get=GetSurfaceGroup,put=PutSurfaceGroup))
+    _variant_t SurfaceGroup;
+    __declspec(property(get=GetType,put=PutType))
+    _variant_t Type;
+    __declspec(property(get=GetWalls,put=PutWalls))
+    _variant_t Walls;
+    __declspec(property(get=GetWallsAndGridlines2D,put=PutWallsAndGridlines2D))
+    _variant_t WallsAndGridlines2D;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+    _variant_t ApplyDataLabels (
+        const _variant_t & Type = vtMissing,
+        const _variant_t & LegendKey = vtMissing );
+    _variant_t AreaGroups (
+        const _variant_t & Index = vtMissing );
+    _variant_t AutoFormat (
+        const _variant_t & Gallery,
+        const _variant_t & Format = vtMissing );
+    _variant_t Axes (
+        const _variant_t & Type = vtMissing,
+        const _variant_t & AxisGroup = vtMissing );
+    _variant_t BarGroups (
+        const _variant_t & Index = vtMissing );
+    _variant_t ChartGroups (
+        const _variant_t & Index = vtMissing );
+    _variant_t ColumnGroups (
+        const _variant_t & Index = vtMissing );
+    _variant_t DoughnutGroups (
+        const _variant_t & Index = vtMissing );
+    _variant_t LineGroups (
+        const _variant_t & Index = vtMissing );
+    _variant_t OmitBackground ( );
+    _variant_t PieGroups (
+        const _variant_t & Index = vtMissing );
+    _variant_t RadarGroups (
+        const _variant_t & Index = vtMissing );
+    _variant_t SeriesCollection (
+        const _variant_t & Index = vtMissing );
+    _variant_t SetEchoOn (
+        const _variant_t & EchoOn = vtMissing );
+    _variant_t XYGroups (
+        const _variant_t & Index = vtMissing );
+
+    // Properties:
+    _variant_t GetArea3DGroup ( );
+    void PutArea3DGroup ( const _variant_t & _val );
+    _variant_t GetAutoScaling ( );
+    void PutAutoScaling ( const _variant_t & _val );
+    _variant_t GetBar3DGroup ( );
+    void PutBar3DGroup ( const _variant_t & _val );
+    _variant_t GetChartArea ( );
+    void PutChartArea ( const _variant_t & _val );
+    _variant_t GetChartTitle ( );
+    void PutChartTitle ( const _variant_t & _val );
+    _variant_t GetColumn3DGroup ( );
+    void PutColumn3DGroup ( const _variant_t & _val );
+    _variant_t GetCorners ( );
+    void PutCorners ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetDepthPercent ( );
+    void PutDepthPercent ( const _variant_t & _val );
+    _variant_t GetDisplayBlanksAs ( );
+    void PutDisplayBlanksAs ( const _variant_t & _val );
+    _variant_t GetElevation ( );
+    void PutElevation ( const _variant_t & _val );
+    _variant_t GetFloor ( );
+    void PutFloor ( const _variant_t & _val );
+    _variant_t GetGapDepth ( );
+    void PutGapDepth ( const _variant_t & _val );
+    _variant_t GetHasAxis ( );
+    void PutHasAxis ( const _variant_t & _val );
+    _variant_t GetHasLegend ( );
+    void PutHasLegend ( const _variant_t & _val );
+    _variant_t GetHasTitle ( );
+    void PutHasTitle ( const _variant_t & _val );
+    _variant_t GetHeightPercent ( );
+    void PutHeightPercent ( const _variant_t & _val );
+    _variant_t GetLegend ( );
+    void PutLegend ( const _variant_t & _val );
+    _variant_t GetLine3DGroup ( );
+    void PutLine3DGroup ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+    _variant_t GetPerspective ( );
+    void PutPerspective ( const _variant_t & _val );
+    _variant_t GetPie3DGroup ( );
+    void PutPie3DGroup ( const _variant_t & _val );
+    _variant_t GetPlotArea ( );
+    void PutPlotArea ( const _variant_t & _val );
+    _variant_t GetRightAngleAxes ( );
+    void PutRightAngleAxes ( const _variant_t & _val );
+    _variant_t GetRotation ( );
+    void PutRotation ( const _variant_t & _val );
+    _variant_t GetSubType ( );
+    void PutSubType ( const _variant_t & _val );
+    _variant_t GetSurfaceGroup ( );
+    void PutSurfaceGroup ( const _variant_t & _val );
+    _variant_t GetType ( );
+    void PutType ( const _variant_t & _val );
+    _variant_t GetWalls ( );
+    void PutWalls ( const _variant_t & _val );
+    _variant_t GetWallsAndGridlines2D ( );
+    void PutWallsAndGridlines2D ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("000208f6-0000-0000-c000-000000000046"))
+ChartGroup : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetAxisGroup,put=PutAxisGroup))
+    _variant_t AxisGroup;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetDoughnutHoleSize,put=PutDoughnutHoleSize))
+    _variant_t DoughnutHoleSize;
+    __declspec(property(get=GetDownBars,put=PutDownBars))
+    _variant_t DownBars;
+    __declspec(property(get=GetDropLines,put=PutDropLines))
+    _variant_t DropLines;
+    __declspec(property(get=GetFirstSliceAngle,put=PutFirstSliceAngle))
+    _variant_t FirstSliceAngle;
+    __declspec(property(get=GetGapWidth,put=PutGapWidth))
+    _variant_t GapWidth;
+    __declspec(property(get=GetHasDropLines,put=PutHasDropLines))
+    _variant_t HasDropLines;
+    __declspec(property(get=GetHasHiLoLines,put=PutHasHiLoLines))
+    _variant_t HasHiLoLines;
+    __declspec(property(get=GetHasRadarAxisLabels,put=PutHasRadarAxisLabels))
+    _variant_t HasRadarAxisLabels;
+    __declspec(property(get=GetHasSeriesLines,put=PutHasSeriesLines))
+    _variant_t HasSeriesLines;
+    __declspec(property(get=GetHasUpDownBars,put=PutHasUpDownBars))
+    _variant_t HasUpDownBars;
+    __declspec(property(get=GetHiLoLines,put=PutHiLoLines))
+    _variant_t HiLoLines;
+    __declspec(property(get=GetOverlap,put=PutOverlap))
+    _variant_t Overlap;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+    __declspec(property(get=GetRadarAxisLabels,put=PutRadarAxisLabels))
+    _variant_t RadarAxisLabels;
+    __declspec(property(get=GetSeriesLines,put=PutSeriesLines))
+    _variant_t SeriesLines;
+    __declspec(property(get=GetSubType,put=PutSubType))
+    _variant_t SubType;
+    __declspec(property(get=GetType,put=PutType))
+    _variant_t Type;
+    __declspec(property(get=GetUpBars,put=PutUpBars))
+    _variant_t UpBars;
+    __declspec(property(get=GetVaryByCategories,put=PutVaryByCategories))
+    _variant_t VaryByCategories;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+    _variant_t SeriesCollection (
+        const _variant_t & Index = vtMissing );
+
+    // Properties:
+    _variant_t GetAxisGroup ( );
+    void PutAxisGroup ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetDoughnutHoleSize ( );
+    void PutDoughnutHoleSize ( const _variant_t & _val );
+    _variant_t GetDownBars ( );
+    void PutDownBars ( const _variant_t & _val );
+    _variant_t GetDropLines ( );
+    void PutDropLines ( const _variant_t & _val );
+    _variant_t GetFirstSliceAngle ( );
+    void PutFirstSliceAngle ( const _variant_t & _val );
+    _variant_t GetGapWidth ( );
+    void PutGapWidth ( const _variant_t & _val );
+    _variant_t GetHasDropLines ( );
+    void PutHasDropLines ( const _variant_t & _val );
+    _variant_t GetHasHiLoLines ( );
+    void PutHasHiLoLines ( const _variant_t & _val );
+    _variant_t GetHasRadarAxisLabels ( );
+    void PutHasRadarAxisLabels ( const _variant_t & _val );
+    _variant_t GetHasSeriesLines ( );
+    void PutHasSeriesLines ( const _variant_t & _val );
+    _variant_t GetHasUpDownBars ( );
+    void PutHasUpDownBars ( const _variant_t & _val );
+    _variant_t GetHiLoLines ( );
+    void PutHiLoLines ( const _variant_t & _val );
+    _variant_t GetOverlap ( );
+    void PutOverlap ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+    _variant_t GetRadarAxisLabels ( );
+    void PutRadarAxisLabels ( const _variant_t & _val );
+    _variant_t GetSeriesLines ( );
+    void PutSeriesLines ( const _variant_t & _val );
+    _variant_t GetSubType ( );
+    void PutSubType ( const _variant_t & _val );
+    _variant_t GetType ( );
+    void PutType ( const _variant_t & _val );
+    _variant_t GetUpBars ( );
+    void PutUpBars ( const _variant_t & _val );
+    _variant_t GetVaryByCategories ( );
+    void PutVaryByCategories ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("000208f5-0000-0000-c000-000000000046"))
+ChartGroups : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCount,put=PutCount))
+    _variant_t Count;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t _NewEnum ( );
+    _variant_t Application ( );
+    _variant_t Item (
+        const _variant_t & Index );
+
+    // Properties:
+    _variant_t GetCount ( );
+    void PutCount ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("000208f9-0000-0000-c000-000000000046"))
+Axis : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetAxisBetweenCategories,put=PutAxisBetweenCategories))
+    _variant_t AxisBetweenCategories;
+    __declspec(property(get=GetAxisGroup,put=PutAxisGroup))
+    _variant_t AxisGroup;
+    __declspec(property(get=GetAxisTitle,put=PutAxisTitle))
+    _variant_t AxisTitle;
+    __declspec(property(get=GetBorder,put=PutBorder))
+    _variant_t Border;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetCrosses,put=PutCrosses))
+    _variant_t Crosses;
+    __declspec(property(get=GetCrossesAt,put=PutCrossesAt))
+    _variant_t CrossesAt;
+    __declspec(property(get=GetHasMajorGridlines,put=PutHasMajorGridlines))
+    _variant_t HasMajorGridlines;
+    __declspec(property(get=GetHasMinorGridlines,put=PutHasMinorGridlines))
+    _variant_t HasMinorGridlines;
+    __declspec(property(get=GetHasTitle,put=PutHasTitle))
+    _variant_t HasTitle;
+    __declspec(property(get=GetMajorGridlines,put=PutMajorGridlines))
+    _variant_t MajorGridlines;
+    __declspec(property(get=GetMajorTickMark,put=PutMajorTickMark))
+    _variant_t MajorTickMark;
+    __declspec(property(get=GetMajorUnit,put=PutMajorUnit))
+    _variant_t MajorUnit;
+    __declspec(property(get=GetMajorUnitIsAuto,put=PutMajorUnitIsAuto))
+    _variant_t MajorUnitIsAuto;
+    __declspec(property(get=GetMaximumScale,put=PutMaximumScale))
+    _variant_t MaximumScale;
+    __declspec(property(get=GetMaximumScaleIsAuto,put=PutMaximumScaleIsAuto))
+    _variant_t MaximumScaleIsAuto;
+    __declspec(property(get=GetMinimumScale,put=PutMinimumScale))
+    _variant_t MinimumScale;
+    __declspec(property(get=GetMinimumScaleIsAuto,put=PutMinimumScaleIsAuto))
+    _variant_t MinimumScaleIsAuto;
+    __declspec(property(get=GetMinorGridlines,put=PutMinorGridlines))
+    _variant_t MinorGridlines;
+    __declspec(property(get=GetMinorTickMark,put=PutMinorTickMark))
+    _variant_t MinorTickMark;
+    __declspec(property(get=GetMinorUnit,put=PutMinorUnit))
+    _variant_t MinorUnit;
+    __declspec(property(get=GetMinorUnitIsAuto,put=PutMinorUnitIsAuto))
+    _variant_t MinorUnitIsAuto;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+    __declspec(property(get=GetReversePlotOrder,put=PutReversePlotOrder))
+    _variant_t ReversePlotOrder;
+    __declspec(property(get=GetScaleType,put=PutScaleType))
+    _variant_t ScaleType;
+    __declspec(property(get=GetTickLabelPosition,put=PutTickLabelPosition))
+    _variant_t TickLabelPosition;
+    __declspec(property(get=GetTickLabels,put=PutTickLabels))
+    _variant_t TickLabels;
+    __declspec(property(get=GetTickLabelSpacing,put=PutTickLabelSpacing))
+    _variant_t TickLabelSpacing;
+    __declspec(property(get=GetTickMarkSpacing,put=PutTickMarkSpacing))
+    _variant_t TickMarkSpacing;
+    __declspec(property(get=GetType,put=PutType))
+    _variant_t Type;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+    _variant_t Delete ( );
+
+    // Properties:
+    _variant_t GetAxisBetweenCategories ( );
+    void PutAxisBetweenCategories ( const _variant_t & _val );
+    _variant_t GetAxisGroup ( );
+    void PutAxisGroup ( const _variant_t & _val );
+    _variant_t GetAxisTitle ( );
+    void PutAxisTitle ( const _variant_t & _val );
+    _variant_t GetBorder ( );
+    void PutBorder ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetCrosses ( );
+    void PutCrosses ( const _variant_t & _val );
+    _variant_t GetCrossesAt ( );
+    void PutCrossesAt ( const _variant_t & _val );
+    _variant_t GetHasMajorGridlines ( );
+    void PutHasMajorGridlines ( const _variant_t & _val );
+    _variant_t GetHasMinorGridlines ( );
+    void PutHasMinorGridlines ( const _variant_t & _val );
+    _variant_t GetHasTitle ( );
+    void PutHasTitle ( const _variant_t & _val );
+    _variant_t GetMajorGridlines ( );
+    void PutMajorGridlines ( const _variant_t & _val );
+    _variant_t GetMajorTickMark ( );
+    void PutMajorTickMark ( const _variant_t & _val );
+    _variant_t GetMajorUnit ( );
+    void PutMajorUnit ( const _variant_t & _val );
+    _variant_t GetMajorUnitIsAuto ( );
+    void PutMajorUnitIsAuto ( const _variant_t & _val );
+    _variant_t GetMaximumScale ( );
+    void PutMaximumScale ( const _variant_t & _val );
+    _variant_t GetMaximumScaleIsAuto ( );
+    void PutMaximumScaleIsAuto ( const _variant_t & _val );
+    _variant_t GetMinimumScale ( );
+    void PutMinimumScale ( const _variant_t & _val );
+    _variant_t GetMinimumScaleIsAuto ( );
+    void PutMinimumScaleIsAuto ( const _variant_t & _val );
+    _variant_t GetMinorGridlines ( );
+    void PutMinorGridlines ( const _variant_t & _val );
+    _variant_t GetMinorTickMark ( );
+    void PutMinorTickMark ( const _variant_t & _val );
+    _variant_t GetMinorUnit ( );
+    void PutMinorUnit ( const _variant_t & _val );
+    _variant_t GetMinorUnitIsAuto ( );
+    void PutMinorUnitIsAuto ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+    _variant_t GetReversePlotOrder ( );
+    void PutReversePlotOrder ( const _variant_t & _val );
+    _variant_t GetScaleType ( );
+    void PutScaleType ( const _variant_t & _val );
+    _variant_t GetTickLabelPosition ( );
+    void PutTickLabelPosition ( const _variant_t & _val );
+    _variant_t GetTickLabels ( );
+    void PutTickLabels ( const _variant_t & _val );
+    _variant_t GetTickLabelSpacing ( );
+    void PutTickLabelSpacing ( const _variant_t & _val );
+    _variant_t GetTickMarkSpacing ( );
+    void PutTickMarkSpacing ( const _variant_t & _val );
+    _variant_t GetType ( );
+    void PutType ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("000208f4-0000-0000-c000-000000000046"))
+Axes : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCount,put=PutCount))
+    _variant_t Count;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t _NewEnum ( );
+    _variant_t Application ( );
+    _variant_t Item (
+        const _variant_t & Type,
+        const _variant_t & AxisGroup = vtMissing );
+
+    // Properties:
+    _variant_t GetCount ( );
+    void PutCount ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("000208e9-0000-0000-c000-000000000046"))
+DataLabel : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetAutoText,put=PutAutoText))
+    _variant_t AutoText;
+    __declspec(property(get=GetBorder,put=PutBorder))
+    _variant_t Border;
+    __declspec(property(get=GetCaption,put=PutCaption))
+    _variant_t Caption;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetFont,put=PutFont))
+    _variant_t Font;
+    __declspec(property(get=GetHorizontalAlignment,put=PutHorizontalAlignment))
+    _variant_t HorizontalAlignment;
+    __declspec(property(get=GetInterior,put=PutInterior))
+    _variant_t Interior;
+    __declspec(property(get=GetLeft,put=PutLeft))
+    _variant_t Left;
+    __declspec(property(get=GetName,put=PutName))
+    _variant_t Name;
+    __declspec(property(get=GetNumberFormat,put=PutNumberFormat))
+    _variant_t NumberFormat;
+    __declspec(property(get=GetOrientation,put=PutOrientation))
+    _variant_t Orientation;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+    __declspec(property(get=GetShadow,put=PutShadow))
+    _variant_t Shadow;
+    __declspec(property(get=GetShowLegendKey,put=PutShowLegendKey))
+    _variant_t ShowLegendKey;
+    __declspec(property(get=GetText,put=PutText))
+    _variant_t Text;
+    __declspec(property(get=GetTop,put=PutTop))
+    _variant_t Top;
+    __declspec(property(get=GetType,put=PutType))
+    _variant_t Type;
+    __declspec(property(get=GetVerticalAlignment,put=PutVerticalAlignment))
+    _variant_t VerticalAlignment;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+    _variant_t Delete ( );
+
+    // Properties:
+    _variant_t GetAutoText ( );
+    void PutAutoText ( const _variant_t & _val );
+    _variant_t GetBorder ( );
+    void PutBorder ( const _variant_t & _val );
+    _variant_t GetCaption ( );
+    void PutCaption ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetFont ( );
+    void PutFont ( const _variant_t & _val );
+    _variant_t GetHorizontalAlignment ( );
+    void PutHorizontalAlignment ( const _variant_t & _val );
+    _variant_t GetInterior ( );
+    void PutInterior ( const _variant_t & _val );
+    _variant_t GetLeft ( );
+    void PutLeft ( const _variant_t & _val );
+    _variant_t GetName ( );
+    void PutName ( const _variant_t & _val );
+    _variant_t GetNumberFormat ( );
+    void PutNumberFormat ( const _variant_t & _val );
+    _variant_t GetOrientation ( );
+    void PutOrientation ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+    _variant_t GetShadow ( );
+    void PutShadow ( const _variant_t & _val );
+    _variant_t GetShowLegendKey ( );
+    void PutShowLegendKey ( const _variant_t & _val );
+    _variant_t GetText ( );
+    void PutText ( const _variant_t & _val );
+    _variant_t GetTop ( );
+    void PutTop ( const _variant_t & _val );
+    _variant_t GetType ( );
+    void PutType ( const _variant_t & _val );
+    _variant_t GetVerticalAlignment ( );
+    void PutVerticalAlignment ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("000208e8-0000-0000-c000-000000000046"))
+DataLabels : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetAutoText,put=PutAutoText))
+    _variant_t AutoText;
+    __declspec(property(get=GetBorder,put=PutBorder))
+    _variant_t Border;
+    __declspec(property(get=GetCount,put=PutCount))
+    _variant_t Count;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetFont,put=PutFont))
+    _variant_t Font;
+    __declspec(property(get=GetHorizontalAlignment,put=PutHorizontalAlignment))
+    _variant_t HorizontalAlignment;
+    __declspec(property(get=GetInterior,put=PutInterior))
+    _variant_t Interior;
+    __declspec(property(get=GetName,put=PutName))
+    _variant_t Name;
+    __declspec(property(get=GetNumberFormat,put=PutNumberFormat))
+    _variant_t NumberFormat;
+    __declspec(property(get=GetOrientation,put=PutOrientation))
+    _variant_t Orientation;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+    __declspec(property(get=GetShadow,put=PutShadow))
+    _variant_t Shadow;
+    __declspec(property(get=GetShowLegendKey,put=PutShowLegendKey))
+    _variant_t ShowLegendKey;
+    __declspec(property(get=GetType,put=PutType))
+    _variant_t Type;
+    __declspec(property(get=GetVerticalAlignment,put=PutVerticalAlignment))
+    _variant_t VerticalAlignment;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t _NewEnum ( );
+    _variant_t Application ( );
+    _variant_t Delete ( );
+    _variant_t Item (
+        const _variant_t & Index );
+
+    // Properties:
+    _variant_t GetAutoText ( );
+    void PutAutoText ( const _variant_t & _val );
+    _variant_t GetBorder ( );
+    void PutBorder ( const _variant_t & _val );
+    _variant_t GetCount ( );
+    void PutCount ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetFont ( );
+    void PutFont ( const _variant_t & _val );
+    _variant_t GetHorizontalAlignment ( );
+    void PutHorizontalAlignment ( const _variant_t & _val );
+    _variant_t GetInterior ( );
+    void PutInterior ( const _variant_t & _val );
+    _variant_t GetName ( );
+    void PutName ( const _variant_t & _val );
+    _variant_t GetNumberFormat ( );
+    void PutNumberFormat ( const _variant_t & _val );
+    _variant_t GetOrientation ( );
+    void PutOrientation ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+    _variant_t GetShadow ( );
+    void PutShadow ( const _variant_t & _val );
+    _variant_t GetShowLegendKey ( );
+    void PutShowLegendKey ( const _variant_t & _val );
+    _variant_t GetType ( );
+    void PutType ( const _variant_t & _val );
+    _variant_t GetVerticalAlignment ( );
+    void PutVerticalAlignment ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("000208f1-0000-0000-c000-000000000046"))
+Point : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetBorder,put=PutBorder))
+    _variant_t Border;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetDataLabel,put=PutDataLabel))
+    _variant_t DataLabel;
+    __declspec(property(get=GetExplosion,put=PutExplosion))
+    _variant_t Explosion;
+    __declspec(property(get=GetHasDataLabel,put=PutHasDataLabel))
+    _variant_t HasDataLabel;
+    __declspec(property(get=GetInterior,put=PutInterior))
+    _variant_t Interior;
+    __declspec(property(get=GetInvertIfNegative,put=PutInvertIfNegative))
+    _variant_t InvertIfNegative;
+    __declspec(property(get=GetMarkerBackgroundColor,put=PutMarkerBackgroundColor))
+    _variant_t MarkerBackgroundColor;
+    __declspec(property(get=GetMarkerBackgroundColorIndex,put=PutMarkerBackgroundColorIndex))
+    _variant_t MarkerBackgroundColorIndex;
+    __declspec(property(get=GetMarkerForegroundColor,put=PutMarkerForegroundColor))
+    _variant_t MarkerForegroundColor;
+    __declspec(property(get=GetMarkerForegroundColorIndex,put=PutMarkerForegroundColorIndex))
+    _variant_t MarkerForegroundColorIndex;
+    __declspec(property(get=GetMarkerStyle,put=PutMarkerStyle))
+    _variant_t MarkerStyle;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+    __declspec(property(get=GetPictureType,put=PutPictureType))
+    _variant_t PictureType;
+    __declspec(property(get=GetPictureUnit,put=PutPictureUnit))
+    _variant_t PictureUnit;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+    _variant_t ApplyDataLabels (
+        const _variant_t & Type = vtMissing,
+        const _variant_t & LegendKey = vtMissing );
+    _variant_t ClearFormats ( );
+    _variant_t Copy ( );
+    _variant_t Delete ( );
+
+    // Properties:
+    _variant_t GetBorder ( );
+    void PutBorder ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetDataLabel ( );
+    void PutDataLabel ( const _variant_t & _val );
+    _variant_t GetExplosion ( );
+    void PutExplosion ( const _variant_t & _val );
+    _variant_t GetHasDataLabel ( );
+    void PutHasDataLabel ( const _variant_t & _val );
+    _variant_t GetInterior ( );
+    void PutInterior ( const _variant_t & _val );
+    _variant_t GetInvertIfNegative ( );
+    void PutInvertIfNegative ( const _variant_t & _val );
+    _variant_t GetMarkerBackgroundColor ( );
+    void PutMarkerBackgroundColor ( const _variant_t & _val );
+    _variant_t GetMarkerBackgroundColorIndex ( );
+    void PutMarkerBackgroundColorIndex ( const _variant_t & _val );
+    _variant_t GetMarkerForegroundColor ( );
+    void PutMarkerForegroundColor ( const _variant_t & _val );
+    _variant_t GetMarkerForegroundColorIndex ( );
+    void PutMarkerForegroundColorIndex ( const _variant_t & _val );
+    _variant_t GetMarkerStyle ( );
+    void PutMarkerStyle ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+    _variant_t GetPictureType ( );
+    void PutPictureType ( const _variant_t & _val );
+    _variant_t GetPictureUnit ( );
+    void PutPictureUnit ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("000208f2-0000-0000-c000-000000000046"))
+Points : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCount,put=PutCount))
+    _variant_t Count;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t _NewEnum ( );
+    _variant_t Application ( );
+    _variant_t Item (
+        const _variant_t & Index );
+
+    // Properties:
+    _variant_t GetCount ( );
+    void PutCount ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("000208f0-0000-0000-c000-000000000046"))
+Series : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetAxisGroup,put=PutAxisGroup))
+    _variant_t AxisGroup;
+    __declspec(property(get=GetBorder,put=PutBorder))
+    _variant_t Border;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetErrorBars,put=PutErrorBars))
+    _variant_t ErrorBars;
+    __declspec(property(get=GetExplosion,put=PutExplosion))
+    _variant_t Explosion;
+    __declspec(property(get=GetHasDataLabels,put=PutHasDataLabels))
+    _variant_t HasDataLabels;
+    __declspec(property(get=GetHasErrorBars,put=PutHasErrorBars))
+    _variant_t HasErrorBars;
+    __declspec(property(get=GetInterior,put=PutInterior))
+    _variant_t Interior;
+    __declspec(property(get=GetInvertIfNegative,put=PutInvertIfNegative))
+    _variant_t InvertIfNegative;
+    __declspec(property(get=GetMarkerBackgroundColor,put=PutMarkerBackgroundColor))
+    _variant_t MarkerBackgroundColor;
+    __declspec(property(get=GetMarkerBackgroundColorIndex,put=PutMarkerBackgroundColorIndex))
+    _variant_t MarkerBackgroundColorIndex;
+    __declspec(property(get=GetMarkerForegroundColor,put=PutMarkerForegroundColor))
+    _variant_t MarkerForegroundColor;
+    __declspec(property(get=GetMarkerForegroundColorIndex,put=PutMarkerForegroundColorIndex))
+    _variant_t MarkerForegroundColorIndex;
+    __declspec(property(get=GetMarkerStyle,put=PutMarkerStyle))
+    _variant_t MarkerStyle;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+    __declspec(property(get=GetPictureType,put=PutPictureType))
+    _variant_t PictureType;
+    __declspec(property(get=GetPictureUnit,put=PutPictureUnit))
+    _variant_t PictureUnit;
+    __declspec(property(get=GetSmooth,put=PutSmooth))
+    _variant_t Smooth;
+    __declspec(property(get=GetType,put=PutType))
+    _variant_t Type;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+    _variant_t ApplyDataLabels (
+        const _variant_t & Type = vtMissing,
+        const _variant_t & LegendKey = vtMissing );
+    _variant_t ClearFormats ( );
+    _variant_t Copy ( );
+    _variant_t DataLabels (
+        const _variant_t & Index = vtMissing );
+    _variant_t Delete ( );
+    _variant_t ErrorBar (
+        const _variant_t & Direction,
+        const _variant_t & Include,
+        const _variant_t & Type,
+        const _variant_t & Amount = vtMissing,
+        const _variant_t & MinusValues = vtMissing );
+    _variant_t Points (
+        const _variant_t & Index = vtMissing );
+    _variant_t Trendlines (
+        const _variant_t & Index = vtMissing );
+
+    // Properties:
+    _variant_t GetAxisGroup ( );
+    void PutAxisGroup ( const _variant_t & _val );
+    _variant_t GetBorder ( );
+    void PutBorder ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetErrorBars ( );
+    void PutErrorBars ( const _variant_t & _val );
+    _variant_t GetExplosion ( );
+    void PutExplosion ( const _variant_t & _val );
+    _variant_t GetHasDataLabels ( );
+    void PutHasDataLabels ( const _variant_t & _val );
+    _variant_t GetHasErrorBars ( );
+    void PutHasErrorBars ( const _variant_t & _val );
+    _variant_t GetInterior ( );
+    void PutInterior ( const _variant_t & _val );
+    _variant_t GetInvertIfNegative ( );
+    void PutInvertIfNegative ( const _variant_t & _val );
+    _variant_t GetMarkerBackgroundColor ( );
+    void PutMarkerBackgroundColor ( const _variant_t & _val );
+    _variant_t GetMarkerBackgroundColorIndex ( );
+    void PutMarkerBackgroundColorIndex ( const _variant_t & _val );
+    _variant_t GetMarkerForegroundColor ( );
+    void PutMarkerForegroundColor ( const _variant_t & _val );
+    _variant_t GetMarkerForegroundColorIndex ( );
+    void PutMarkerForegroundColorIndex ( const _variant_t & _val );
+    _variant_t GetMarkerStyle ( );
+    void PutMarkerStyle ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+    _variant_t GetPictureType ( );
+    void PutPictureType ( const _variant_t & _val );
+    _variant_t GetPictureUnit ( );
+    void PutPictureUnit ( const _variant_t & _val );
+    _variant_t GetSmooth ( );
+    void PutSmooth ( const _variant_t & _val );
+    _variant_t GetType ( );
+    void PutType ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("000208ef-0000-0000-c000-000000000046"))
+SeriesCollection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCount,put=PutCount))
+    _variant_t Count;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t _NewEnum ( );
+    _variant_t Application ( );
+    _variant_t Item (
+        const _variant_t & Index );
+
+    // Properties:
+    _variant_t GetCount ( );
+    void PutCount ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("000208e7-0000-0000-c000-000000000046"))
+LegendEntry : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetFont,put=PutFont))
+    _variant_t Font;
+    __declspec(property(get=GetIndex,put=PutIndex))
+    _variant_t Index;
+    __declspec(property(get=GetLegendKey,put=PutLegendKey))
+    _variant_t LegendKey;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+    _variant_t Delete ( );
+
+    // Properties:
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetFont ( );
+    void PutFont ( const _variant_t & _val );
+    _variant_t GetIndex ( );
+    void PutIndex ( const _variant_t & _val );
+    _variant_t GetLegendKey ( );
+    void PutLegendKey ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("000208e6-0000-0000-c000-000000000046"))
+LegendEntries : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCount,put=PutCount))
+    _variant_t Count;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t _NewEnum ( );
+    _variant_t Application ( );
+    _variant_t Item (
+        const _variant_t & Index );
+
+    // Properties:
+    _variant_t GetCount ( );
+    void PutCount ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("000208e5-0000-0000-c000-000000000046"))
+LegendKey : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetBorder,put=PutBorder))
+    _variant_t Border;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetInterior,put=PutInterior))
+    _variant_t Interior;
+    __declspec(property(get=GetInvertIfNegative,put=PutInvertIfNegative))
+    _variant_t InvertIfNegative;
+    __declspec(property(get=GetMarkerBackgroundColor,put=PutMarkerBackgroundColor))
+    _variant_t MarkerBackgroundColor;
+    __declspec(property(get=GetMarkerBackgroundColorIndex,put=PutMarkerBackgroundColorIndex))
+    _variant_t MarkerBackgroundColorIndex;
+    __declspec(property(get=GetMarkerForegroundColor,put=PutMarkerForegroundColor))
+    _variant_t MarkerForegroundColor;
+    __declspec(property(get=GetMarkerForegroundColorIndex,put=PutMarkerForegroundColorIndex))
+    _variant_t MarkerForegroundColorIndex;
+    __declspec(property(get=GetMarkerStyle,put=PutMarkerStyle))
+    _variant_t MarkerStyle;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+    __declspec(property(get=GetSmooth,put=PutSmooth))
+    _variant_t Smooth;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+    _variant_t ClearFormats ( );
+    _variant_t Delete ( );
+
+    // Properties:
+    _variant_t GetBorder ( );
+    void PutBorder ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetInterior ( );
+    void PutInterior ( const _variant_t & _val );
+    _variant_t GetInvertIfNegative ( );
+    void PutInvertIfNegative ( const _variant_t & _val );
+    _variant_t GetMarkerBackgroundColor ( );
+    void PutMarkerBackgroundColor ( const _variant_t & _val );
+    _variant_t GetMarkerBackgroundColorIndex ( );
+    void PutMarkerBackgroundColorIndex ( const _variant_t & _val );
+    _variant_t GetMarkerForegroundColor ( );
+    void PutMarkerForegroundColor ( const _variant_t & _val );
+    _variant_t GetMarkerForegroundColorIndex ( );
+    void PutMarkerForegroundColorIndex ( const _variant_t & _val );
+    _variant_t GetMarkerStyle ( );
+    void PutMarkerStyle ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+    _variant_t GetSmooth ( );
+    void PutSmooth ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("000208e3-0000-0000-c000-000000000046"))
+Trendline : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetBackward,put=PutBackward))
+    _variant_t Backward;
+    __declspec(property(get=GetBorder,put=PutBorder))
+    _variant_t Border;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetDataLabel,put=PutDataLabel))
+    _variant_t DataLabel;
+    __declspec(property(get=GetDisplayEquation,put=PutDisplayEquation))
+    _variant_t DisplayEquation;
+    __declspec(property(get=GetDisplayRSquared,put=PutDisplayRSquared))
+    _variant_t DisplayRSquared;
+    __declspec(property(get=GetForward,put=PutForward))
+    _variant_t Forward;
+    __declspec(property(get=GetIndex,put=PutIndex))
+    _variant_t Index;
+    __declspec(property(get=GetIntercept,put=PutIntercept))
+    _variant_t Intercept;
+    __declspec(property(get=GetInterceptIsAuto,put=PutInterceptIsAuto))
+    _variant_t InterceptIsAuto;
+    __declspec(property(get=GetName,put=PutName))
+    _variant_t Name;
+    __declspec(property(get=GetNameIsAuto,put=PutNameIsAuto))
+    _variant_t NameIsAuto;
+    __declspec(property(get=GetOrder,put=PutOrder))
+    _variant_t Order;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+    __declspec(property(get=GetPeriod,put=PutPeriod))
+    _variant_t Period;
+    __declspec(property(get=GetType,put=PutType))
+    _variant_t Type;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t Application ( );
+    _variant_t ClearFormats ( );
+    _variant_t Delete ( );
+
+    // Properties:
+    _variant_t GetBackward ( );
+    void PutBackward ( const _variant_t & _val );
+    _variant_t GetBorder ( );
+    void PutBorder ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetDataLabel ( );
+    void PutDataLabel ( const _variant_t & _val );
+    _variant_t GetDisplayEquation ( );
+    void PutDisplayEquation ( const _variant_t & _val );
+    _variant_t GetDisplayRSquared ( );
+    void PutDisplayRSquared ( const _variant_t & _val );
+    _variant_t GetForward ( );
+    void PutForward ( const _variant_t & _val );
+    _variant_t GetIndex ( );
+    void PutIndex ( const _variant_t & _val );
+    _variant_t GetIntercept ( );
+    void PutIntercept ( const _variant_t & _val );
+    _variant_t GetInterceptIsAuto ( );
+    void PutInterceptIsAuto ( const _variant_t & _val );
+    _variant_t GetName ( );
+    void PutName ( const _variant_t & _val );
+    _variant_t GetNameIsAuto ( );
+    void PutNameIsAuto ( const _variant_t & _val );
+    _variant_t GetOrder ( );
+    void PutOrder ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+    _variant_t GetPeriod ( );
+    void PutPeriod ( const _variant_t & _val );
+    _variant_t GetType ( );
+    void PutType ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("000208e4-0000-0000-c000-000000000046"))
+Trendlines : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCount,put=PutCount))
+    _variant_t Count;
+    __declspec(property(get=GetCreator,put=PutCreator))
+    _variant_t Creator;
+    __declspec(property(get=GetParent,put=PutParent))
+    _variant_t Parent;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    _variant_t _NewEnum ( );
+    _variant_t Add (
+        const _variant_t & Type = vtMissing,
+        const _variant_t & Order = vtMissing,
+        const _variant_t & Period = vtMissing,
+        const _variant_t & Forward = vtMissing,
+        const _variant_t & Backward = vtMissing,
+        const _variant_t & Intercept = vtMissing,
+        const _variant_t & DisplayEquation = vtMissing,
+        const _variant_t & DisplayRSquared = vtMissing,
+        const _variant_t & Name = vtMissing );
+    _variant_t Application ( );
+    _variant_t Item (
+        const _variant_t & Index = vtMissing );
+
+    // Properties:
+    _variant_t GetCount ( );
+    void PutCount ( const _variant_t & _val );
+    _variant_t GetCreator ( );
+    void PutCreator ( const _variant_t & _val );
+    _variant_t GetParent ( );
+    void PutParent ( const _variant_t & _val );
+};
+
+struct __declspec(uuid("00020800-0000-0000-c000-000000000046"))
+_GraphApplication;
+    // [ default ] dispinterface _Global
+
+//
+// Function implementation mapping
+//
+
+#pragma start_map_region("GRJP50.tli")
+__declspec(implementation_key(1)) _variant_t _Global::Application ( );
+__declspec(implementation_key(2)) _variant_t _Global::GetCreator ( );
+__declspec(implementation_key(3)) void _Global::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(4)) _variant_t _Global::GetParent ( );
+__declspec(implementation_key(5)) void _Global::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(6)) _variant_t Application::_Application ( );
+__declspec(implementation_key(7)) _variant_t Application::Chart ( );
+__declspec(implementation_key(8)) _variant_t Application::Quit ( );
+__declspec(implementation_key(9)) _variant_t Application::SaveAsOldFileFormat ( const _variant_t & MajorVersion, const _variant_t & MinorVersion );
+__declspec(implementation_key(10)) _variant_t Application::GetChartWizardDisplay ( );
+__declspec(implementation_key(11)) void Application::PutChartWizardDisplay ( const _variant_t & _val );
+__declspec(implementation_key(12)) _variant_t Application::GetCreator ( );
+__declspec(implementation_key(13)) void Application::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(14)) _variant_t Application::GetHasLinks ( );
+__declspec(implementation_key(15)) void Application::PutHasLinks ( const _variant_t & _val );
+__declspec(implementation_key(16)) _variant_t Application::GetName ( );
+__declspec(implementation_key(17)) void Application::PutName ( const _variant_t & _val );
+__declspec(implementation_key(18)) _variant_t Application::GetParent ( );
+__declspec(implementation_key(19)) void Application::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(20)) _variant_t Application::GetVisible ( );
+__declspec(implementation_key(21)) void Application::PutVisible ( const _variant_t & _val );
+__declspec(implementation_key(22)) _variant_t Font::Application ( );
+__declspec(implementation_key(23)) _variant_t Font::GetBackground ( );
+__declspec(implementation_key(24)) void Font::PutBackground ( const _variant_t & _val );
+__declspec(implementation_key(25)) _variant_t Font::GetBold ( );
+__declspec(implementation_key(26)) void Font::PutBold ( const _variant_t & _val );
+__declspec(implementation_key(27)) _variant_t Font::GetColor ( );
+__declspec(implementation_key(28)) void Font::PutColor ( const _variant_t & _val );
+__declspec(implementation_key(29)) _variant_t Font::GetColorIndex ( );
+__declspec(implementation_key(30)) void Font::PutColorIndex ( const _variant_t & _val );
+__declspec(implementation_key(31)) _variant_t Font::GetCreator ( );
+__declspec(implementation_key(32)) void Font::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(33)) _variant_t Font::GetFontStyle ( );
+__declspec(implementation_key(34)) void Font::PutFontStyle ( const _variant_t & _val );
+__declspec(implementation_key(35)) _variant_t Font::GetItalic ( );
+__declspec(implementation_key(36)) void Font::PutItalic ( const _variant_t & _val );
+__declspec(implementation_key(37)) _variant_t Font::GetName ( );
+__declspec(implementation_key(38)) void Font::PutName ( const _variant_t & _val );
+__declspec(implementation_key(39)) _variant_t Font::GetOutlineFont ( );
+__declspec(implementation_key(40)) void Font::PutOutlineFont ( const _variant_t & _val );
+__declspec(implementation_key(41)) _variant_t Font::GetParent ( );
+__declspec(implementation_key(42)) void Font::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(43)) _variant_t Font::GetShadow ( );
+__declspec(implementation_key(44)) void Font::PutShadow ( const _variant_t & _val );
+__declspec(implementation_key(45)) _variant_t Font::GetSize ( );
+__declspec(implementation_key(46)) void Font::PutSize ( const _variant_t & _val );
+__declspec(implementation_key(47)) _variant_t Font::GetStrikethrough ( );
+__declspec(implementation_key(48)) void Font::PutStrikethrough ( const _variant_t & _val );
+__declspec(implementation_key(49)) _variant_t Font::GetSubscript ( );
+__declspec(implementation_key(50)) void Font::PutSubscript ( const _variant_t & _val );
+__declspec(implementation_key(51)) _variant_t Font::GetSuperscript ( );
+__declspec(implementation_key(52)) void Font::PutSuperscript ( const _variant_t & _val );
+__declspec(implementation_key(53)) _variant_t Font::GetUnderline ( );
+__declspec(implementation_key(54)) void Font::PutUnderline ( const _variant_t & _val );
+__declspec(implementation_key(55)) _variant_t Border::Application ( );
+__declspec(implementation_key(56)) _variant_t Border::GetColor ( );
+__declspec(implementation_key(57)) void Border::PutColor ( const _variant_t & _val );
+__declspec(implementation_key(58)) _variant_t Border::GetColorIndex ( );
+__declspec(implementation_key(59)) void Border::PutColorIndex ( const _variant_t & _val );
+__declspec(implementation_key(60)) _variant_t Border::GetCreator ( );
+__declspec(implementation_key(61)) void Border::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(62)) _variant_t Border::GetLineStyle ( );
+__declspec(implementation_key(63)) void Border::PutLineStyle ( const _variant_t & _val );
+__declspec(implementation_key(64)) _variant_t Border::GetParent ( );
+__declspec(implementation_key(65)) void Border::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(66)) _variant_t Border::GetWeight ( );
+__declspec(implementation_key(67)) void Border::PutWeight ( const _variant_t & _val );
+__declspec(implementation_key(68)) _variant_t Interior::Application ( );
+__declspec(implementation_key(69)) _variant_t Interior::GetColor ( );
+__declspec(implementation_key(70)) void Interior::PutColor ( const _variant_t & _val );
+__declspec(implementation_key(71)) _variant_t Interior::GetColorIndex ( );
+__declspec(implementation_key(72)) void Interior::PutColorIndex ( const _variant_t & _val );
+__declspec(implementation_key(73)) _variant_t Interior::GetCreator ( );
+__declspec(implementation_key(74)) void Interior::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(75)) _variant_t Interior::GetInvertIfNegative ( );
+__declspec(implementation_key(76)) void Interior::PutInvertIfNegative ( const _variant_t & _val );
+__declspec(implementation_key(77)) _variant_t Interior::GetParent ( );
+__declspec(implementation_key(78)) void Interior::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(79)) _variant_t Interior::GetPattern ( );
+__declspec(implementation_key(80)) void Interior::PutPattern ( const _variant_t & _val );
+__declspec(implementation_key(81)) _variant_t Interior::GetPatternColor ( );
+__declspec(implementation_key(82)) void Interior::PutPatternColor ( const _variant_t & _val );
+__declspec(implementation_key(83)) _variant_t Interior::GetPatternColorIndex ( );
+__declspec(implementation_key(84)) void Interior::PutPatternColorIndex ( const _variant_t & _val );
+__declspec(implementation_key(85)) _variant_t Corners::Application ( );
+__declspec(implementation_key(86)) _variant_t Corners::GetCreator ( );
+__declspec(implementation_key(87)) void Corners::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(88)) _variant_t Corners::GetName ( );
+__declspec(implementation_key(89)) void Corners::PutName ( const _variant_t & _val );
+__declspec(implementation_key(90)) _variant_t Corners::GetParent ( );
+__declspec(implementation_key(91)) void Corners::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(92)) _variant_t SeriesLines::Application ( );
+__declspec(implementation_key(93)) _variant_t SeriesLines::Delete ( );
+__declspec(implementation_key(94)) _variant_t SeriesLines::GetBorder ( );
+__declspec(implementation_key(95)) void SeriesLines::PutBorder ( const _variant_t & _val );
+__declspec(implementation_key(96)) _variant_t SeriesLines::GetCreator ( );
+__declspec(implementation_key(97)) void SeriesLines::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(98)) _variant_t SeriesLines::GetName ( );
+__declspec(implementation_key(99)) void SeriesLines::PutName ( const _variant_t & _val );
+__declspec(implementation_key(100)) _variant_t SeriesLines::GetParent ( );
+__declspec(implementation_key(101)) void SeriesLines::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(102)) _variant_t HiLoLines::Application ( );
+__declspec(implementation_key(103)) _variant_t HiLoLines::Delete ( );
+__declspec(implementation_key(104)) _variant_t HiLoLines::GetBorder ( );
+__declspec(implementation_key(105)) void HiLoLines::PutBorder ( const _variant_t & _val );
+__declspec(implementation_key(106)) _variant_t HiLoLines::GetCreator ( );
+__declspec(implementation_key(107)) void HiLoLines::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(108)) _variant_t HiLoLines::GetName ( );
+__declspec(implementation_key(109)) void HiLoLines::PutName ( const _variant_t & _val );
+__declspec(implementation_key(110)) _variant_t HiLoLines::GetParent ( );
+__declspec(implementation_key(111)) void HiLoLines::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(112)) _variant_t Gridlines::Application ( );
+__declspec(implementation_key(113)) _variant_t Gridlines::Delete ( );
+__declspec(implementation_key(114)) _variant_t Gridlines::GetBorder ( );
+__declspec(implementation_key(115)) void Gridlines::PutBorder ( const _variant_t & _val );
+__declspec(implementation_key(116)) _variant_t Gridlines::GetCreator ( );
+__declspec(implementation_key(117)) void Gridlines::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(118)) _variant_t Gridlines::GetName ( );
+__declspec(implementation_key(119)) void Gridlines::PutName ( const _variant_t & _val );
+__declspec(implementation_key(120)) _variant_t Gridlines::GetParent ( );
+__declspec(implementation_key(121)) void Gridlines::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(122)) _variant_t DropLines::Application ( );
+__declspec(implementation_key(123)) _variant_t DropLines::Delete ( );
+__declspec(implementation_key(124)) _variant_t DropLines::GetBorder ( );
+__declspec(implementation_key(125)) void DropLines::PutBorder ( const _variant_t & _val );
+__declspec(implementation_key(126)) _variant_t DropLines::GetCreator ( );
+__declspec(implementation_key(127)) void DropLines::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(128)) _variant_t DropLines::GetName ( );
+__declspec(implementation_key(129)) void DropLines::PutName ( const _variant_t & _val );
+__declspec(implementation_key(130)) _variant_t DropLines::GetParent ( );
+__declspec(implementation_key(131)) void DropLines::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(132)) _variant_t ErrorBars::Application ( );
+__declspec(implementation_key(133)) _variant_t ErrorBars::ClearFormats ( );
+__declspec(implementation_key(134)) _variant_t ErrorBars::Delete ( );
+__declspec(implementation_key(135)) _variant_t ErrorBars::GetBorder ( );
+__declspec(implementation_key(136)) void ErrorBars::PutBorder ( const _variant_t & _val );
+__declspec(implementation_key(137)) _variant_t ErrorBars::GetCreator ( );
+__declspec(implementation_key(138)) void ErrorBars::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(139)) _variant_t ErrorBars::GetEndStyle ( );
+__declspec(implementation_key(140)) void ErrorBars::PutEndStyle ( const _variant_t & _val );
+__declspec(implementation_key(141)) _variant_t ErrorBars::GetName ( );
+__declspec(implementation_key(142)) void ErrorBars::PutName ( const _variant_t & _val );
+__declspec(implementation_key(143)) _variant_t ErrorBars::GetParent ( );
+__declspec(implementation_key(144)) void ErrorBars::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(145)) _variant_t UpBars::Application ( );
+__declspec(implementation_key(146)) _variant_t UpBars::Delete ( );
+__declspec(implementation_key(147)) _variant_t UpBars::GetBorder ( );
+__declspec(implementation_key(148)) void UpBars::PutBorder ( const _variant_t & _val );
+__declspec(implementation_key(149)) _variant_t UpBars::GetCreator ( );
+__declspec(implementation_key(150)) void UpBars::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(151)) _variant_t UpBars::GetInterior ( );
+__declspec(implementation_key(152)) void UpBars::PutInterior ( const _variant_t & _val );
+__declspec(implementation_key(153)) _variant_t UpBars::GetName ( );
+__declspec(implementation_key(154)) void UpBars::PutName ( const _variant_t & _val );
+__declspec(implementation_key(155)) _variant_t UpBars::GetParent ( );
+__declspec(implementation_key(156)) void UpBars::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(157)) _variant_t DownBars::Application ( );
+__declspec(implementation_key(158)) _variant_t DownBars::Delete ( );
+__declspec(implementation_key(159)) _variant_t DownBars::GetBorder ( );
+__declspec(implementation_key(160)) void DownBars::PutBorder ( const _variant_t & _val );
+__declspec(implementation_key(161)) _variant_t DownBars::GetCreator ( );
+__declspec(implementation_key(162)) void DownBars::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(163)) _variant_t DownBars::GetInterior ( );
+__declspec(implementation_key(164)) void DownBars::PutInterior ( const _variant_t & _val );
+__declspec(implementation_key(165)) _variant_t DownBars::GetName ( );
+__declspec(implementation_key(166)) void DownBars::PutName ( const _variant_t & _val );
+__declspec(implementation_key(167)) _variant_t DownBars::GetParent ( );
+__declspec(implementation_key(168)) void DownBars::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(169)) _variant_t ChartTitle::Application ( );
+__declspec(implementation_key(170)) _variant_t ChartTitle::Delete ( );
+__declspec(implementation_key(171)) _variant_t ChartTitle::GetBorder ( );
+__declspec(implementation_key(172)) void ChartTitle::PutBorder ( const _variant_t & _val );
+__declspec(implementation_key(173)) _variant_t ChartTitle::GetCaption ( );
+__declspec(implementation_key(174)) void ChartTitle::PutCaption ( const _variant_t & _val );
+__declspec(implementation_key(175)) _variant_t ChartTitle::GetCreator ( );
+__declspec(implementation_key(176)) void ChartTitle::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(177)) _variant_t ChartTitle::GetFont ( );
+__declspec(implementation_key(178)) void ChartTitle::PutFont ( const _variant_t & _val );
+__declspec(implementation_key(179)) _variant_t ChartTitle::GetHorizontalAlignment ( );
+__declspec(implementation_key(180)) void ChartTitle::PutHorizontalAlignment ( const _variant_t & _val );
+__declspec(implementation_key(181)) _variant_t ChartTitle::GetInterior ( );
+__declspec(implementation_key(182)) void ChartTitle::PutInterior ( const _variant_t & _val );
+__declspec(implementation_key(183)) _variant_t ChartTitle::GetLeft ( );
+__declspec(implementation_key(184)) void ChartTitle::PutLeft ( const _variant_t & _val );
+__declspec(implementation_key(185)) _variant_t ChartTitle::GetName ( );
+__declspec(implementation_key(186)) void ChartTitle::PutName ( const _variant_t & _val );
+__declspec(implementation_key(187)) _variant_t ChartTitle::GetOrientation ( );
+__declspec(implementation_key(188)) void ChartTitle::PutOrientation ( const _variant_t & _val );
+__declspec(implementation_key(189)) _variant_t ChartTitle::GetParent ( );
+__declspec(implementation_key(190)) void ChartTitle::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(191)) _variant_t ChartTitle::GetShadow ( );
+__declspec(implementation_key(192)) void ChartTitle::PutShadow ( const _variant_t & _val );
+__declspec(implementation_key(193)) _variant_t ChartTitle::GetText ( );
+__declspec(implementation_key(194)) void ChartTitle::PutText ( const _variant_t & _val );
+__declspec(implementation_key(195)) _variant_t ChartTitle::GetTop ( );
+__declspec(implementation_key(196)) void ChartTitle::PutTop ( const _variant_t & _val );
+__declspec(implementation_key(197)) _variant_t ChartTitle::GetVerticalAlignment ( );
+__declspec(implementation_key(198)) void ChartTitle::PutVerticalAlignment ( const _variant_t & _val );
+__declspec(implementation_key(199)) _variant_t AxisTitle::Application ( );
+__declspec(implementation_key(200)) _variant_t AxisTitle::Delete ( );
+__declspec(implementation_key(201)) _variant_t AxisTitle::GetBorder ( );
+__declspec(implementation_key(202)) void AxisTitle::PutBorder ( const _variant_t & _val );
+__declspec(implementation_key(203)) _variant_t AxisTitle::GetCaption ( );
+__declspec(implementation_key(204)) void AxisTitle::PutCaption ( const _variant_t & _val );
+__declspec(implementation_key(205)) _variant_t AxisTitle::GetCreator ( );
+__declspec(implementation_key(206)) void AxisTitle::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(207)) _variant_t AxisTitle::GetFont ( );
+__declspec(implementation_key(208)) void AxisTitle::PutFont ( const _variant_t & _val );
+__declspec(implementation_key(209)) _variant_t AxisTitle::GetHorizontalAlignment ( );
+__declspec(implementation_key(210)) void AxisTitle::PutHorizontalAlignment ( const _variant_t & _val );
+__declspec(implementation_key(211)) _variant_t AxisTitle::GetInterior ( );
+__declspec(implementation_key(212)) void AxisTitle::PutInterior ( const _variant_t & _val );
+__declspec(implementation_key(213)) _variant_t AxisTitle::GetLeft ( );
+__declspec(implementation_key(214)) void AxisTitle::PutLeft ( const _variant_t & _val );
+__declspec(implementation_key(215)) _variant_t AxisTitle::GetName ( );
+__declspec(implementation_key(216)) void AxisTitle::PutName ( const _variant_t & _val );
+__declspec(implementation_key(217)) _variant_t AxisTitle::GetOrientation ( );
+__declspec(implementation_key(218)) void AxisTitle::PutOrientation ( const _variant_t & _val );
+__declspec(implementation_key(219)) _variant_t AxisTitle::GetParent ( );
+__declspec(implementation_key(220)) void AxisTitle::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(221)) _variant_t AxisTitle::GetShadow ( );
+__declspec(implementation_key(222)) void AxisTitle::PutShadow ( const _variant_t & _val );
+__declspec(implementation_key(223)) _variant_t AxisTitle::GetText ( );
+__declspec(implementation_key(224)) void AxisTitle::PutText ( const _variant_t & _val );
+__declspec(implementation_key(225)) _variant_t AxisTitle::GetTop ( );
+__declspec(implementation_key(226)) void AxisTitle::PutTop ( const _variant_t & _val );
+__declspec(implementation_key(227)) _variant_t AxisTitle::GetVerticalAlignment ( );
+__declspec(implementation_key(228)) void AxisTitle::PutVerticalAlignment ( const _variant_t & _val );
+__declspec(implementation_key(229)) _variant_t Floor::Application ( );
+__declspec(implementation_key(230)) _variant_t Floor::ClearFormats ( );
+__declspec(implementation_key(231)) _variant_t Floor::GetBorder ( );
+__declspec(implementation_key(232)) void Floor::PutBorder ( const _variant_t & _val );
+__declspec(implementation_key(233)) _variant_t Floor::GetCreator ( );
+__declspec(implementation_key(234)) void Floor::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(235)) _variant_t Floor::GetInterior ( );
+__declspec(implementation_key(236)) void Floor::PutInterior ( const _variant_t & _val );
+__declspec(implementation_key(237)) _variant_t Floor::GetName ( );
+__declspec(implementation_key(238)) void Floor::PutName ( const _variant_t & _val );
+__declspec(implementation_key(239)) _variant_t Floor::GetParent ( );
+__declspec(implementation_key(240)) void Floor::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(241)) _variant_t Walls::Application ( );
+__declspec(implementation_key(242)) _variant_t Walls::ClearFormats ( );
+__declspec(implementation_key(243)) _variant_t Walls::GetBorder ( );
+__declspec(implementation_key(244)) void Walls::PutBorder ( const _variant_t & _val );
+__declspec(implementation_key(245)) _variant_t Walls::GetCreator ( );
+__declspec(implementation_key(246)) void Walls::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(247)) _variant_t Walls::GetInterior ( );
+__declspec(implementation_key(248)) void Walls::PutInterior ( const _variant_t & _val );
+__declspec(implementation_key(249)) _variant_t Walls::GetName ( );
+__declspec(implementation_key(250)) void Walls::PutName ( const _variant_t & _val );
+__declspec(implementation_key(251)) _variant_t Walls::GetParent ( );
+__declspec(implementation_key(252)) void Walls::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(253)) _variant_t PlotArea::Application ( );
+__declspec(implementation_key(254)) _variant_t PlotArea::ClearFormats ( );
+__declspec(implementation_key(255)) _variant_t PlotArea::GetBorder ( );
+__declspec(implementation_key(256)) void PlotArea::PutBorder ( const _variant_t & _val );
+__declspec(implementation_key(257)) _variant_t PlotArea::GetCreator ( );
+__declspec(implementation_key(258)) void PlotArea::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(259)) _variant_t PlotArea::GetHeight ( );
+__declspec(implementation_key(260)) void PlotArea::PutHeight ( const _variant_t & _val );
+__declspec(implementation_key(261)) _variant_t PlotArea::GetInterior ( );
+__declspec(implementation_key(262)) void PlotArea::PutInterior ( const _variant_t & _val );
+__declspec(implementation_key(263)) _variant_t PlotArea::GetLeft ( );
+__declspec(implementation_key(264)) void PlotArea::PutLeft ( const _variant_t & _val );
+__declspec(implementation_key(265)) _variant_t PlotArea::GetName ( );
+__declspec(implementation_key(266)) void PlotArea::PutName ( const _variant_t & _val );
+__declspec(implementation_key(267)) _variant_t PlotArea::GetParent ( );
+__declspec(implementation_key(268)) void PlotArea::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(269)) _variant_t PlotArea::GetTop ( );
+__declspec(implementation_key(270)) void PlotArea::PutTop ( const _variant_t & _val );
+__declspec(implementation_key(271)) _variant_t PlotArea::GetWidth ( );
+__declspec(implementation_key(272)) void PlotArea::PutWidth ( const _variant_t & _val );
+__declspec(implementation_key(273)) _variant_t ChartArea::Application ( );
+__declspec(implementation_key(274)) _variant_t ChartArea::Clear ( );
+__declspec(implementation_key(275)) _variant_t ChartArea::ClearContents ( );
+__declspec(implementation_key(276)) _variant_t ChartArea::ClearFormats ( );
+__declspec(implementation_key(277)) _variant_t ChartArea::Copy ( );
+__declspec(implementation_key(278)) _variant_t ChartArea::GetBorder ( );
+__declspec(implementation_key(279)) void ChartArea::PutBorder ( const _variant_t & _val );
+__declspec(implementation_key(280)) _variant_t ChartArea::GetCreator ( );
+__declspec(implementation_key(281)) void ChartArea::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(282)) _variant_t ChartArea::GetFont ( );
+__declspec(implementation_key(283)) void ChartArea::PutFont ( const _variant_t & _val );
+__declspec(implementation_key(284)) _variant_t ChartArea::GetHeight ( );
+__declspec(implementation_key(285)) void ChartArea::PutHeight ( const _variant_t & _val );
+__declspec(implementation_key(286)) _variant_t ChartArea::GetInterior ( );
+__declspec(implementation_key(287)) void ChartArea::PutInterior ( const _variant_t & _val );
+__declspec(implementation_key(288)) _variant_t ChartArea::GetLeft ( );
+__declspec(implementation_key(289)) void ChartArea::PutLeft ( const _variant_t & _val );
+__declspec(implementation_key(290)) _variant_t ChartArea::GetName ( );
+__declspec(implementation_key(291)) void ChartArea::PutName ( const _variant_t & _val );
+__declspec(implementation_key(292)) _variant_t ChartArea::GetParent ( );
+__declspec(implementation_key(293)) void ChartArea::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(294)) _variant_t ChartArea::GetShadow ( );
+__declspec(implementation_key(295)) void ChartArea::PutShadow ( const _variant_t & _val );
+__declspec(implementation_key(296)) _variant_t ChartArea::GetTop ( );
+__declspec(implementation_key(297)) void ChartArea::PutTop ( const _variant_t & _val );
+__declspec(implementation_key(298)) _variant_t ChartArea::GetWidth ( );
+__declspec(implementation_key(299)) void ChartArea::PutWidth ( const _variant_t & _val );
+__declspec(implementation_key(300)) _variant_t Legend::Application ( );
+__declspec(implementation_key(301)) _variant_t Legend::Delete ( );
+__declspec(implementation_key(302)) _variant_t Legend::LegendEntries ( const _variant_t & Index );
+__declspec(implementation_key(303)) _variant_t Legend::GetBorder ( );
+__declspec(implementation_key(304)) void Legend::PutBorder ( const _variant_t & _val );
+__declspec(implementation_key(305)) _variant_t Legend::GetCreator ( );
+__declspec(implementation_key(306)) void Legend::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(307)) _variant_t Legend::GetFont ( );
+__declspec(implementation_key(308)) void Legend::PutFont ( const _variant_t & _val );
+__declspec(implementation_key(309)) _variant_t Legend::GetHeight ( );
+__declspec(implementation_key(310)) void Legend::PutHeight ( const _variant_t & _val );
+__declspec(implementation_key(311)) _variant_t Legend::GetInterior ( );
+__declspec(implementation_key(312)) void Legend::PutInterior ( const _variant_t & _val );
+__declspec(implementation_key(313)) _variant_t Legend::GetLeft ( );
+__declspec(implementation_key(314)) void Legend::PutLeft ( const _variant_t & _val );
+__declspec(implementation_key(315)) _variant_t Legend::GetName ( );
+__declspec(implementation_key(316)) void Legend::PutName ( const _variant_t & _val );
+__declspec(implementation_key(317)) _variant_t Legend::GetParent ( );
+__declspec(implementation_key(318)) void Legend::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(319)) _variant_t Legend::GetPosition ( );
+__declspec(implementation_key(320)) void Legend::PutPosition ( const _variant_t & _val );
+__declspec(implementation_key(321)) _variant_t Legend::GetShadow ( );
+__declspec(implementation_key(322)) void Legend::PutShadow ( const _variant_t & _val );
+__declspec(implementation_key(323)) _variant_t Legend::GetTop ( );
+__declspec(implementation_key(324)) void Legend::PutTop ( const _variant_t & _val );
+__declspec(implementation_key(325)) _variant_t Legend::GetWidth ( );
+__declspec(implementation_key(326)) void Legend::PutWidth ( const _variant_t & _val );
+__declspec(implementation_key(327)) _variant_t TickLabels::Application ( );
+__declspec(implementation_key(328)) _variant_t TickLabels::Delete ( );
+__declspec(implementation_key(329)) _variant_t TickLabels::GetCreator ( );
+__declspec(implementation_key(330)) void TickLabels::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(331)) _variant_t TickLabels::GetFont ( );
+__declspec(implementation_key(332)) void TickLabels::PutFont ( const _variant_t & _val );
+__declspec(implementation_key(333)) _variant_t TickLabels::GetName ( );
+__declspec(implementation_key(334)) void TickLabels::PutName ( const _variant_t & _val );
+__declspec(implementation_key(335)) _variant_t TickLabels::GetNumberFormat ( );
+__declspec(implementation_key(336)) void TickLabels::PutNumberFormat ( const _variant_t & _val );
+__declspec(implementation_key(337)) _variant_t TickLabels::GetOrientation ( );
+__declspec(implementation_key(338)) void TickLabels::PutOrientation ( const _variant_t & _val );
+__declspec(implementation_key(339)) _variant_t TickLabels::GetParent ( );
+__declspec(implementation_key(340)) void TickLabels::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(341)) _variant_t Chart::Application ( );
+__declspec(implementation_key(342)) _variant_t Chart::ApplyDataLabels ( const _variant_t & Type, const _variant_t & LegendKey );
+__declspec(implementation_key(343)) _variant_t Chart::AreaGroups ( const _variant_t & Index );
+__declspec(implementation_key(344)) _variant_t Chart::AutoFormat ( const _variant_t & Gallery, const _variant_t & Format );
+__declspec(implementation_key(345)) _variant_t Chart::Axes ( const _variant_t & Type, const _variant_t & AxisGroup );
+__declspec(implementation_key(346)) _variant_t Chart::BarGroups ( const _variant_t & Index );
+__declspec(implementation_key(347)) _variant_t Chart::ChartGroups ( const _variant_t & Index );
+__declspec(implementation_key(348)) _variant_t Chart::ColumnGroups ( const _variant_t & Index );
+__declspec(implementation_key(349)) _variant_t Chart::DoughnutGroups ( const _variant_t & Index );
+__declspec(implementation_key(350)) _variant_t Chart::LineGroups ( const _variant_t & Index );
+__declspec(implementation_key(351)) _variant_t Chart::OmitBackground ( );
+__declspec(implementation_key(352)) _variant_t Chart::PieGroups ( const _variant_t & Index );
+__declspec(implementation_key(353)) _variant_t Chart::RadarGroups ( const _variant_t & Index );
+__declspec(implementation_key(354)) _variant_t Chart::SeriesCollection ( const _variant_t & Index );
+__declspec(implementation_key(355)) _variant_t Chart::SetEchoOn ( const _variant_t & EchoOn );
+__declspec(implementation_key(356)) _variant_t Chart::XYGroups ( const _variant_t & Index );
+__declspec(implementation_key(357)) _variant_t Chart::GetArea3DGroup ( );
+__declspec(implementation_key(358)) void Chart::PutArea3DGroup ( const _variant_t & _val );
+__declspec(implementation_key(359)) _variant_t Chart::GetAutoScaling ( );
+__declspec(implementation_key(360)) void Chart::PutAutoScaling ( const _variant_t & _val );
+__declspec(implementation_key(361)) _variant_t Chart::GetBar3DGroup ( );
+__declspec(implementation_key(362)) void Chart::PutBar3DGroup ( const _variant_t & _val );
+__declspec(implementation_key(363)) _variant_t Chart::GetChartArea ( );
+__declspec(implementation_key(364)) void Chart::PutChartArea ( const _variant_t & _val );
+__declspec(implementation_key(365)) _variant_t Chart::GetChartTitle ( );
+__declspec(implementation_key(366)) void Chart::PutChartTitle ( const _variant_t & _val );
+__declspec(implementation_key(367)) _variant_t Chart::GetColumn3DGroup ( );
+__declspec(implementation_key(368)) void Chart::PutColumn3DGroup ( const _variant_t & _val );
+__declspec(implementation_key(369)) _variant_t Chart::GetCorners ( );
+__declspec(implementation_key(370)) void Chart::PutCorners ( const _variant_t & _val );
+__declspec(implementation_key(371)) _variant_t Chart::GetCreator ( );
+__declspec(implementation_key(372)) void Chart::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(373)) _variant_t Chart::GetDepthPercent ( );
+__declspec(implementation_key(374)) void Chart::PutDepthPercent ( const _variant_t & _val );
+__declspec(implementation_key(375)) _variant_t Chart::GetDisplayBlanksAs ( );
+__declspec(implementation_key(376)) void Chart::PutDisplayBlanksAs ( const _variant_t & _val );
+__declspec(implementation_key(377)) _variant_t Chart::GetElevation ( );
+__declspec(implementation_key(378)) void Chart::PutElevation ( const _variant_t & _val );
+__declspec(implementation_key(379)) _variant_t Chart::GetFloor ( );
+__declspec(implementation_key(380)) void Chart::PutFloor ( const _variant_t & _val );
+__declspec(implementation_key(381)) _variant_t Chart::GetGapDepth ( );
+__declspec(implementation_key(382)) void Chart::PutGapDepth ( const _variant_t & _val );
+__declspec(implementation_key(383)) _variant_t Chart::GetHasAxis ( );
+__declspec(implementation_key(384)) void Chart::PutHasAxis ( const _variant_t & _val );
+__declspec(implementation_key(385)) _variant_t Chart::GetHasLegend ( );
+__declspec(implementation_key(386)) void Chart::PutHasLegend ( const _variant_t & _val );
+__declspec(implementation_key(387)) _variant_t Chart::GetHasTitle ( );
+__declspec(implementation_key(388)) void Chart::PutHasTitle ( const _variant_t & _val );
+__declspec(implementation_key(389)) _variant_t Chart::GetHeightPercent ( );
+__declspec(implementation_key(390)) void Chart::PutHeightPercent ( const _variant_t & _val );
+__declspec(implementation_key(391)) _variant_t Chart::GetLegend ( );
+__declspec(implementation_key(392)) void Chart::PutLegend ( const _variant_t & _val );
+__declspec(implementation_key(393)) _variant_t Chart::GetLine3DGroup ( );
+__declspec(implementation_key(394)) void Chart::PutLine3DGroup ( const _variant_t & _val );
+__declspec(implementation_key(395)) _variant_t Chart::GetParent ( );
+__declspec(implementation_key(396)) void Chart::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(397)) _variant_t Chart::GetPerspective ( );
+__declspec(implementation_key(398)) void Chart::PutPerspective ( const _variant_t & _val );
+__declspec(implementation_key(399)) _variant_t Chart::GetPie3DGroup ( );
+__declspec(implementation_key(400)) void Chart::PutPie3DGroup ( const _variant_t & _val );
+__declspec(implementation_key(401)) _variant_t Chart::GetPlotArea ( );
+__declspec(implementation_key(402)) void Chart::PutPlotArea ( const _variant_t & _val );
+__declspec(implementation_key(403)) _variant_t Chart::GetRightAngleAxes ( );
+__declspec(implementation_key(404)) void Chart::PutRightAngleAxes ( const _variant_t & _val );
+__declspec(implementation_key(405)) _variant_t Chart::GetRotation ( );
+__declspec(implementation_key(406)) void Chart::PutRotation ( const _variant_t & _val );
+__declspec(implementation_key(407)) _variant_t Chart::GetSubType ( );
+__declspec(implementation_key(408)) void Chart::PutSubType ( const _variant_t & _val );
+__declspec(implementation_key(409)) _variant_t Chart::GetSurfaceGroup ( );
+__declspec(implementation_key(410)) void Chart::PutSurfaceGroup ( const _variant_t & _val );
+__declspec(implementation_key(411)) _variant_t Chart::GetType ( );
+__declspec(implementation_key(412)) void Chart::PutType ( const _variant_t & _val );
+__declspec(implementation_key(413)) _variant_t Chart::GetWalls ( );
+__declspec(implementation_key(414)) void Chart::PutWalls ( const _variant_t & _val );
+__declspec(implementation_key(415)) _variant_t Chart::GetWallsAndGridlines2D ( );
+__declspec(implementation_key(416)) void Chart::PutWallsAndGridlines2D ( const _variant_t & _val );
+__declspec(implementation_key(417)) _variant_t ChartGroup::Application ( );
+__declspec(implementation_key(418)) _variant_t ChartGroup::SeriesCollection ( const _variant_t & Index );
+__declspec(implementation_key(419)) _variant_t ChartGroup::GetAxisGroup ( );
+__declspec(implementation_key(420)) void ChartGroup::PutAxisGroup ( const _variant_t & _val );
+__declspec(implementation_key(421)) _variant_t ChartGroup::GetCreator ( );
+__declspec(implementation_key(422)) void ChartGroup::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(423)) _variant_t ChartGroup::GetDoughnutHoleSize ( );
+__declspec(implementation_key(424)) void ChartGroup::PutDoughnutHoleSize ( const _variant_t & _val );
+__declspec(implementation_key(425)) _variant_t ChartGroup::GetDownBars ( );
+__declspec(implementation_key(426)) void ChartGroup::PutDownBars ( const _variant_t & _val );
+__declspec(implementation_key(427)) _variant_t ChartGroup::GetDropLines ( );
+__declspec(implementation_key(428)) void ChartGroup::PutDropLines ( const _variant_t & _val );
+__declspec(implementation_key(429)) _variant_t ChartGroup::GetFirstSliceAngle ( );
+__declspec(implementation_key(430)) void ChartGroup::PutFirstSliceAngle ( const _variant_t & _val );
+__declspec(implementation_key(431)) _variant_t ChartGroup::GetGapWidth ( );
+__declspec(implementation_key(432)) void ChartGroup::PutGapWidth ( const _variant_t & _val );
+__declspec(implementation_key(433)) _variant_t ChartGroup::GetHasDropLines ( );
+__declspec(implementation_key(434)) void ChartGroup::PutHasDropLines ( const _variant_t & _val );
+__declspec(implementation_key(435)) _variant_t ChartGroup::GetHasHiLoLines ( );
+__declspec(implementation_key(436)) void ChartGroup::PutHasHiLoLines ( const _variant_t & _val );
+__declspec(implementation_key(437)) _variant_t ChartGroup::GetHasRadarAxisLabels ( );
+__declspec(implementation_key(438)) void ChartGroup::PutHasRadarAxisLabels ( const _variant_t & _val );
+__declspec(implementation_key(439)) _variant_t ChartGroup::GetHasSeriesLines ( );
+__declspec(implementation_key(440)) void ChartGroup::PutHasSeriesLines ( const _variant_t & _val );
+__declspec(implementation_key(441)) _variant_t ChartGroup::GetHasUpDownBars ( );
+__declspec(implementation_key(442)) void ChartGroup::PutHasUpDownBars ( const _variant_t & _val );
+__declspec(implementation_key(443)) _variant_t ChartGroup::GetHiLoLines ( );
+__declspec(implementation_key(444)) void ChartGroup::PutHiLoLines ( const _variant_t & _val );
+__declspec(implementation_key(445)) _variant_t ChartGroup::GetOverlap ( );
+__declspec(implementation_key(446)) void ChartGroup::PutOverlap ( const _variant_t & _val );
+__declspec(implementation_key(447)) _variant_t ChartGroup::GetParent ( );
+__declspec(implementation_key(448)) void ChartGroup::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(449)) _variant_t ChartGroup::GetRadarAxisLabels ( );
+__declspec(implementation_key(450)) void ChartGroup::PutRadarAxisLabels ( const _variant_t & _val );
+__declspec(implementation_key(451)) _variant_t ChartGroup::GetSeriesLines ( );
+__declspec(implementation_key(452)) void ChartGroup::PutSeriesLines ( const _variant_t & _val );
+__declspec(implementation_key(453)) _variant_t ChartGroup::GetSubType ( );
+__declspec(implementation_key(454)) void ChartGroup::PutSubType ( const _variant_t & _val );
+__declspec(implementation_key(455)) _variant_t ChartGroup::GetType ( );
+__declspec(implementation_key(456)) void ChartGroup::PutType ( const _variant_t & _val );
+__declspec(implementation_key(457)) _variant_t ChartGroup::GetUpBars ( );
+__declspec(implementation_key(458)) void ChartGroup::PutUpBars ( const _variant_t & _val );
+__declspec(implementation_key(459)) _variant_t ChartGroup::GetVaryByCategories ( );
+__declspec(implementation_key(460)) void ChartGroup::PutVaryByCategories ( const _variant_t & _val );
+__declspec(implementation_key(461)) _variant_t ChartGroups::_NewEnum ( );
+__declspec(implementation_key(462)) _variant_t ChartGroups::Application ( );
+__declspec(implementation_key(463)) _variant_t ChartGroups::Item ( const _variant_t & Index );
+__declspec(implementation_key(464)) _variant_t ChartGroups::GetCount ( );
+__declspec(implementation_key(465)) void ChartGroups::PutCount ( const _variant_t & _val );
+__declspec(implementation_key(466)) _variant_t ChartGroups::GetCreator ( );
+__declspec(implementation_key(467)) void ChartGroups::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(468)) _variant_t ChartGroups::GetParent ( );
+__declspec(implementation_key(469)) void ChartGroups::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(470)) _variant_t Axis::Application ( );
+__declspec(implementation_key(471)) _variant_t Axis::Delete ( );
+__declspec(implementation_key(472)) _variant_t Axis::GetAxisBetweenCategories ( );
+__declspec(implementation_key(473)) void Axis::PutAxisBetweenCategories ( const _variant_t & _val );
+__declspec(implementation_key(474)) _variant_t Axis::GetAxisGroup ( );
+__declspec(implementation_key(475)) void Axis::PutAxisGroup ( const _variant_t & _val );
+__declspec(implementation_key(476)) _variant_t Axis::GetAxisTitle ( );
+__declspec(implementation_key(477)) void Axis::PutAxisTitle ( const _variant_t & _val );
+__declspec(implementation_key(478)) _variant_t Axis::GetBorder ( );
+__declspec(implementation_key(479)) void Axis::PutBorder ( const _variant_t & _val );
+__declspec(implementation_key(480)) _variant_t Axis::GetCreator ( );
+__declspec(implementation_key(481)) void Axis::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(482)) _variant_t Axis::GetCrosses ( );
+__declspec(implementation_key(483)) void Axis::PutCrosses ( const _variant_t & _val );
+__declspec(implementation_key(484)) _variant_t Axis::GetCrossesAt ( );
+__declspec(implementation_key(485)) void Axis::PutCrossesAt ( const _variant_t & _val );
+__declspec(implementation_key(486)) _variant_t Axis::GetHasMajorGridlines ( );
+__declspec(implementation_key(487)) void Axis::PutHasMajorGridlines ( const _variant_t & _val );
+__declspec(implementation_key(488)) _variant_t Axis::GetHasMinorGridlines ( );
+__declspec(implementation_key(489)) void Axis::PutHasMinorGridlines ( const _variant_t & _val );
+__declspec(implementation_key(490)) _variant_t Axis::GetHasTitle ( );
+__declspec(implementation_key(491)) void Axis::PutHasTitle ( const _variant_t & _val );
+__declspec(implementation_key(492)) _variant_t Axis::GetMajorGridlines ( );
+__declspec(implementation_key(493)) void Axis::PutMajorGridlines ( const _variant_t & _val );
+__declspec(implementation_key(494)) _variant_t Axis::GetMajorTickMark ( );
+__declspec(implementation_key(495)) void Axis::PutMajorTickMark ( const _variant_t & _val );
+__declspec(implementation_key(496)) _variant_t Axis::GetMajorUnit ( );
+__declspec(implementation_key(497)) void Axis::PutMajorUnit ( const _variant_t & _val );
+__declspec(implementation_key(498)) _variant_t Axis::GetMajorUnitIsAuto ( );
+__declspec(implementation_key(499)) void Axis::PutMajorUnitIsAuto ( const _variant_t & _val );
+__declspec(implementation_key(500)) _variant_t Axis::GetMaximumScale ( );
+__declspec(implementation_key(501)) void Axis::PutMaximumScale ( const _variant_t & _val );
+__declspec(implementation_key(502)) _variant_t Axis::GetMaximumScaleIsAuto ( );
+__declspec(implementation_key(503)) void Axis::PutMaximumScaleIsAuto ( const _variant_t & _val );
+__declspec(implementation_key(504)) _variant_t Axis::GetMinimumScale ( );
+__declspec(implementation_key(505)) void Axis::PutMinimumScale ( const _variant_t & _val );
+__declspec(implementation_key(506)) _variant_t Axis::GetMinimumScaleIsAuto ( );
+__declspec(implementation_key(507)) void Axis::PutMinimumScaleIsAuto ( const _variant_t & _val );
+__declspec(implementation_key(508)) _variant_t Axis::GetMinorGridlines ( );
+__declspec(implementation_key(509)) void Axis::PutMinorGridlines ( const _variant_t & _val );
+__declspec(implementation_key(510)) _variant_t Axis::GetMinorTickMark ( );
+__declspec(implementation_key(511)) void Axis::PutMinorTickMark ( const _variant_t & _val );
+__declspec(implementation_key(512)) _variant_t Axis::GetMinorUnit ( );
+__declspec(implementation_key(513)) void Axis::PutMinorUnit ( const _variant_t & _val );
+__declspec(implementation_key(514)) _variant_t Axis::GetMinorUnitIsAuto ( );
+__declspec(implementation_key(515)) void Axis::PutMinorUnitIsAuto ( const _variant_t & _val );
+__declspec(implementation_key(516)) _variant_t Axis::GetParent ( );
+__declspec(implementation_key(517)) void Axis::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(518)) _variant_t Axis::GetReversePlotOrder ( );
+__declspec(implementation_key(519)) void Axis::PutReversePlotOrder ( const _variant_t & _val );
+__declspec(implementation_key(520)) _variant_t Axis::GetScaleType ( );
+__declspec(implementation_key(521)) void Axis::PutScaleType ( const _variant_t & _val );
+__declspec(implementation_key(522)) _variant_t Axis::GetTickLabelPosition ( );
+__declspec(implementation_key(523)) void Axis::PutTickLabelPosition ( const _variant_t & _val );
+__declspec(implementation_key(524)) _variant_t Axis::GetTickLabels ( );
+__declspec(implementation_key(525)) void Axis::PutTickLabels ( const _variant_t & _val );
+__declspec(implementation_key(526)) _variant_t Axis::GetTickLabelSpacing ( );
+__declspec(implementation_key(527)) void Axis::PutTickLabelSpacing ( const _variant_t & _val );
+__declspec(implementation_key(528)) _variant_t Axis::GetTickMarkSpacing ( );
+__declspec(implementation_key(529)) void Axis::PutTickMarkSpacing ( const _variant_t & _val );
+__declspec(implementation_key(530)) _variant_t Axis::GetType ( );
+__declspec(implementation_key(531)) void Axis::PutType ( const _variant_t & _val );
+__declspec(implementation_key(532)) _variant_t Axes::_NewEnum ( );
+__declspec(implementation_key(533)) _variant_t Axes::Application ( );
+__declspec(implementation_key(534)) _variant_t Axes::Item ( const _variant_t & Type, const _variant_t & AxisGroup );
+__declspec(implementation_key(535)) _variant_t Axes::GetCount ( );
+__declspec(implementation_key(536)) void Axes::PutCount ( const _variant_t & _val );
+__declspec(implementation_key(537)) _variant_t Axes::GetCreator ( );
+__declspec(implementation_key(538)) void Axes::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(539)) _variant_t Axes::GetParent ( );
+__declspec(implementation_key(540)) void Axes::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(541)) _variant_t DataLabel::Application ( );
+__declspec(implementation_key(542)) _variant_t DataLabel::Delete ( );
+__declspec(implementation_key(543)) _variant_t DataLabel::GetAutoText ( );
+__declspec(implementation_key(544)) void DataLabel::PutAutoText ( const _variant_t & _val );
+__declspec(implementation_key(545)) _variant_t DataLabel::GetBorder ( );
+__declspec(implementation_key(546)) void DataLabel::PutBorder ( const _variant_t & _val );
+__declspec(implementation_key(547)) _variant_t DataLabel::GetCaption ( );
+__declspec(implementation_key(548)) void DataLabel::PutCaption ( const _variant_t & _val );
+__declspec(implementation_key(549)) _variant_t DataLabel::GetCreator ( );
+__declspec(implementation_key(550)) void DataLabel::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(551)) _variant_t DataLabel::GetFont ( );
+__declspec(implementation_key(552)) void DataLabel::PutFont ( const _variant_t & _val );
+__declspec(implementation_key(553)) _variant_t DataLabel::GetHorizontalAlignment ( );
+__declspec(implementation_key(554)) void DataLabel::PutHorizontalAlignment ( const _variant_t & _val );
+__declspec(implementation_key(555)) _variant_t DataLabel::GetInterior ( );
+__declspec(implementation_key(556)) void DataLabel::PutInterior ( const _variant_t & _val );
+__declspec(implementation_key(557)) _variant_t DataLabel::GetLeft ( );
+__declspec(implementation_key(558)) void DataLabel::PutLeft ( const _variant_t & _val );
+__declspec(implementation_key(559)) _variant_t DataLabel::GetName ( );
+__declspec(implementation_key(560)) void DataLabel::PutName ( const _variant_t & _val );
+__declspec(implementation_key(561)) _variant_t DataLabel::GetNumberFormat ( );
+__declspec(implementation_key(562)) void DataLabel::PutNumberFormat ( const _variant_t & _val );
+__declspec(implementation_key(563)) _variant_t DataLabel::GetOrientation ( );
+__declspec(implementation_key(564)) void DataLabel::PutOrientation ( const _variant_t & _val );
+__declspec(implementation_key(565)) _variant_t DataLabel::GetParent ( );
+__declspec(implementation_key(566)) void DataLabel::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(567)) _variant_t DataLabel::GetShadow ( );
+__declspec(implementation_key(568)) void DataLabel::PutShadow ( const _variant_t & _val );
+__declspec(implementation_key(569)) _variant_t DataLabel::GetShowLegendKey ( );
+__declspec(implementation_key(570)) void DataLabel::PutShowLegendKey ( const _variant_t & _val );
+__declspec(implementation_key(571)) _variant_t DataLabel::GetText ( );
+__declspec(implementation_key(572)) void DataLabel::PutText ( const _variant_t & _val );
+__declspec(implementation_key(573)) _variant_t DataLabel::GetTop ( );
+__declspec(implementation_key(574)) void DataLabel::PutTop ( const _variant_t & _val );
+__declspec(implementation_key(575)) _variant_t DataLabel::GetType ( );
+__declspec(implementation_key(576)) void DataLabel::PutType ( const _variant_t & _val );
+__declspec(implementation_key(577)) _variant_t DataLabel::GetVerticalAlignment ( );
+__declspec(implementation_key(578)) void DataLabel::PutVerticalAlignment ( const _variant_t & _val );
+__declspec(implementation_key(579)) _variant_t DataLabels::_NewEnum ( );
+__declspec(implementation_key(580)) _variant_t DataLabels::Application ( );
+__declspec(implementation_key(581)) _variant_t DataLabels::Delete ( );
+__declspec(implementation_key(582)) _variant_t DataLabels::Item ( const _variant_t & Index );
+__declspec(implementation_key(583)) _variant_t DataLabels::GetAutoText ( );
+__declspec(implementation_key(584)) void DataLabels::PutAutoText ( const _variant_t & _val );
+__declspec(implementation_key(585)) _variant_t DataLabels::GetBorder ( );
+__declspec(implementation_key(586)) void DataLabels::PutBorder ( const _variant_t & _val );
+__declspec(implementation_key(587)) _variant_t DataLabels::GetCount ( );
+__declspec(implementation_key(588)) void DataLabels::PutCount ( const _variant_t & _val );
+__declspec(implementation_key(589)) _variant_t DataLabels::GetCreator ( );
+__declspec(implementation_key(590)) void DataLabels::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(591)) _variant_t DataLabels::GetFont ( );
+__declspec(implementation_key(592)) void DataLabels::PutFont ( const _variant_t & _val );
+__declspec(implementation_key(593)) _variant_t DataLabels::GetHorizontalAlignment ( );
+__declspec(implementation_key(594)) void DataLabels::PutHorizontalAlignment ( const _variant_t & _val );
+__declspec(implementation_key(595)) _variant_t DataLabels::GetInterior ( );
+__declspec(implementation_key(596)) void DataLabels::PutInterior ( const _variant_t & _val );
+__declspec(implementation_key(597)) _variant_t DataLabels::GetName ( );
+__declspec(implementation_key(598)) void DataLabels::PutName ( const _variant_t & _val );
+__declspec(implementation_key(599)) _variant_t DataLabels::GetNumberFormat ( );
+__declspec(implementation_key(600)) void DataLabels::PutNumberFormat ( const _variant_t & _val );
+__declspec(implementation_key(601)) _variant_t DataLabels::GetOrientation ( );
+__declspec(implementation_key(602)) void DataLabels::PutOrientation ( const _variant_t & _val );
+__declspec(implementation_key(603)) _variant_t DataLabels::GetParent ( );
+__declspec(implementation_key(604)) void DataLabels::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(605)) _variant_t DataLabels::GetShadow ( );
+__declspec(implementation_key(606)) void DataLabels::PutShadow ( const _variant_t & _val );
+__declspec(implementation_key(607)) _variant_t DataLabels::GetShowLegendKey ( );
+__declspec(implementation_key(608)) void DataLabels::PutShowLegendKey ( const _variant_t & _val );
+__declspec(implementation_key(609)) _variant_t DataLabels::GetType ( );
+__declspec(implementation_key(610)) void DataLabels::PutType ( const _variant_t & _val );
+__declspec(implementation_key(611)) _variant_t DataLabels::GetVerticalAlignment ( );
+__declspec(implementation_key(612)) void DataLabels::PutVerticalAlignment ( const _variant_t & _val );
+__declspec(implementation_key(613)) _variant_t Point::Application ( );
+__declspec(implementation_key(614)) _variant_t Point::ApplyDataLabels ( const _variant_t & Type, const _variant_t & LegendKey );
+__declspec(implementation_key(615)) _variant_t Point::ClearFormats ( );
+__declspec(implementation_key(616)) _variant_t Point::Copy ( );
+__declspec(implementation_key(617)) _variant_t Point::Delete ( );
+__declspec(implementation_key(618)) _variant_t Point::GetBorder ( );
+__declspec(implementation_key(619)) void Point::PutBorder ( const _variant_t & _val );
+__declspec(implementation_key(620)) _variant_t Point::GetCreator ( );
+__declspec(implementation_key(621)) void Point::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(622)) _variant_t Point::GetDataLabel ( );
+__declspec(implementation_key(623)) void Point::PutDataLabel ( const _variant_t & _val );
+__declspec(implementation_key(624)) _variant_t Point::GetExplosion ( );
+__declspec(implementation_key(625)) void Point::PutExplosion ( const _variant_t & _val );
+__declspec(implementation_key(626)) _variant_t Point::GetHasDataLabel ( );
+__declspec(implementation_key(627)) void Point::PutHasDataLabel ( const _variant_t & _val );
+__declspec(implementation_key(628)) _variant_t Point::GetInterior ( );
+__declspec(implementation_key(629)) void Point::PutInterior ( const _variant_t & _val );
+__declspec(implementation_key(630)) _variant_t Point::GetInvertIfNegative ( );
+__declspec(implementation_key(631)) void Point::PutInvertIfNegative ( const _variant_t & _val );
+__declspec(implementation_key(632)) _variant_t Point::GetMarkerBackgroundColor ( );
+__declspec(implementation_key(633)) void Point::PutMarkerBackgroundColor ( const _variant_t & _val );
+__declspec(implementation_key(634)) _variant_t Point::GetMarkerBackgroundColorIndex ( );
+__declspec(implementation_key(635)) void Point::PutMarkerBackgroundColorIndex ( const _variant_t & _val );
+__declspec(implementation_key(636)) _variant_t Point::GetMarkerForegroundColor ( );
+__declspec(implementation_key(637)) void Point::PutMarkerForegroundColor ( const _variant_t & _val );
+__declspec(implementation_key(638)) _variant_t Point::GetMarkerForegroundColorIndex ( );
+__declspec(implementation_key(639)) void Point::PutMarkerForegroundColorIndex ( const _variant_t & _val );
+__declspec(implementation_key(640)) _variant_t Point::GetMarkerStyle ( );
+__declspec(implementation_key(641)) void Point::PutMarkerStyle ( const _variant_t & _val );
+__declspec(implementation_key(642)) _variant_t Point::GetParent ( );
+__declspec(implementation_key(643)) void Point::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(644)) _variant_t Point::GetPictureType ( );
+__declspec(implementation_key(645)) void Point::PutPictureType ( const _variant_t & _val );
+__declspec(implementation_key(646)) _variant_t Point::GetPictureUnit ( );
+__declspec(implementation_key(647)) void Point::PutPictureUnit ( const _variant_t & _val );
+__declspec(implementation_key(648)) _variant_t Points::_NewEnum ( );
+__declspec(implementation_key(649)) _variant_t Points::Application ( );
+__declspec(implementation_key(650)) _variant_t Points::Item ( const _variant_t & Index );
+__declspec(implementation_key(651)) _variant_t Points::GetCount ( );
+__declspec(implementation_key(652)) void Points::PutCount ( const _variant_t & _val );
+__declspec(implementation_key(653)) _variant_t Points::GetCreator ( );
+__declspec(implementation_key(654)) void Points::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(655)) _variant_t Points::GetParent ( );
+__declspec(implementation_key(656)) void Points::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(657)) _variant_t Series::Application ( );
+__declspec(implementation_key(658)) _variant_t Series::ApplyDataLabels ( const _variant_t & Type, const _variant_t & LegendKey );
+__declspec(implementation_key(659)) _variant_t Series::ClearFormats ( );
+__declspec(implementation_key(660)) _variant_t Series::Copy ( );
+__declspec(implementation_key(661)) _variant_t Series::DataLabels ( const _variant_t & Index );
+__declspec(implementation_key(662)) _variant_t Series::Delete ( );
+__declspec(implementation_key(663)) _variant_t Series::ErrorBar ( const _variant_t & Direction, const _variant_t & Include, const _variant_t & Type, const _variant_t & Amount, const _variant_t & MinusValues );
+__declspec(implementation_key(664)) _variant_t Series::Points ( const _variant_t & Index );
+__declspec(implementation_key(665)) _variant_t Series::Trendlines ( const _variant_t & Index );
+__declspec(implementation_key(666)) _variant_t Series::GetAxisGroup ( );
+__declspec(implementation_key(667)) void Series::PutAxisGroup ( const _variant_t & _val );
+__declspec(implementation_key(668)) _variant_t Series::GetBorder ( );
+__declspec(implementation_key(669)) void Series::PutBorder ( const _variant_t & _val );
+__declspec(implementation_key(670)) _variant_t Series::GetCreator ( );
+__declspec(implementation_key(671)) void Series::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(672)) _variant_t Series::GetErrorBars ( );
+__declspec(implementation_key(673)) void Series::PutErrorBars ( const _variant_t & _val );
+__declspec(implementation_key(674)) _variant_t Series::GetExplosion ( );
+__declspec(implementation_key(675)) void Series::PutExplosion ( const _variant_t & _val );
+__declspec(implementation_key(676)) _variant_t Series::GetHasDataLabels ( );
+__declspec(implementation_key(677)) void Series::PutHasDataLabels ( const _variant_t & _val );
+__declspec(implementation_key(678)) _variant_t Series::GetHasErrorBars ( );
+__declspec(implementation_key(679)) void Series::PutHasErrorBars ( const _variant_t & _val );
+__declspec(implementation_key(680)) _variant_t Series::GetInterior ( );
+__declspec(implementation_key(681)) void Series::PutInterior ( const _variant_t & _val );
+__declspec(implementation_key(682)) _variant_t Series::GetInvertIfNegative ( );
+__declspec(implementation_key(683)) void Series::PutInvertIfNegative ( const _variant_t & _val );
+__declspec(implementation_key(684)) _variant_t Series::GetMarkerBackgroundColor ( );
+__declspec(implementation_key(685)) void Series::PutMarkerBackgroundColor ( const _variant_t & _val );
+__declspec(implementation_key(686)) _variant_t Series::GetMarkerBackgroundColorIndex ( );
+__declspec(implementation_key(687)) void Series::PutMarkerBackgroundColorIndex ( const _variant_t & _val );
+__declspec(implementation_key(688)) _variant_t Series::GetMarkerForegroundColor ( );
+__declspec(implementation_key(689)) void Series::PutMarkerForegroundColor ( const _variant_t & _val );
+__declspec(implementation_key(690)) _variant_t Series::GetMarkerForegroundColorIndex ( );
+__declspec(implementation_key(691)) void Series::PutMarkerForegroundColorIndex ( const _variant_t & _val );
+__declspec(implementation_key(692)) _variant_t Series::GetMarkerStyle ( );
+__declspec(implementation_key(693)) void Series::PutMarkerStyle ( const _variant_t & _val );
+__declspec(implementation_key(694)) _variant_t Series::GetParent ( );
+__declspec(implementation_key(695)) void Series::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(696)) _variant_t Series::GetPictureType ( );
+__declspec(implementation_key(697)) void Series::PutPictureType ( const _variant_t & _val );
+__declspec(implementation_key(698)) _variant_t Series::GetPictureUnit ( );
+__declspec(implementation_key(699)) void Series::PutPictureUnit ( const _variant_t & _val );
+__declspec(implementation_key(700)) _variant_t Series::GetSmooth ( );
+__declspec(implementation_key(701)) void Series::PutSmooth ( const _variant_t & _val );
+__declspec(implementation_key(702)) _variant_t Series::GetType ( );
+__declspec(implementation_key(703)) void Series::PutType ( const _variant_t & _val );
+__declspec(implementation_key(704)) _variant_t SeriesCollection::_NewEnum ( );
+__declspec(implementation_key(705)) _variant_t SeriesCollection::Application ( );
+__declspec(implementation_key(706)) _variant_t SeriesCollection::Item ( const _variant_t & Index );
+__declspec(implementation_key(707)) _variant_t SeriesCollection::GetCount ( );
+__declspec(implementation_key(708)) void SeriesCollection::PutCount ( const _variant_t & _val );
+__declspec(implementation_key(709)) _variant_t SeriesCollection::GetCreator ( );
+__declspec(implementation_key(710)) void SeriesCollection::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(711)) _variant_t SeriesCollection::GetParent ( );
+__declspec(implementation_key(712)) void SeriesCollection::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(713)) _variant_t LegendEntry::Application ( );
+__declspec(implementation_key(714)) _variant_t LegendEntry::Delete ( );
+__declspec(implementation_key(715)) _variant_t LegendEntry::GetCreator ( );
+__declspec(implementation_key(716)) void LegendEntry::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(717)) _variant_t LegendEntry::GetFont ( );
+__declspec(implementation_key(718)) void LegendEntry::PutFont ( const _variant_t & _val );
+__declspec(implementation_key(719)) _variant_t LegendEntry::GetIndex ( );
+__declspec(implementation_key(720)) void LegendEntry::PutIndex ( const _variant_t & _val );
+__declspec(implementation_key(721)) _variant_t LegendEntry::GetLegendKey ( );
+__declspec(implementation_key(722)) void LegendEntry::PutLegendKey ( const _variant_t & _val );
+__declspec(implementation_key(723)) _variant_t LegendEntry::GetParent ( );
+__declspec(implementation_key(724)) void LegendEntry::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(725)) _variant_t LegendEntries::_NewEnum ( );
+__declspec(implementation_key(726)) _variant_t LegendEntries::Application ( );
+__declspec(implementation_key(727)) _variant_t LegendEntries::Item ( const _variant_t & Index );
+__declspec(implementation_key(728)) _variant_t LegendEntries::GetCount ( );
+__declspec(implementation_key(729)) void LegendEntries::PutCount ( const _variant_t & _val );
+__declspec(implementation_key(730)) _variant_t LegendEntries::GetCreator ( );
+__declspec(implementation_key(731)) void LegendEntries::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(732)) _variant_t LegendEntries::GetParent ( );
+__declspec(implementation_key(733)) void LegendEntries::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(734)) _variant_t LegendKey::Application ( );
+__declspec(implementation_key(735)) _variant_t LegendKey::ClearFormats ( );
+__declspec(implementation_key(736)) _variant_t LegendKey::Delete ( );
+__declspec(implementation_key(737)) _variant_t LegendKey::GetBorder ( );
+__declspec(implementation_key(738)) void LegendKey::PutBorder ( const _variant_t & _val );
+__declspec(implementation_key(739)) _variant_t LegendKey::GetCreator ( );
+__declspec(implementation_key(740)) void LegendKey::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(741)) _variant_t LegendKey::GetInterior ( );
+__declspec(implementation_key(742)) void LegendKey::PutInterior ( const _variant_t & _val );
+__declspec(implementation_key(743)) _variant_t LegendKey::GetInvertIfNegative ( );
+__declspec(implementation_key(744)) void LegendKey::PutInvertIfNegative ( const _variant_t & _val );
+__declspec(implementation_key(745)) _variant_t LegendKey::GetMarkerBackgroundColor ( );
+__declspec(implementation_key(746)) void LegendKey::PutMarkerBackgroundColor ( const _variant_t & _val );
+__declspec(implementation_key(747)) _variant_t LegendKey::GetMarkerBackgroundColorIndex ( );
+__declspec(implementation_key(748)) void LegendKey::PutMarkerBackgroundColorIndex ( const _variant_t & _val );
+__declspec(implementation_key(749)) _variant_t LegendKey::GetMarkerForegroundColor ( );
+__declspec(implementation_key(750)) void LegendKey::PutMarkerForegroundColor ( const _variant_t & _val );
+__declspec(implementation_key(751)) _variant_t LegendKey::GetMarkerForegroundColorIndex ( );
+__declspec(implementation_key(752)) void LegendKey::PutMarkerForegroundColorIndex ( const _variant_t & _val );
+__declspec(implementation_key(753)) _variant_t LegendKey::GetMarkerStyle ( );
+__declspec(implementation_key(754)) void LegendKey::PutMarkerStyle ( const _variant_t & _val );
+__declspec(implementation_key(755)) _variant_t LegendKey::GetParent ( );
+__declspec(implementation_key(756)) void LegendKey::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(757)) _variant_t LegendKey::GetSmooth ( );
+__declspec(implementation_key(758)) void LegendKey::PutSmooth ( const _variant_t & _val );
+__declspec(implementation_key(759)) _variant_t Trendline::Application ( );
+__declspec(implementation_key(760)) _variant_t Trendline::ClearFormats ( );
+__declspec(implementation_key(761)) _variant_t Trendline::Delete ( );
+__declspec(implementation_key(762)) _variant_t Trendline::GetBackward ( );
+__declspec(implementation_key(763)) void Trendline::PutBackward ( const _variant_t & _val );
+__declspec(implementation_key(764)) _variant_t Trendline::GetBorder ( );
+__declspec(implementation_key(765)) void Trendline::PutBorder ( const _variant_t & _val );
+__declspec(implementation_key(766)) _variant_t Trendline::GetCreator ( );
+__declspec(implementation_key(767)) void Trendline::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(768)) _variant_t Trendline::GetDataLabel ( );
+__declspec(implementation_key(769)) void Trendline::PutDataLabel ( const _variant_t & _val );
+__declspec(implementation_key(770)) _variant_t Trendline::GetDisplayEquation ( );
+__declspec(implementation_key(771)) void Trendline::PutDisplayEquation ( const _variant_t & _val );
+__declspec(implementation_key(772)) _variant_t Trendline::GetDisplayRSquared ( );
+__declspec(implementation_key(773)) void Trendline::PutDisplayRSquared ( const _variant_t & _val );
+__declspec(implementation_key(774)) _variant_t Trendline::GetForward ( );
+__declspec(implementation_key(775)) void Trendline::PutForward ( const _variant_t & _val );
+__declspec(implementation_key(776)) _variant_t Trendline::GetIndex ( );
+__declspec(implementation_key(777)) void Trendline::PutIndex ( const _variant_t & _val );
+__declspec(implementation_key(778)) _variant_t Trendline::GetIntercept ( );
+__declspec(implementation_key(779)) void Trendline::PutIntercept ( const _variant_t & _val );
+__declspec(implementation_key(780)) _variant_t Trendline::GetInterceptIsAuto ( );
+__declspec(implementation_key(781)) void Trendline::PutInterceptIsAuto ( const _variant_t & _val );
+__declspec(implementation_key(782)) _variant_t Trendline::GetName ( );
+__declspec(implementation_key(783)) void Trendline::PutName ( const _variant_t & _val );
+__declspec(implementation_key(784)) _variant_t Trendline::GetNameIsAuto ( );
+__declspec(implementation_key(785)) void Trendline::PutNameIsAuto ( const _variant_t & _val );
+__declspec(implementation_key(786)) _variant_t Trendline::GetOrder ( );
+__declspec(implementation_key(787)) void Trendline::PutOrder ( const _variant_t & _val );
+__declspec(implementation_key(788)) _variant_t Trendline::GetParent ( );
+__declspec(implementation_key(789)) void Trendline::PutParent ( const _variant_t & _val );
+__declspec(implementation_key(790)) _variant_t Trendline::GetPeriod ( );
+__declspec(implementation_key(791)) void Trendline::PutPeriod ( const _variant_t & _val );
+__declspec(implementation_key(792)) _variant_t Trendline::GetType ( );
+__declspec(implementation_key(793)) void Trendline::PutType ( const _variant_t & _val );
+__declspec(implementation_key(794)) _variant_t Trendlines::_NewEnum ( );
+__declspec(implementation_key(795)) _variant_t Trendlines::Add ( const _variant_t & Type, const _variant_t & Order, const _variant_t & Period, const _variant_t & Forward, const _variant_t & Backward, const _variant_t & Intercept, const _variant_t & DisplayEquation, const _variant_t & DisplayRSquared, const _variant_t & Name );
+__declspec(implementation_key(796)) _variant_t Trendlines::Application ( );
+__declspec(implementation_key(797)) _variant_t Trendlines::Item ( const _variant_t & Index );
+__declspec(implementation_key(798)) _variant_t Trendlines::GetCount ( );
+__declspec(implementation_key(799)) void Trendlines::PutCount ( const _variant_t & _val );
+__declspec(implementation_key(800)) _variant_t Trendlines::GetCreator ( );
+__declspec(implementation_key(801)) void Trendlines::PutCreator ( const _variant_t & _val );
+__declspec(implementation_key(802)) _variant_t Trendlines::GetParent ( );
+__declspec(implementation_key(803)) void Trendlines::PutParent ( const _variant_t & _val );
+#pragma stop_map_region
+
+} // namespace Graph
+
+#pragma pack(pop)

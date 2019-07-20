@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=Shift_JIS">
+<title>Project D.E.V Libraly: クラス CTabView</title>
+<link href="help.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 作成： Doxygen 1.4.1 -->
+<h1>クラス CTabView</h1>CHwndTabCtrlをメンバとして持つビュー。.  
+<a href="#_details">[詳細]</a>
+<p>
+<code>#include &lt;TabView.h&gt;</code>
+<p>
+<a href="class_c_tab_view-members.html">すべてのメンバ一覧</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_c_hwnd_tab_ctrl.html">CHwndTabCtrl</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tab_view.html#a0">GetTabCtrl</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">CCustTabCtrlコントロールを取得.  <a href="#a0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tab_view.html#a1">CreatePage</a> (int nIndex, LPCTSTR strTitle, HWND hWNd)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">新規ページの作成  <a href="#a1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tab_view.html#a2">OnSelChangeFunc</a> (NMHDR *pNMHDR, LRESULT *pResult)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ページ切り替え時に呼び出される関数  <a href="#a2"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>説明</h2>
+CHwndTabCtrlをメンバとして持つビュー。. 
+<p>
+<hr><h2>関数</h2>
+<a class="anchor" name="a1" doxytag="CTabView::CreatePage"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int CTabView::CreatePage           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int&nbsp;</td>
+          <td class="mdname" nowrap> <em>nIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>LPCTSTR&nbsp;</td>
+          <td class="mdname" nowrap> <em>strTitle</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>HWND&nbsp;</td>
+          <td class="mdname" nowrap> <em>hWnd</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+新規ページの作成 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>nIndex</em>&nbsp;</td><td>インデックス </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>strTitle</em>&nbsp;</td><td>タブの名前 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>hWnd</em>&nbsp;</td><td>タブに関連付けるウィンドウハンドル </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>挿入位置 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a0" doxytag="CTabView::GetTabCtrl"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"><a class="el" href="class_c_hwnd_tab_ctrl.html">CHwndTabCtrl</a> &amp; CTabView::GetTabCtrl           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+CCustTabCtrlコントロールを取得. 
+<p>
+<dl compact><dt><b>戻り値:</b></dt><dd>CCustTabCtrlオブジェクト </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a2" doxytag="CTabView::OnSelChangeFunc"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">void CTabView::OnSelChangeFunc           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">NMHDR *&nbsp;</td>
+          <td class="mdname" nowrap> <em>pNMHDR</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>LRESULT *&nbsp;</td>
+          <td class="mdname" nowrap> <em>pResult</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [virtual]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+ページ切り替え時に呼び出される関数 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pNMHDR</em>&nbsp;</td><td>WM_HWNDTABCHANGE のwParam </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pResult</em>&nbsp;</td><td>WM_HWNDTABCHANGE のlParam </td></tr>
+  </table>
+</dl>
+    </td>
+  </tr>
+</table>
+<hr size="1"><address style="align: right;"><small>Project D.E.V Libralyに対してFri Jan 21 17:15:14 2005に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.1 </small></address>
+</body>
+</html>

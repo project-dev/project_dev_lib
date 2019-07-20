@@ -1,0 +1,316 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a4"><param name="Name" value="AddDirLastSepalator"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_hwnd_tab_ctrl.html#a3"><param name="Name" value="AddNewPage"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_hwnd_tab_ctrl.html#a3"><param name="Name" value="CHwndTabCtrl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_wnd_tab_ctrl.html#a4"><param name="Name" value="CWndTabCtrl"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_string_buffer.html#a4"><param name="Name" value="append"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_byte_array_output_stream.html#a6"><param name="Name" value="ByteArrayOutputStream"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_byte_array_output_stream.html#a6"><param name="Name" value="toByteArray"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_byte_array_output_stream.html#a4"><param name="Name" value="write"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a0"><param name="Name" value="CAdoDatabase"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a0"><param name="Name" value="CheckCommandType"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a17"><param name="Name" value="Close"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a5"><param name="Name" value="Connect"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a7"><param name="Name" value="ConnectODBC"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a6"><param name="Name" value="ConnectSqlServer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a19"><param name="Name" value="Create"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a16"><param name="Name" value="ExecSQL"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a10"><param name="Name" value="GetColumns"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a9"><param name="Name" value="GetDatabases"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a2"><param name="Name" value="GetDBType"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a3"><param name="Name" value="GetError"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a13"><param name="Name" value="GetFieldValue"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a1"><param name="Name" value="GetProcedures"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a12"><param name="Name" value="GetTableInfo"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a11"><param name="Name" value="GetTables"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a18"><param name="Name" value="IsConnect"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a14"><param name="Name" value="OpenEditRecordSet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a15"><param name="Name" value="OpenRecordSet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a4"><param name="Name" value="SetErrorOut"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_debug_support.html#e6"><param name="Name" value="CDebugSupport"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_debug_support.html#e6"><param name="Name" value="GetDebugMode"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_debug_support.html#e0"><param name="Name" value="GetLastErrorText"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_debug_support.html#e2"><param name="Name" value="GetModuleVersionInfo"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_debug_support.html#e4"><param name="Name" value="OutputDebugLog"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_debug_support.html#e5"><param name="Name" value="OutputGetLastErrorMsg"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_debug_support.html#e3"><param name="Name" value="OutputModuleVer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_debug_support.html#e7"><param name="Name" value="StartDebugMode"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a2"><param name="Name" value="CDevString"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a2"><param name="Name" value="CDevString"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a35"><param name="Name" value="Compare"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a36"><param name="Name" value="CompareNoCase"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a21"><param name="Name" value="Find"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a29"><param name="Name" value="FindText"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a40"><param name="Name" value="GetAt"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a38"><param name="Name" value="GetBuffer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a37"><param name="Name" value="GetLength"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a42"><param name="Name" value="GetTextAt"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a41"><param name="Name" value="GetTextLength"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a5"><param name="Name" value="Left"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a9"><param name="Name" value="LeftText"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a7"><param name="Name" value="Mid"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a11"><param name="Name" value="MidText"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a25"><param name="Name" value="Replace"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a26"><param name="Name" value="ReplaceAll"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a34"><param name="Name" value="ReplaceAllText"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a33"><param name="Name" value="ReplaceText"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a24"><param name="Name" value="ReverseFind"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a32"><param name="Name" value="ReverseFindText"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a6"><param name="Name" value="Right"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a10"><param name="Name" value="RightText"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a18"><param name="Name" value="SetAt"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a8"><param name="Name" value="SubString"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a12"><param name="Name" value="SubStringText"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_edit_ex.html#a2"><param name="Name" value="CEditEx"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_edit_ex.html#a2"><param name="Name" value="SetFont"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_edit_ex.html#a3"><param name="Name" value="SetLineShow"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_env_info.html#w8"><param name="Name" value="CEnvInfo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_env_info.html#w8"><param name="Name" value="eWIN_VER"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_env_info.html#e2"><param name="Name" value="GetDeviceInfo"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_env_info.html#e0"><param name="Name" value="GetOSInfo"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_env_info.html#e1"><param name="Name" value="GetProcesserInfo"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_env_info.html#w8w6"><param name="Name" value="WIN2K"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_env_info.html#w8w2"><param name="Name" value="WIN95"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_env_info.html#w8w3"><param name="Name" value="WIN98"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_env_info.html#w8w4"><param name="Name" value="WINME"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_env_info.html#w8w1"><param name="Name" value="WINNT3"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_env_info.html#w8w5"><param name="Name" value="WINNT4"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_env_info.html#w8w7"><param name="Name" value="WINXP"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_file_dialog_ex.html#a1"><param name="Name" value="CFileDialogEx"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_file_dialog_ex.html#a1"><param name="Name" value="CFileDialogEx"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_file_dialog_ex.html#a2"><param name="Name" value="DoModal"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_file_dialog_ex.html#a0"><param name="Name" value="GetFileName"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_folder_dialog.html#a1"><param name="Name" value="CFolderDialog"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_folder_dialog.html#a1"><param name="Name" value="CFolderDialog"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_folder_dialog.html#a2"><param name="Name" value="DoModal"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_folder_dialog.html#a0"><param name="Name" value="GetFolder"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#a2"><param name="Name" value="CheckCode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a0"><param name="Name" value="CheckCommandType"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_hwnd_tab_ctrl.html#a3"><param name="Name" value="CHwndTabCtrl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_hwnd_tab_ctrl.html#a3"><param name="Name" value="AddNewPage"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_hwnd_tab_ctrl.html#a2"><param name="Name" value="GetPageRect"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_hwnd_tab_ctrl.html#a4"><param name="Name" value="SetActivePage"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_list_ctrl_ex.html#a2"><param name="Name" value="CListCtrlEx"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a17"><param name="Name" value="Close"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a35"><param name="Name" value="Compare"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a36"><param name="Name" value="CompareNoCase"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a5"><param name="Name" value="Connect"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a7"><param name="Name" value="ConnectODBC"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a6"><param name="Name" value="ConnectSqlServer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_progress_status_bar.html#a5"><param name="Name" value="CProgressStatusBar"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_progress_status_bar.html#a5"><param name="Name" value="GetPos"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_progress_status_bar.html#a3"><param name="Name" value="OffsetPos"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_progress_status_bar.html#a4"><param name="Name" value="SetPos"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_progress_status_bar.html#a2"><param name="Name" value="SetStep"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_progress_status_bar.html#a1"><param name="Name" value="StepIt"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a19"><param name="Name" value="Create"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a19"><param name="Name" value="CAdoDatabase"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_list_ctrl_ex.html#a2"><param name="Name" value="CListCtrlEx"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a3"><param name="Name" value="CreateDir"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_tab_view.html#a1"><param name="Name" value="CreatePage"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#a2"><param name="Name" value="CStringEncode"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#a2"><param name="Name" value="CheckCode"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#a6"><param name="Name" value="decodeBASE64"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#a4"><param name="Name" value="decodeURL"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#e0"><param name="Name" value="euc2jis"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#e1"><param name="Name" value="euc2sjis"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#a7"><param name="Name" value="getBasebyte"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#e2"><param name="Name" value="jis2euc"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#e3"><param name="Name" value="jis2sjis"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#a13"><param name="Name" value="ReleaseBuff"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#e5"><param name="Name" value="sjis2euc"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#e4"><param name="Name" value="sjis2jis"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#a8"><param name="Name" value="sjis2utf8"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#a5"><param name="Name" value="toBASE64"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#a10"><param name="Name" value="toEUC"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#a12"><param name="Name" value="toJIS"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#a11"><param name="Name" value="toSJIS"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#a3"><param name="Name" value="toURL"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#a9"><param name="Name" value="toUTF8"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#e6"><param name="Name" value="utf82sjis"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_tab_view.html#a1"><param name="Name" value="CTabView"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_tab_view.html#a1"><param name="Name" value="CreatePage"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_tab_view.html#a0"><param name="Name" value="GetTabCtrl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_tab_view.html#a2"><param name="Name" value="OnSelChangeFunc"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_wnd_tab_ctrl.html#a4"><param name="Name" value="CWndTabCtrl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_wnd_tab_ctrl.html#a4"><param name="Name" value="AddNewPage"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_wnd_tab_ctrl.html#a2"><param name="Name" value="GetPageRect"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_wnd_tab_ctrl.html#a5"><param name="Name" value="SetActivePage"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#a6"><param name="Name" value="decodeBASE64"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#a4"><param name="Name" value="decodeURL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a8"><param name="Name" value="DeleteFileEx"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a4"><param name="Name" value="devlib.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a4"><param name="Name" value="AddDirLastSepalator"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a3"><param name="Name" value="CreateDir"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a8"><param name="Name" value="DeleteFileEx"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a14"><param name="Name" value="EnumFiles"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a11"><param name="Name" value="GetInifileInt"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a10"><param name="Name" value="GetInifileString"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a9"><param name="Name" value="GetNowTimeText"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a7"><param name="Name" value="IsDir"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a6"><param name="Name" value="IsFileExsist"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a21"><param name="Name" value="MsgBoxErr"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a18"><param name="Name" value="MsgBoxInfo"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a20"><param name="Name" value="MsgBoxQuestion"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a19"><param name="Name" value="MsgBoxWarning"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a5"><param name="Name" value="RemoveDirectoryEx"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a15"><param name="Name" value="SetTextToClipBoard"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a13"><param name="Name" value="WriteInifileInt"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a12"><param name="Name" value="WriteInifileString"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_file_dialog_ex.html#a2"><param name="Name" value="DoModal"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_file_dialog_ex.html#a2"><param name="Name" value="CFileDialogEx"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_folder_dialog.html#a2"><param name="Name" value="CFolderDialog"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a14"><param name="Name" value="EnumFiles"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#e0"><param name="Name" value="euc2jis"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#e1"><param name="Name" value="euc2sjis"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_env_info.html#w8"><param name="Name" value="eWIN_VER"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a16"><param name="Name" value="ExecSQL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a21"><param name="Name" value="Find"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a29"><param name="Name" value="FindText"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a40"><param name="Name" value="GetAt"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#a7"><param name="Name" value="getBasebyte"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a38"><param name="Name" value="GetBuffer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a10"><param name="Name" value="GetColumns"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a9"><param name="Name" value="GetDatabases"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a2"><param name="Name" value="GetDBType"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_debug_support.html#e6"><param name="Name" value="GetDebugMode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_env_info.html#e2"><param name="Name" value="GetDeviceInfo"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a3"><param name="Name" value="GetError"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a13"><param name="Name" value="GetFieldValue"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_file_dialog_ex.html#a0"><param name="Name" value="GetFileName"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_folder_dialog.html#a0"><param name="Name" value="GetFolder"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a11"><param name="Name" value="GetInifileInt"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a10"><param name="Name" value="GetInifileString"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_debug_support.html#e0"><param name="Name" value="GetLastErrorText"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a37"><param name="Name" value="GetLength"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_debug_support.html#e2"><param name="Name" value="GetModuleVersionInfo"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a9"><param name="Name" value="GetNowTimeText"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_env_info.html#e0"><param name="Name" value="GetOSInfo"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_hwnd_tab_ctrl.html#a2"><param name="Name" value="GetPageRect"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_hwnd_tab_ctrl.html#a2"><param name="Name" value="CHwndTabCtrl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_wnd_tab_ctrl.html#a2"><param name="Name" value="CWndTabCtrl"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_progress_status_bar.html#a5"><param name="Name" value="GetPos"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a1"><param name="Name" value="GetProcedures"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_env_info.html#e1"><param name="Name" value="GetProcesserInfo"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_tab_view.html#a0"><param name="Name" value="GetTabCtrl"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a12"><param name="Name" value="GetTableInfo"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a11"><param name="Name" value="GetTables"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a42"><param name="Name" value="GetTextAt"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a41"><param name="Name" value="GetTextLength"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a18"><param name="Name" value="IsConnect"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a7"><param name="Name" value="IsDir"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a6"><param name="Name" value="IsFileExsist"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#e2"><param name="Name" value="jis2euc"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#e3"><param name="Name" value="jis2sjis"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a5"><param name="Name" value="Left"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a9"><param name="Name" value="LeftText"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_string_buffer.html#a1"><param name="Name" value="length"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a7"><param name="Name" value="Mid"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a11"><param name="Name" value="MidText"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a21"><param name="Name" value="MsgBoxErr"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a18"><param name="Name" value="MsgBoxInfo"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a20"><param name="Name" value="MsgBoxQuestion"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a19"><param name="Name" value="MsgBoxWarning"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_progress_status_bar.html#a3"><param name="Name" value="OffsetPos"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_tab_view.html#a2"><param name="Name" value="OnSelChangeFunc"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a14"><param name="Name" value="OpenEditRecordSet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a15"><param name="Name" value="OpenRecordSet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_debug_support.html#e4"><param name="Name" value="OutputDebugLog"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_debug_support.html#e5"><param name="Name" value="OutputGetLastErrorMsg"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_debug_support.html#e3"><param name="Name" value="OutputModuleVer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#a13"><param name="Name" value="ReleaseBuff"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a5"><param name="Name" value="RemoveDirectoryEx"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a25"><param name="Name" value="Replace"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a26"><param name="Name" value="ReplaceAll"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a34"><param name="Name" value="ReplaceAllText"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a33"><param name="Name" value="ReplaceText"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a24"><param name="Name" value="ReverseFind"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a32"><param name="Name" value="ReverseFindText"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a6"><param name="Name" value="Right"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a10"><param name="Name" value="RightText"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_hwnd_tab_ctrl.html#a4"><param name="Name" value="SetActivePage"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_hwnd_tab_ctrl.html#a4"><param name="Name" value="CHwndTabCtrl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_wnd_tab_ctrl.html#a5"><param name="Name" value="CWndTabCtrl"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a18"><param name="Name" value="SetAt"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_ado_database.html#a4"><param name="Name" value="SetErrorOut"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_edit_ex.html#a2"><param name="Name" value="SetFont"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_edit_ex.html#a3"><param name="Name" value="SetLineShow"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_progress_status_bar.html#a4"><param name="Name" value="SetPos"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_progress_status_bar.html#a2"><param name="Name" value="SetStep"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a15"><param name="Name" value="SetTextToClipBoard"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#e5"><param name="Name" value="sjis2euc"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#e4"><param name="Name" value="sjis2jis"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#a8"><param name="Name" value="sjis2utf8"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_debug_support.html#e7"><param name="Name" value="StartDebugMode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_progress_status_bar.html#a1"><param name="Name" value="StepIt"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_string_buffer.html#a4"><param name="Name" value="StringBuffer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_string_buffer.html#a4"><param name="Name" value="append"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_string_buffer.html#a1"><param name="Name" value="length"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_string_buffer.html#a2"><param name="Name" value="toByte"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a8"><param name="Name" value="SubString"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_dev_string.html#a12"><param name="Name" value="SubStringText"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#a5"><param name="Name" value="toBASE64"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_string_buffer.html#a2"><param name="Name" value="toByte"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_byte_array_output_stream.html#a6"><param name="Name" value="toByteArray"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#a10"><param name="Name" value="toEUC"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#a12"><param name="Name" value="toJIS"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#a11"><param name="Name" value="toSJIS"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#a3"><param name="Name" value="toURL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#a9"><param name="Name" value="toUTF8"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_string_encode.html#e6"><param name="Name" value="utf82sjis"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_env_info.html#w8w6"><param name="Name" value="WIN2K"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_env_info.html#w8w2"><param name="Name" value="WIN95"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_env_info.html#w8w3"><param name="Name" value="WIN98"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_env_info.html#w8w4"><param name="Name" value="WINME"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_env_info.html#w8w1"><param name="Name" value="WINNT3"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_env_info.html#w8w5"><param name="Name" value="WINNT4"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_c_env_info.html#w8w7"><param name="Name" value="WINXP"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_byte_array_output_stream.html#a4"><param name="Name" value="write"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a13"><param name="Name" value="WriteInifileInt"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="devlib_8h.html#a12"><param name="Name" value="WriteInifileString"></OBJECT>
+</UL>

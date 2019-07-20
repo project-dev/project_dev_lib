@@ -1,0 +1,26 @@
+// DevImgTool.cpp: CDevImgTool クラスのインプリメンテーション
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "devgraph.h"
+#include "DevImgTool.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// 構築/消滅
+//////////////////////////////////////////////////////////////////////
+
+CDevImgTool::CDevImgTool()
+{
+
+}
+
+CDevImgTool::~CDevImgTool()
+{
+}

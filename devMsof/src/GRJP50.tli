@@ -1,0 +1,5115 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.9782.0 (54e01e46).
+//
+// GRJP50.tli
+//
+// Wrapper implementations for Win16 type library C:\Program Files\Microsoft Office\OFFICE11\GRJP50.OLB
+// compiler-generated file created 02/16/06 at 07:16:17 - DO NOT EDIT!
+
+
+//
+// dispinterface _Global wrapper method implementations
+//
+
+#pragma implementation_key(1)
+inline _variant_t Graph::_Global::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(2)
+inline _variant_t Graph::_Global::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(3)
+inline void Graph::_Global::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(4)
+inline _variant_t Graph::_Global::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(5)
+inline void Graph::_Global::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface Application wrapper method implementations
+//
+
+#pragma implementation_key(6)
+inline _variant_t Graph::Application::_Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(7)
+inline _variant_t Graph::Application::Chart ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x7, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(8)
+inline _variant_t Graph::Application::Quit ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x12e, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(9)
+inline _variant_t Graph::Application::SaveAsOldFileFormat ( const _variant_t & MajorVersion, const _variant_t & MinorVersion ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x443, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x080c\x080c", &MajorVersion, &MinorVersion);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(10)
+inline _variant_t Graph::Application::GetChartWizardDisplay ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x469, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(11)
+inline void Graph::Application::PutChartWizardDisplay ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x469, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(12)
+inline _variant_t Graph::Application::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(13)
+inline void Graph::Application::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(14)
+inline _variant_t Graph::Application::GetHasLinks ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x446, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(15)
+inline void Graph::Application::PutHasLinks ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x446, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(16)
+inline _variant_t Graph::Application::GetName ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(17)
+inline void Graph::Application::PutName ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(18)
+inline _variant_t Graph::Application::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(19)
+inline void Graph::Application::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(20)
+inline _variant_t Graph::Application::GetVisible ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x22e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(21)
+inline void Graph::Application::PutVisible ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x22e, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface Font wrapper method implementations
+//
+
+#pragma implementation_key(22)
+inline _variant_t Graph::Font::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(23)
+inline _variant_t Graph::Font::GetBackground ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xb4, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(24)
+inline void Graph::Font::PutBackground ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xb4, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(25)
+inline _variant_t Graph::Font::GetBold ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x60, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(26)
+inline void Graph::Font::PutBold ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x60, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(27)
+inline _variant_t Graph::Font::GetColor ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x63, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(28)
+inline void Graph::Font::PutColor ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x63, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(29)
+inline _variant_t Graph::Font::GetColorIndex ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x61, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(30)
+inline void Graph::Font::PutColorIndex ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x61, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(31)
+inline _variant_t Graph::Font::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(32)
+inline void Graph::Font::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(33)
+inline _variant_t Graph::Font::GetFontStyle ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xb1, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(34)
+inline void Graph::Font::PutFontStyle ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xb1, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(35)
+inline _variant_t Graph::Font::GetItalic ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x65, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(36)
+inline void Graph::Font::PutItalic ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x65, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(37)
+inline _variant_t Graph::Font::GetName ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(38)
+inline void Graph::Font::PutName ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(39)
+inline _variant_t Graph::Font::GetOutlineFont ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xdd, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(40)
+inline void Graph::Font::PutOutlineFont ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xdd, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(41)
+inline _variant_t Graph::Font::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(42)
+inline void Graph::Font::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(43)
+inline _variant_t Graph::Font::GetShadow ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x67, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(44)
+inline void Graph::Font::PutShadow ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x67, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(45)
+inline _variant_t Graph::Font::GetSize ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x68, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(46)
+inline void Graph::Font::PutSize ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x68, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(47)
+inline _variant_t Graph::Font::GetStrikethrough ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x69, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(48)
+inline void Graph::Font::PutStrikethrough ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x69, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(49)
+inline _variant_t Graph::Font::GetSubscript ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xb3, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(50)
+inline void Graph::Font::PutSubscript ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xb3, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(51)
+inline _variant_t Graph::Font::GetSuperscript ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xb2, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(52)
+inline void Graph::Font::PutSuperscript ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xb2, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(53)
+inline _variant_t Graph::Font::GetUnderline ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6a, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(54)
+inline void Graph::Font::PutUnderline ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6a, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface Border wrapper method implementations
+//
+
+#pragma implementation_key(55)
+inline _variant_t Graph::Border::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(56)
+inline _variant_t Graph::Border::GetColor ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x63, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(57)
+inline void Graph::Border::PutColor ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x63, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(58)
+inline _variant_t Graph::Border::GetColorIndex ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x61, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(59)
+inline void Graph::Border::PutColorIndex ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x61, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(60)
+inline _variant_t Graph::Border::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(61)
+inline void Graph::Border::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(62)
+inline _variant_t Graph::Border::GetLineStyle ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x77, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(63)
+inline void Graph::Border::PutLineStyle ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x77, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(64)
+inline _variant_t Graph::Border::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(65)
+inline void Graph::Border::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(66)
+inline _variant_t Graph::Border::GetWeight ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x78, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(67)
+inline void Graph::Border::PutWeight ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x78, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface Interior wrapper method implementations
+//
+
+#pragma implementation_key(68)
+inline _variant_t Graph::Interior::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(69)
+inline _variant_t Graph::Interior::GetColor ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x63, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(70)
+inline void Graph::Interior::PutColor ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x63, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(71)
+inline _variant_t Graph::Interior::GetColorIndex ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x61, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(72)
+inline void Graph::Interior::PutColorIndex ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x61, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(73)
+inline _variant_t Graph::Interior::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(74)
+inline void Graph::Interior::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(75)
+inline _variant_t Graph::Interior::GetInvertIfNegative ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x84, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(76)
+inline void Graph::Interior::PutInvertIfNegative ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x84, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(77)
+inline _variant_t Graph::Interior::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(78)
+inline void Graph::Interior::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(79)
+inline _variant_t Graph::Interior::GetPattern ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x5f, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(80)
+inline void Graph::Interior::PutPattern ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x5f, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(81)
+inline _variant_t Graph::Interior::GetPatternColor ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x64, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(82)
+inline void Graph::Interior::PutPatternColor ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x64, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(83)
+inline _variant_t Graph::Interior::GetPatternColorIndex ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x62, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(84)
+inline void Graph::Interior::PutPatternColorIndex ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x62, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface Corners wrapper method implementations
+//
+
+#pragma implementation_key(85)
+inline _variant_t Graph::Corners::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(86)
+inline _variant_t Graph::Corners::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(87)
+inline void Graph::Corners::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(88)
+inline _variant_t Graph::Corners::GetName ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(89)
+inline void Graph::Corners::PutName ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(90)
+inline _variant_t Graph::Corners::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(91)
+inline void Graph::Corners::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface SeriesLines wrapper method implementations
+//
+
+#pragma implementation_key(92)
+inline _variant_t Graph::SeriesLines::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(93)
+inline _variant_t Graph::SeriesLines::Delete ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x75, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(94)
+inline _variant_t Graph::SeriesLines::GetBorder ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x80, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(95)
+inline void Graph::SeriesLines::PutBorder ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x80, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(96)
+inline _variant_t Graph::SeriesLines::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(97)
+inline void Graph::SeriesLines::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(98)
+inline _variant_t Graph::SeriesLines::GetName ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(99)
+inline void Graph::SeriesLines::PutName ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(100)
+inline _variant_t Graph::SeriesLines::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(101)
+inline void Graph::SeriesLines::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface HiLoLines wrapper method implementations
+//
+
+#pragma implementation_key(102)
+inline _variant_t Graph::HiLoLines::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(103)
+inline _variant_t Graph::HiLoLines::Delete ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x75, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(104)
+inline _variant_t Graph::HiLoLines::GetBorder ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x80, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(105)
+inline void Graph::HiLoLines::PutBorder ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x80, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(106)
+inline _variant_t Graph::HiLoLines::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(107)
+inline void Graph::HiLoLines::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(108)
+inline _variant_t Graph::HiLoLines::GetName ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(109)
+inline void Graph::HiLoLines::PutName ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(110)
+inline _variant_t Graph::HiLoLines::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(111)
+inline void Graph::HiLoLines::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface Gridlines wrapper method implementations
+//
+
+#pragma implementation_key(112)
+inline _variant_t Graph::Gridlines::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(113)
+inline _variant_t Graph::Gridlines::Delete ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x75, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(114)
+inline _variant_t Graph::Gridlines::GetBorder ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x80, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(115)
+inline void Graph::Gridlines::PutBorder ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x80, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(116)
+inline _variant_t Graph::Gridlines::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(117)
+inline void Graph::Gridlines::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(118)
+inline _variant_t Graph::Gridlines::GetName ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(119)
+inline void Graph::Gridlines::PutName ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(120)
+inline _variant_t Graph::Gridlines::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(121)
+inline void Graph::Gridlines::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface DropLines wrapper method implementations
+//
+
+#pragma implementation_key(122)
+inline _variant_t Graph::DropLines::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(123)
+inline _variant_t Graph::DropLines::Delete ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x75, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(124)
+inline _variant_t Graph::DropLines::GetBorder ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x80, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(125)
+inline void Graph::DropLines::PutBorder ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x80, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(126)
+inline _variant_t Graph::DropLines::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(127)
+inline void Graph::DropLines::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(128)
+inline _variant_t Graph::DropLines::GetName ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(129)
+inline void Graph::DropLines::PutName ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(130)
+inline _variant_t Graph::DropLines::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(131)
+inline void Graph::DropLines::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface ErrorBars wrapper method implementations
+//
+
+#pragma implementation_key(132)
+inline _variant_t Graph::ErrorBars::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(133)
+inline _variant_t Graph::ErrorBars::ClearFormats ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x70, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(134)
+inline _variant_t Graph::ErrorBars::Delete ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x75, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(135)
+inline _variant_t Graph::ErrorBars::GetBorder ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x80, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(136)
+inline void Graph::ErrorBars::PutBorder ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x80, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(137)
+inline _variant_t Graph::ErrorBars::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(138)
+inline void Graph::ErrorBars::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(139)
+inline _variant_t Graph::ErrorBars::GetEndStyle ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x464, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(140)
+inline void Graph::ErrorBars::PutEndStyle ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x464, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(141)
+inline _variant_t Graph::ErrorBars::GetName ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(142)
+inline void Graph::ErrorBars::PutName ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(143)
+inline _variant_t Graph::ErrorBars::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(144)
+inline void Graph::ErrorBars::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface UpBars wrapper method implementations
+//
+
+#pragma implementation_key(145)
+inline _variant_t Graph::UpBars::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(146)
+inline _variant_t Graph::UpBars::Delete ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x75, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(147)
+inline _variant_t Graph::UpBars::GetBorder ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x80, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(148)
+inline void Graph::UpBars::PutBorder ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x80, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(149)
+inline _variant_t Graph::UpBars::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(150)
+inline void Graph::UpBars::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(151)
+inline _variant_t Graph::UpBars::GetInterior ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x81, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(152)
+inline void Graph::UpBars::PutInterior ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x81, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(153)
+inline _variant_t Graph::UpBars::GetName ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(154)
+inline void Graph::UpBars::PutName ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(155)
+inline _variant_t Graph::UpBars::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(156)
+inline void Graph::UpBars::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface DownBars wrapper method implementations
+//
+
+#pragma implementation_key(157)
+inline _variant_t Graph::DownBars::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(158)
+inline _variant_t Graph::DownBars::Delete ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x75, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(159)
+inline _variant_t Graph::DownBars::GetBorder ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x80, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(160)
+inline void Graph::DownBars::PutBorder ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x80, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(161)
+inline _variant_t Graph::DownBars::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(162)
+inline void Graph::DownBars::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(163)
+inline _variant_t Graph::DownBars::GetInterior ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x81, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(164)
+inline void Graph::DownBars::PutInterior ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x81, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(165)
+inline _variant_t Graph::DownBars::GetName ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(166)
+inline void Graph::DownBars::PutName ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(167)
+inline _variant_t Graph::DownBars::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(168)
+inline void Graph::DownBars::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface ChartTitle wrapper method implementations
+//
+
+#pragma implementation_key(169)
+inline _variant_t Graph::ChartTitle::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(170)
+inline _variant_t Graph::ChartTitle::Delete ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x75, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(171)
+inline _variant_t Graph::ChartTitle::GetBorder ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x80, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(172)
+inline void Graph::ChartTitle::PutBorder ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x80, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(173)
+inline _variant_t Graph::ChartTitle::GetCaption ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x8b, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(174)
+inline void Graph::ChartTitle::PutCaption ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x8b, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(175)
+inline _variant_t Graph::ChartTitle::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(176)
+inline void Graph::ChartTitle::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(177)
+inline _variant_t Graph::ChartTitle::GetFont ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x92, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(178)
+inline void Graph::ChartTitle::PutFont ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x92, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(179)
+inline _variant_t Graph::ChartTitle::GetHorizontalAlignment ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x88, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(180)
+inline void Graph::ChartTitle::PutHorizontalAlignment ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x88, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(181)
+inline _variant_t Graph::ChartTitle::GetInterior ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x81, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(182)
+inline void Graph::ChartTitle::PutInterior ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x81, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(183)
+inline _variant_t Graph::ChartTitle::GetLeft ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x7f, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(184)
+inline void Graph::ChartTitle::PutLeft ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x7f, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(185)
+inline _variant_t Graph::ChartTitle::GetName ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(186)
+inline void Graph::ChartTitle::PutName ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(187)
+inline _variant_t Graph::ChartTitle::GetOrientation ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x86, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(188)
+inline void Graph::ChartTitle::PutOrientation ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x86, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(189)
+inline _variant_t Graph::ChartTitle::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(190)
+inline void Graph::ChartTitle::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(191)
+inline _variant_t Graph::ChartTitle::GetShadow ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x67, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(192)
+inline void Graph::ChartTitle::PutShadow ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x67, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(193)
+inline _variant_t Graph::ChartTitle::GetText ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x8a, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(194)
+inline void Graph::ChartTitle::PutText ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x8a, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(195)
+inline _variant_t Graph::ChartTitle::GetTop ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x7e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(196)
+inline void Graph::ChartTitle::PutTop ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x7e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(197)
+inline _variant_t Graph::ChartTitle::GetVerticalAlignment ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x89, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(198)
+inline void Graph::ChartTitle::PutVerticalAlignment ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x89, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface AxisTitle wrapper method implementations
+//
+
+#pragma implementation_key(199)
+inline _variant_t Graph::AxisTitle::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(200)
+inline _variant_t Graph::AxisTitle::Delete ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x75, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(201)
+inline _variant_t Graph::AxisTitle::GetBorder ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x80, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(202)
+inline void Graph::AxisTitle::PutBorder ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x80, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(203)
+inline _variant_t Graph::AxisTitle::GetCaption ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x8b, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(204)
+inline void Graph::AxisTitle::PutCaption ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x8b, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(205)
+inline _variant_t Graph::AxisTitle::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(206)
+inline void Graph::AxisTitle::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(207)
+inline _variant_t Graph::AxisTitle::GetFont ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x92, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(208)
+inline void Graph::AxisTitle::PutFont ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x92, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(209)
+inline _variant_t Graph::AxisTitle::GetHorizontalAlignment ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x88, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(210)
+inline void Graph::AxisTitle::PutHorizontalAlignment ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x88, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(211)
+inline _variant_t Graph::AxisTitle::GetInterior ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x81, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(212)
+inline void Graph::AxisTitle::PutInterior ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x81, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(213)
+inline _variant_t Graph::AxisTitle::GetLeft ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x7f, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(214)
+inline void Graph::AxisTitle::PutLeft ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x7f, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(215)
+inline _variant_t Graph::AxisTitle::GetName ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(216)
+inline void Graph::AxisTitle::PutName ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(217)
+inline _variant_t Graph::AxisTitle::GetOrientation ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x86, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(218)
+inline void Graph::AxisTitle::PutOrientation ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x86, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(219)
+inline _variant_t Graph::AxisTitle::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(220)
+inline void Graph::AxisTitle::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(221)
+inline _variant_t Graph::AxisTitle::GetShadow ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x67, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(222)
+inline void Graph::AxisTitle::PutShadow ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x67, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(223)
+inline _variant_t Graph::AxisTitle::GetText ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x8a, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(224)
+inline void Graph::AxisTitle::PutText ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x8a, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(225)
+inline _variant_t Graph::AxisTitle::GetTop ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x7e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(226)
+inline void Graph::AxisTitle::PutTop ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x7e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(227)
+inline _variant_t Graph::AxisTitle::GetVerticalAlignment ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x89, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(228)
+inline void Graph::AxisTitle::PutVerticalAlignment ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x89, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface Floor wrapper method implementations
+//
+
+#pragma implementation_key(229)
+inline _variant_t Graph::Floor::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(230)
+inline _variant_t Graph::Floor::ClearFormats ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x70, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(231)
+inline _variant_t Graph::Floor::GetBorder ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x80, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(232)
+inline void Graph::Floor::PutBorder ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x80, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(233)
+inline _variant_t Graph::Floor::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(234)
+inline void Graph::Floor::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(235)
+inline _variant_t Graph::Floor::GetInterior ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x81, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(236)
+inline void Graph::Floor::PutInterior ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x81, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(237)
+inline _variant_t Graph::Floor::GetName ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(238)
+inline void Graph::Floor::PutName ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(239)
+inline _variant_t Graph::Floor::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(240)
+inline void Graph::Floor::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface Walls wrapper method implementations
+//
+
+#pragma implementation_key(241)
+inline _variant_t Graph::Walls::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(242)
+inline _variant_t Graph::Walls::ClearFormats ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x70, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(243)
+inline _variant_t Graph::Walls::GetBorder ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x80, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(244)
+inline void Graph::Walls::PutBorder ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x80, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(245)
+inline _variant_t Graph::Walls::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(246)
+inline void Graph::Walls::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(247)
+inline _variant_t Graph::Walls::GetInterior ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x81, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(248)
+inline void Graph::Walls::PutInterior ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x81, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(249)
+inline _variant_t Graph::Walls::GetName ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(250)
+inline void Graph::Walls::PutName ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(251)
+inline _variant_t Graph::Walls::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(252)
+inline void Graph::Walls::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface PlotArea wrapper method implementations
+//
+
+#pragma implementation_key(253)
+inline _variant_t Graph::PlotArea::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(254)
+inline _variant_t Graph::PlotArea::ClearFormats ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x70, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(255)
+inline _variant_t Graph::PlotArea::GetBorder ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x80, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(256)
+inline void Graph::PlotArea::PutBorder ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x80, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(257)
+inline _variant_t Graph::PlotArea::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(258)
+inline void Graph::PlotArea::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(259)
+inline _variant_t Graph::PlotArea::GetHeight ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x7b, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(260)
+inline void Graph::PlotArea::PutHeight ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x7b, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(261)
+inline _variant_t Graph::PlotArea::GetInterior ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x81, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(262)
+inline void Graph::PlotArea::PutInterior ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x81, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(263)
+inline _variant_t Graph::PlotArea::GetLeft ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x7f, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(264)
+inline void Graph::PlotArea::PutLeft ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x7f, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(265)
+inline _variant_t Graph::PlotArea::GetName ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(266)
+inline void Graph::PlotArea::PutName ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(267)
+inline _variant_t Graph::PlotArea::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(268)
+inline void Graph::PlotArea::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(269)
+inline _variant_t Graph::PlotArea::GetTop ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x7e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(270)
+inline void Graph::PlotArea::PutTop ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x7e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(271)
+inline _variant_t Graph::PlotArea::GetWidth ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x7a, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(272)
+inline void Graph::PlotArea::PutWidth ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x7a, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface ChartArea wrapper method implementations
+//
+
+#pragma implementation_key(273)
+inline _variant_t Graph::ChartArea::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(274)
+inline _variant_t Graph::ChartArea::Clear ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x6f, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(275)
+inline _variant_t Graph::ChartArea::ClearContents ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x71, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(276)
+inline _variant_t Graph::ChartArea::ClearFormats ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x70, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(277)
+inline _variant_t Graph::ChartArea::Copy ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x227, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(278)
+inline _variant_t Graph::ChartArea::GetBorder ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x80, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(279)
+inline void Graph::ChartArea::PutBorder ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x80, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(280)
+inline _variant_t Graph::ChartArea::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(281)
+inline void Graph::ChartArea::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(282)
+inline _variant_t Graph::ChartArea::GetFont ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x92, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(283)
+inline void Graph::ChartArea::PutFont ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x92, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(284)
+inline _variant_t Graph::ChartArea::GetHeight ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x7b, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(285)
+inline void Graph::ChartArea::PutHeight ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x7b, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(286)
+inline _variant_t Graph::ChartArea::GetInterior ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x81, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(287)
+inline void Graph::ChartArea::PutInterior ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x81, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(288)
+inline _variant_t Graph::ChartArea::GetLeft ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x7f, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(289)
+inline void Graph::ChartArea::PutLeft ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x7f, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(290)
+inline _variant_t Graph::ChartArea::GetName ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(291)
+inline void Graph::ChartArea::PutName ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(292)
+inline _variant_t Graph::ChartArea::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(293)
+inline void Graph::ChartArea::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(294)
+inline _variant_t Graph::ChartArea::GetShadow ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x67, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(295)
+inline void Graph::ChartArea::PutShadow ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x67, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(296)
+inline _variant_t Graph::ChartArea::GetTop ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x7e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(297)
+inline void Graph::ChartArea::PutTop ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x7e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(298)
+inline _variant_t Graph::ChartArea::GetWidth ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x7a, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(299)
+inline void Graph::ChartArea::PutWidth ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x7a, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface Legend wrapper method implementations
+//
+
+#pragma implementation_key(300)
+inline _variant_t Graph::Legend::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(301)
+inline _variant_t Graph::Legend::Delete ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x75, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(302)
+inline _variant_t Graph::Legend::LegendEntries ( const _variant_t & Index ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0xad, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x080c", &Index);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(303)
+inline _variant_t Graph::Legend::GetBorder ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x80, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(304)
+inline void Graph::Legend::PutBorder ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x80, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(305)
+inline _variant_t Graph::Legend::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(306)
+inline void Graph::Legend::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(307)
+inline _variant_t Graph::Legend::GetFont ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x92, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(308)
+inline void Graph::Legend::PutFont ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x92, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(309)
+inline _variant_t Graph::Legend::GetHeight ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x7b, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(310)
+inline void Graph::Legend::PutHeight ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x7b, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(311)
+inline _variant_t Graph::Legend::GetInterior ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x81, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(312)
+inline void Graph::Legend::PutInterior ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x81, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(313)
+inline _variant_t Graph::Legend::GetLeft ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x7f, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(314)
+inline void Graph::Legend::PutLeft ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x7f, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(315)
+inline _variant_t Graph::Legend::GetName ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(316)
+inline void Graph::Legend::PutName ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(317)
+inline _variant_t Graph::Legend::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(318)
+inline void Graph::Legend::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(319)
+inline _variant_t Graph::Legend::GetPosition ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x85, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(320)
+inline void Graph::Legend::PutPosition ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x85, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(321)
+inline _variant_t Graph::Legend::GetShadow ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x67, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(322)
+inline void Graph::Legend::PutShadow ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x67, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(323)
+inline _variant_t Graph::Legend::GetTop ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x7e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(324)
+inline void Graph::Legend::PutTop ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x7e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(325)
+inline _variant_t Graph::Legend::GetWidth ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x7a, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(326)
+inline void Graph::Legend::PutWidth ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x7a, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface TickLabels wrapper method implementations
+//
+
+#pragma implementation_key(327)
+inline _variant_t Graph::TickLabels::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(328)
+inline _variant_t Graph::TickLabels::Delete ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x75, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(329)
+inline _variant_t Graph::TickLabels::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(330)
+inline void Graph::TickLabels::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(331)
+inline _variant_t Graph::TickLabels::GetFont ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x92, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(332)
+inline void Graph::TickLabels::PutFont ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x92, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(333)
+inline _variant_t Graph::TickLabels::GetName ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(334)
+inline void Graph::TickLabels::PutName ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(335)
+inline _variant_t Graph::TickLabels::GetNumberFormat ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xc1, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(336)
+inline void Graph::TickLabels::PutNumberFormat ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xc1, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(337)
+inline _variant_t Graph::TickLabels::GetOrientation ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x86, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(338)
+inline void Graph::TickLabels::PutOrientation ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x86, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(339)
+inline _variant_t Graph::TickLabels::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(340)
+inline void Graph::TickLabels::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface Chart wrapper method implementations
+//
+
+#pragma implementation_key(341)
+inline _variant_t Graph::Chart::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(342)
+inline _variant_t Graph::Chart::ApplyDataLabels ( const _variant_t & Type, const _variant_t & LegendKey ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x97, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x080c\x080c", &Type, &LegendKey);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(343)
+inline _variant_t Graph::Chart::AreaGroups ( const _variant_t & Index ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x9, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x080c", &Index);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(344)
+inline _variant_t Graph::Chart::AutoFormat ( const _variant_t & Gallery, const _variant_t & Format ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x72, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x000c\x080c", &Gallery, &Format);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(345)
+inline _variant_t Graph::Chart::Axes ( const _variant_t & Type, const _variant_t & AxisGroup ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x17, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x080c\x080c", &Type, &AxisGroup);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(346)
+inline _variant_t Graph::Chart::BarGroups ( const _variant_t & Index ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0xa, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x080c", &Index);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(347)
+inline _variant_t Graph::Chart::ChartGroups ( const _variant_t & Index ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x8, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x080c", &Index);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(348)
+inline _variant_t Graph::Chart::ColumnGroups ( const _variant_t & Index ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0xb, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x080c", &Index);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(349)
+inline _variant_t Graph::Chart::DoughnutGroups ( const _variant_t & Index ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0xe, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x080c", &Index);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(350)
+inline _variant_t Graph::Chart::LineGroups ( const _variant_t & Index ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0xc, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x080c", &Index);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(351)
+inline _variant_t Graph::Chart::OmitBackground ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x44a, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(352)
+inline _variant_t Graph::Chart::PieGroups ( const _variant_t & Index ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0xd, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x080c", &Index);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(353)
+inline _variant_t Graph::Chart::RadarGroups ( const _variant_t & Index ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0xf, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x080c", &Index);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(354)
+inline _variant_t Graph::Chart::SeriesCollection ( const _variant_t & Index ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x44, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x080c", &Index);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(355)
+inline _variant_t Graph::Chart::SetEchoOn ( const _variant_t & EchoOn ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x46d, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x080c", &EchoOn);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(356)
+inline _variant_t Graph::Chart::XYGroups ( const _variant_t & Index ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x10, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x080c", &Index);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(357)
+inline _variant_t Graph::Chart::GetArea3DGroup ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x11, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(358)
+inline void Graph::Chart::PutArea3DGroup ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x11, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(359)
+inline _variant_t Graph::Chart::GetAutoScaling ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6b, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(360)
+inline void Graph::Chart::PutAutoScaling ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6b, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(361)
+inline _variant_t Graph::Chart::GetBar3DGroup ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x12, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(362)
+inline void Graph::Chart::PutBar3DGroup ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x12, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(363)
+inline _variant_t Graph::Chart::GetChartArea ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x50, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(364)
+inline void Graph::Chart::PutChartArea ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x50, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(365)
+inline _variant_t Graph::Chart::GetChartTitle ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x51, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(366)
+inline void Graph::Chart::PutChartTitle ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x51, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(367)
+inline _variant_t Graph::Chart::GetColumn3DGroup ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x13, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(368)
+inline void Graph::Chart::PutColumn3DGroup ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x13, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(369)
+inline _variant_t Graph::Chart::GetCorners ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x4f, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(370)
+inline void Graph::Chart::PutCorners ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x4f, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(371)
+inline _variant_t Graph::Chart::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(372)
+inline void Graph::Chart::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(373)
+inline _variant_t Graph::Chart::GetDepthPercent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x30, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(374)
+inline void Graph::Chart::PutDepthPercent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x30, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(375)
+inline _variant_t Graph::Chart::GetDisplayBlanksAs ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x5d, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(376)
+inline void Graph::Chart::PutDisplayBlanksAs ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x5d, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(377)
+inline _variant_t Graph::Chart::GetElevation ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x31, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(378)
+inline void Graph::Chart::PutElevation ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x31, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(379)
+inline _variant_t Graph::Chart::GetFloor ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x53, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(380)
+inline void Graph::Chart::PutFloor ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x53, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(381)
+inline _variant_t Graph::Chart::GetGapDepth ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x32, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(382)
+inline void Graph::Chart::PutGapDepth ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x32, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(383)
+inline _variant_t Graph::Chart::GetHasAxis ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x34, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(384)
+inline void Graph::Chart::PutHasAxis ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x34, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(385)
+inline _variant_t Graph::Chart::GetHasLegend ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x35, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(386)
+inline void Graph::Chart::PutHasLegend ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x35, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(387)
+inline _variant_t Graph::Chart::GetHasTitle ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x36, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(388)
+inline void Graph::Chart::PutHasTitle ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x36, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(389)
+inline _variant_t Graph::Chart::GetHeightPercent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x37, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(390)
+inline void Graph::Chart::PutHeightPercent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x37, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(391)
+inline _variant_t Graph::Chart::GetLegend ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x54, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(392)
+inline void Graph::Chart::PutLegend ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x54, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(393)
+inline _variant_t Graph::Chart::GetLine3DGroup ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x14, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(394)
+inline void Graph::Chart::PutLine3DGroup ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x14, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(395)
+inline _variant_t Graph::Chart::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(396)
+inline void Graph::Chart::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(397)
+inline _variant_t Graph::Chart::GetPerspective ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x39, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(398)
+inline void Graph::Chart::PutPerspective ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x39, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(399)
+inline _variant_t Graph::Chart::GetPie3DGroup ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x15, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(400)
+inline void Graph::Chart::PutPie3DGroup ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x15, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(401)
+inline _variant_t Graph::Chart::GetPlotArea ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x55, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(402)
+inline void Graph::Chart::PutPlotArea ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x55, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(403)
+inline _variant_t Graph::Chart::GetRightAngleAxes ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x3a, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(404)
+inline void Graph::Chart::PutRightAngleAxes ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x3a, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(405)
+inline _variant_t Graph::Chart::GetRotation ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x3b, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(406)
+inline void Graph::Chart::PutRotation ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x3b, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(407)
+inline _variant_t Graph::Chart::GetSubType ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6d, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(408)
+inline void Graph::Chart::PutSubType ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6d, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(409)
+inline _variant_t Graph::Chart::GetSurfaceGroup ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x16, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(410)
+inline void Graph::Chart::PutSurfaceGroup ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x16, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(411)
+inline _variant_t Graph::Chart::GetType ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6c, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(412)
+inline void Graph::Chart::PutType ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6c, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(413)
+inline _variant_t Graph::Chart::GetWalls ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x56, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(414)
+inline void Graph::Chart::PutWalls ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x56, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(415)
+inline _variant_t Graph::Chart::GetWallsAndGridlines2D ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xd2, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(416)
+inline void Graph::Chart::PutWallsAndGridlines2D ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xd2, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface ChartGroup wrapper method implementations
+//
+
+#pragma implementation_key(417)
+inline _variant_t Graph::ChartGroup::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(418)
+inline _variant_t Graph::ChartGroup::SeriesCollection ( const _variant_t & Index ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x44, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x080c", &Index);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(419)
+inline _variant_t Graph::ChartGroup::GetAxisGroup ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x2f, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(420)
+inline void Graph::ChartGroup::PutAxisGroup ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x2f, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(421)
+inline _variant_t Graph::ChartGroup::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(422)
+inline void Graph::ChartGroup::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(423)
+inline _variant_t Graph::ChartGroup::GetDoughnutHoleSize ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x466, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(424)
+inline void Graph::ChartGroup::PutDoughnutHoleSize ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x466, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(425)
+inline _variant_t Graph::ChartGroup::GetDownBars ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x8d, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(426)
+inline void Graph::ChartGroup::PutDownBars ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x8d, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(427)
+inline _variant_t Graph::ChartGroup::GetDropLines ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x8e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(428)
+inline void Graph::ChartGroup::PutDropLines ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x8e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(429)
+inline _variant_t Graph::ChartGroup::GetFirstSliceAngle ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x3f, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(430)
+inline void Graph::ChartGroup::PutFirstSliceAngle ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x3f, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(431)
+inline _variant_t Graph::ChartGroup::GetGapWidth ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x33, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(432)
+inline void Graph::ChartGroup::PutGapWidth ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x33, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(433)
+inline _variant_t Graph::ChartGroup::GetHasDropLines ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x3d, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(434)
+inline void Graph::ChartGroup::PutHasDropLines ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x3d, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(435)
+inline _variant_t Graph::ChartGroup::GetHasHiLoLines ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x3e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(436)
+inline void Graph::ChartGroup::PutHasHiLoLines ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x3e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(437)
+inline _variant_t Graph::ChartGroup::GetHasRadarAxisLabels ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x40, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(438)
+inline void Graph::ChartGroup::PutHasRadarAxisLabels ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x40, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(439)
+inline _variant_t Graph::ChartGroup::GetHasSeriesLines ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x41, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(440)
+inline void Graph::ChartGroup::PutHasSeriesLines ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x41, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(441)
+inline _variant_t Graph::ChartGroup::GetHasUpDownBars ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x42, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(442)
+inline void Graph::ChartGroup::PutHasUpDownBars ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x42, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(443)
+inline _variant_t Graph::ChartGroup::GetHiLoLines ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x8f, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(444)
+inline void Graph::ChartGroup::PutHiLoLines ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x8f, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(445)
+inline _variant_t Graph::ChartGroup::GetOverlap ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x38, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(446)
+inline void Graph::ChartGroup::PutOverlap ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x38, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(447)
+inline _variant_t Graph::ChartGroup::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(448)
+inline void Graph::ChartGroup::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(449)
+inline _variant_t Graph::ChartGroup::GetRadarAxisLabels ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x90, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(450)
+inline void Graph::ChartGroup::PutRadarAxisLabels ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x90, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(451)
+inline _variant_t Graph::ChartGroup::GetSeriesLines ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x91, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(452)
+inline void Graph::ChartGroup::PutSeriesLines ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x91, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(453)
+inline _variant_t Graph::ChartGroup::GetSubType ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6d, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(454)
+inline void Graph::ChartGroup::PutSubType ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6d, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(455)
+inline _variant_t Graph::ChartGroup::GetType ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6c, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(456)
+inline void Graph::ChartGroup::PutType ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6c, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(457)
+inline _variant_t Graph::ChartGroup::GetUpBars ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x8c, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(458)
+inline void Graph::ChartGroup::PutUpBars ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x8c, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(459)
+inline _variant_t Graph::ChartGroup::GetVaryByCategories ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x3c, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(460)
+inline void Graph::ChartGroup::PutVaryByCategories ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x3c, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface ChartGroups wrapper method implementations
+//
+
+#pragma implementation_key(461)
+inline _variant_t Graph::ChartGroups::_NewEnum ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(462)
+inline _variant_t Graph::ChartGroups::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(463)
+inline _variant_t Graph::ChartGroups::Item ( const _variant_t & Index ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0xaa, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x000c", &Index);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(464)
+inline _variant_t Graph::ChartGroups::GetCount ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x76, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(465)
+inline void Graph::ChartGroups::PutCount ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x76, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(466)
+inline _variant_t Graph::ChartGroups::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(467)
+inline void Graph::ChartGroups::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(468)
+inline _variant_t Graph::ChartGroups::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(469)
+inline void Graph::ChartGroups::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface Axis wrapper method implementations
+//
+
+#pragma implementation_key(470)
+inline _variant_t Graph::Axis::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(471)
+inline _variant_t Graph::Axis::Delete ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x75, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(472)
+inline _variant_t Graph::Axis::GetAxisBetweenCategories ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x2d, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(473)
+inline void Graph::Axis::PutAxisBetweenCategories ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x2d, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(474)
+inline _variant_t Graph::Axis::GetAxisGroup ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x2f, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(475)
+inline void Graph::Axis::PutAxisGroup ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x2f, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(476)
+inline _variant_t Graph::Axis::GetAxisTitle ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x52, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(477)
+inline void Graph::Axis::PutAxisTitle ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x52, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(478)
+inline _variant_t Graph::Axis::GetBorder ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x80, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(479)
+inline void Graph::Axis::PutBorder ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x80, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(480)
+inline _variant_t Graph::Axis::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(481)
+inline void Graph::Axis::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(482)
+inline _variant_t Graph::Axis::GetCrosses ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x2a, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(483)
+inline void Graph::Axis::PutCrosses ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x2a, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(484)
+inline _variant_t Graph::Axis::GetCrossesAt ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x2b, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(485)
+inline void Graph::Axis::PutCrossesAt ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x2b, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(486)
+inline _variant_t Graph::Axis::GetHasMajorGridlines ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x18, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(487)
+inline void Graph::Axis::PutHasMajorGridlines ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x18, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(488)
+inline _variant_t Graph::Axis::GetHasMinorGridlines ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x19, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(489)
+inline void Graph::Axis::PutHasMinorGridlines ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x19, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(490)
+inline _variant_t Graph::Axis::GetHasTitle ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x36, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(491)
+inline void Graph::Axis::PutHasTitle ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x36, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(492)
+inline _variant_t Graph::Axis::GetMajorGridlines ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x59, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(493)
+inline void Graph::Axis::PutMajorGridlines ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x59, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(494)
+inline _variant_t Graph::Axis::GetMajorTickMark ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x1a, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(495)
+inline void Graph::Axis::PutMajorTickMark ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x1a, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(496)
+inline _variant_t Graph::Axis::GetMajorUnit ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x25, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(497)
+inline void Graph::Axis::PutMajorUnit ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x25, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(498)
+inline _variant_t Graph::Axis::GetMajorUnitIsAuto ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x26, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(499)
+inline void Graph::Axis::PutMajorUnitIsAuto ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x26, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(500)
+inline _variant_t Graph::Axis::GetMaximumScale ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x23, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(501)
+inline void Graph::Axis::PutMaximumScale ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x23, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(502)
+inline _variant_t Graph::Axis::GetMaximumScaleIsAuto ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x24, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(503)
+inline void Graph::Axis::PutMaximumScaleIsAuto ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x24, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(504)
+inline _variant_t Graph::Axis::GetMinimumScale ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x21, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(505)
+inline void Graph::Axis::PutMinimumScale ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x21, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(506)
+inline _variant_t Graph::Axis::GetMinimumScaleIsAuto ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x22, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(507)
+inline void Graph::Axis::PutMinimumScaleIsAuto ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x22, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(508)
+inline _variant_t Graph::Axis::GetMinorGridlines ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x5a, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(509)
+inline void Graph::Axis::PutMinorGridlines ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x5a, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(510)
+inline _variant_t Graph::Axis::GetMinorTickMark ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x1b, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(511)
+inline void Graph::Axis::PutMinorTickMark ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x1b, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(512)
+inline _variant_t Graph::Axis::GetMinorUnit ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x27, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(513)
+inline void Graph::Axis::PutMinorUnit ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x27, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(514)
+inline _variant_t Graph::Axis::GetMinorUnitIsAuto ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x28, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(515)
+inline void Graph::Axis::PutMinorUnitIsAuto ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x28, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(516)
+inline _variant_t Graph::Axis::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(517)
+inline void Graph::Axis::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(518)
+inline _variant_t Graph::Axis::GetReversePlotOrder ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x2c, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(519)
+inline void Graph::Axis::PutReversePlotOrder ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x2c, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(520)
+inline _variant_t Graph::Axis::GetScaleType ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x29, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(521)
+inline void Graph::Axis::PutScaleType ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x29, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(522)
+inline _variant_t Graph::Axis::GetTickLabelPosition ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x1c, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(523)
+inline void Graph::Axis::PutTickLabelPosition ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x1c, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(524)
+inline _variant_t Graph::Axis::GetTickLabels ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x5b, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(525)
+inline void Graph::Axis::PutTickLabels ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x5b, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(526)
+inline _variant_t Graph::Axis::GetTickLabelSpacing ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x1d, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(527)
+inline void Graph::Axis::PutTickLabelSpacing ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x1d, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(528)
+inline _variant_t Graph::Axis::GetTickMarkSpacing ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x1f, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(529)
+inline void Graph::Axis::PutTickMarkSpacing ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x1f, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(530)
+inline _variant_t Graph::Axis::GetType ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6c, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(531)
+inline void Graph::Axis::PutType ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6c, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface Axes wrapper method implementations
+//
+
+#pragma implementation_key(532)
+inline _variant_t Graph::Axes::_NewEnum ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(533)
+inline _variant_t Graph::Axes::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(534)
+inline _variant_t Graph::Axes::Item ( const _variant_t & Type, const _variant_t & AxisGroup ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0xaa, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x000c\x080c", &Type, &AxisGroup);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(535)
+inline _variant_t Graph::Axes::GetCount ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x76, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(536)
+inline void Graph::Axes::PutCount ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x76, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(537)
+inline _variant_t Graph::Axes::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(538)
+inline void Graph::Axes::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(539)
+inline _variant_t Graph::Axes::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(540)
+inline void Graph::Axes::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface DataLabel wrapper method implementations
+//
+
+#pragma implementation_key(541)
+inline _variant_t Graph::DataLabel::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(542)
+inline _variant_t Graph::DataLabel::Delete ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x75, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(543)
+inline _variant_t Graph::DataLabel::GetAutoText ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x87, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(544)
+inline void Graph::DataLabel::PutAutoText ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x87, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(545)
+inline _variant_t Graph::DataLabel::GetBorder ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x80, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(546)
+inline void Graph::DataLabel::PutBorder ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x80, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(547)
+inline _variant_t Graph::DataLabel::GetCaption ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x8b, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(548)
+inline void Graph::DataLabel::PutCaption ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x8b, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(549)
+inline _variant_t Graph::DataLabel::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(550)
+inline void Graph::DataLabel::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(551)
+inline _variant_t Graph::DataLabel::GetFont ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x92, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(552)
+inline void Graph::DataLabel::PutFont ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x92, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(553)
+inline _variant_t Graph::DataLabel::GetHorizontalAlignment ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x88, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(554)
+inline void Graph::DataLabel::PutHorizontalAlignment ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x88, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(555)
+inline _variant_t Graph::DataLabel::GetInterior ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x81, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(556)
+inline void Graph::DataLabel::PutInterior ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x81, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(557)
+inline _variant_t Graph::DataLabel::GetLeft ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x7f, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(558)
+inline void Graph::DataLabel::PutLeft ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x7f, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(559)
+inline _variant_t Graph::DataLabel::GetName ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(560)
+inline void Graph::DataLabel::PutName ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(561)
+inline _variant_t Graph::DataLabel::GetNumberFormat ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xc1, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(562)
+inline void Graph::DataLabel::PutNumberFormat ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xc1, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(563)
+inline _variant_t Graph::DataLabel::GetOrientation ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x86, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(564)
+inline void Graph::DataLabel::PutOrientation ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x86, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(565)
+inline _variant_t Graph::DataLabel::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(566)
+inline void Graph::DataLabel::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(567)
+inline _variant_t Graph::DataLabel::GetShadow ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x67, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(568)
+inline void Graph::DataLabel::PutShadow ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x67, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(569)
+inline _variant_t Graph::DataLabel::GetShowLegendKey ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xab, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(570)
+inline void Graph::DataLabel::PutShowLegendKey ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xab, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(571)
+inline _variant_t Graph::DataLabel::GetText ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x8a, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(572)
+inline void Graph::DataLabel::PutText ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x8a, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(573)
+inline _variant_t Graph::DataLabel::GetTop ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x7e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(574)
+inline void Graph::DataLabel::PutTop ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x7e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(575)
+inline _variant_t Graph::DataLabel::GetType ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6c, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(576)
+inline void Graph::DataLabel::PutType ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6c, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(577)
+inline _variant_t Graph::DataLabel::GetVerticalAlignment ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x89, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(578)
+inline void Graph::DataLabel::PutVerticalAlignment ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x89, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface DataLabels wrapper method implementations
+//
+
+#pragma implementation_key(579)
+inline _variant_t Graph::DataLabels::_NewEnum ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(580)
+inline _variant_t Graph::DataLabels::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(581)
+inline _variant_t Graph::DataLabels::Delete ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x75, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(582)
+inline _variant_t Graph::DataLabels::Item ( const _variant_t & Index ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0xaa, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x000c", &Index);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(583)
+inline _variant_t Graph::DataLabels::GetAutoText ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x87, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(584)
+inline void Graph::DataLabels::PutAutoText ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x87, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(585)
+inline _variant_t Graph::DataLabels::GetBorder ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x80, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(586)
+inline void Graph::DataLabels::PutBorder ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x80, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(587)
+inline _variant_t Graph::DataLabels::GetCount ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x76, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(588)
+inline void Graph::DataLabels::PutCount ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x76, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(589)
+inline _variant_t Graph::DataLabels::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(590)
+inline void Graph::DataLabels::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(591)
+inline _variant_t Graph::DataLabels::GetFont ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x92, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(592)
+inline void Graph::DataLabels::PutFont ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x92, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(593)
+inline _variant_t Graph::DataLabels::GetHorizontalAlignment ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x88, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(594)
+inline void Graph::DataLabels::PutHorizontalAlignment ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x88, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(595)
+inline _variant_t Graph::DataLabels::GetInterior ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x81, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(596)
+inline void Graph::DataLabels::PutInterior ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x81, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(597)
+inline _variant_t Graph::DataLabels::GetName ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(598)
+inline void Graph::DataLabels::PutName ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(599)
+inline _variant_t Graph::DataLabels::GetNumberFormat ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xc1, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(600)
+inline void Graph::DataLabels::PutNumberFormat ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xc1, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(601)
+inline _variant_t Graph::DataLabels::GetOrientation ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x86, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(602)
+inline void Graph::DataLabels::PutOrientation ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x86, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(603)
+inline _variant_t Graph::DataLabels::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(604)
+inline void Graph::DataLabels::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(605)
+inline _variant_t Graph::DataLabels::GetShadow ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x67, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(606)
+inline void Graph::DataLabels::PutShadow ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x67, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(607)
+inline _variant_t Graph::DataLabels::GetShowLegendKey ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xab, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(608)
+inline void Graph::DataLabels::PutShowLegendKey ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xab, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(609)
+inline _variant_t Graph::DataLabels::GetType ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6c, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(610)
+inline void Graph::DataLabels::PutType ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6c, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(611)
+inline _variant_t Graph::DataLabels::GetVerticalAlignment ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x89, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(612)
+inline void Graph::DataLabels::PutVerticalAlignment ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x89, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface Point wrapper method implementations
+//
+
+#pragma implementation_key(613)
+inline _variant_t Graph::Point::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(614)
+inline _variant_t Graph::Point::ApplyDataLabels ( const _variant_t & Type, const _variant_t & LegendKey ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x97, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x080c\x080c", &Type, &LegendKey);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(615)
+inline _variant_t Graph::Point::ClearFormats ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x70, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(616)
+inline _variant_t Graph::Point::Copy ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x227, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(617)
+inline _variant_t Graph::Point::Delete ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x75, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(618)
+inline _variant_t Graph::Point::GetBorder ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x80, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(619)
+inline void Graph::Point::PutBorder ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x80, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(620)
+inline _variant_t Graph::Point::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(621)
+inline void Graph::Point::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(622)
+inline _variant_t Graph::Point::GetDataLabel ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x9e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(623)
+inline void Graph::Point::PutDataLabel ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x9e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(624)
+inline _variant_t Graph::Point::GetExplosion ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xb6, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(625)
+inline void Graph::Point::PutExplosion ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xb6, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(626)
+inline _variant_t Graph::Point::GetHasDataLabel ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x4d, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(627)
+inline void Graph::Point::PutHasDataLabel ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x4d, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(628)
+inline _variant_t Graph::Point::GetInterior ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x81, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(629)
+inline void Graph::Point::PutInterior ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x81, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(630)
+inline _variant_t Graph::Point::GetInvertIfNegative ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x84, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(631)
+inline void Graph::Point::PutInvertIfNegative ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x84, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(632)
+inline _variant_t Graph::Point::GetMarkerBackgroundColor ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x49, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(633)
+inline void Graph::Point::PutMarkerBackgroundColor ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x49, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(634)
+inline _variant_t Graph::Point::GetMarkerBackgroundColorIndex ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x4a, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(635)
+inline void Graph::Point::PutMarkerBackgroundColorIndex ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x4a, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(636)
+inline _variant_t Graph::Point::GetMarkerForegroundColor ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x4b, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(637)
+inline void Graph::Point::PutMarkerForegroundColor ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x4b, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(638)
+inline _variant_t Graph::Point::GetMarkerForegroundColorIndex ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x4c, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(639)
+inline void Graph::Point::PutMarkerForegroundColorIndex ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x4c, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(640)
+inline _variant_t Graph::Point::GetMarkerStyle ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x48, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(641)
+inline void Graph::Point::PutMarkerStyle ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x48, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(642)
+inline _variant_t Graph::Point::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(643)
+inline void Graph::Point::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(644)
+inline _variant_t Graph::Point::GetPictureType ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xa1, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(645)
+inline void Graph::Point::PutPictureType ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xa1, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(646)
+inline _variant_t Graph::Point::GetPictureUnit ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xa2, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(647)
+inline void Graph::Point::PutPictureUnit ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xa2, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface Points wrapper method implementations
+//
+
+#pragma implementation_key(648)
+inline _variant_t Graph::Points::_NewEnum ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(649)
+inline _variant_t Graph::Points::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(650)
+inline _variant_t Graph::Points::Item ( const _variant_t & Index ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0xaa, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x000c", &Index);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(651)
+inline _variant_t Graph::Points::GetCount ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x76, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(652)
+inline void Graph::Points::PutCount ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x76, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(653)
+inline _variant_t Graph::Points::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(654)
+inline void Graph::Points::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(655)
+inline _variant_t Graph::Points::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(656)
+inline void Graph::Points::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface Series wrapper method implementations
+//
+
+#pragma implementation_key(657)
+inline _variant_t Graph::Series::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(658)
+inline _variant_t Graph::Series::ApplyDataLabels ( const _variant_t & Type, const _variant_t & LegendKey ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x97, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x080c\x080c", &Type, &LegendKey);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(659)
+inline _variant_t Graph::Series::ClearFormats ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x70, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(660)
+inline _variant_t Graph::Series::Copy ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x227, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(661)
+inline _variant_t Graph::Series::DataLabels ( const _variant_t & Index ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x9d, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x080c", &Index);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(662)
+inline _variant_t Graph::Series::Delete ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x75, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(663)
+inline _variant_t Graph::Series::ErrorBar ( const _variant_t & Direction, const _variant_t & Include, const _variant_t & Type, const _variant_t & Amount, const _variant_t & MinusValues ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x98, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x000c\x000c\x000c\x080c\x080c", &Direction, &Include, &Type, &Amount, &MinusValues);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(664)
+inline _variant_t Graph::Series::Points ( const _variant_t & Index ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x46, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x080c", &Index);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(665)
+inline _variant_t Graph::Series::Trendlines ( const _variant_t & Index ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x9a, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x080c", &Index);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(666)
+inline _variant_t Graph::Series::GetAxisGroup ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x2f, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(667)
+inline void Graph::Series::PutAxisGroup ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x2f, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(668)
+inline _variant_t Graph::Series::GetBorder ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x80, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(669)
+inline void Graph::Series::PutBorder ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x80, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(670)
+inline _variant_t Graph::Series::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(671)
+inline void Graph::Series::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(672)
+inline _variant_t Graph::Series::GetErrorBars ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x9f, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(673)
+inline void Graph::Series::PutErrorBars ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x9f, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(674)
+inline _variant_t Graph::Series::GetExplosion ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xb6, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(675)
+inline void Graph::Series::PutExplosion ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xb6, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(676)
+inline _variant_t Graph::Series::GetHasDataLabels ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x4e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(677)
+inline void Graph::Series::PutHasDataLabels ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x4e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(678)
+inline _variant_t Graph::Series::GetHasErrorBars ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xa0, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(679)
+inline void Graph::Series::PutHasErrorBars ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xa0, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(680)
+inline _variant_t Graph::Series::GetInterior ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x81, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(681)
+inline void Graph::Series::PutInterior ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x81, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(682)
+inline _variant_t Graph::Series::GetInvertIfNegative ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x84, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(683)
+inline void Graph::Series::PutInvertIfNegative ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x84, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(684)
+inline _variant_t Graph::Series::GetMarkerBackgroundColor ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x49, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(685)
+inline void Graph::Series::PutMarkerBackgroundColor ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x49, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(686)
+inline _variant_t Graph::Series::GetMarkerBackgroundColorIndex ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x4a, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(687)
+inline void Graph::Series::PutMarkerBackgroundColorIndex ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x4a, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(688)
+inline _variant_t Graph::Series::GetMarkerForegroundColor ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x4b, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(689)
+inline void Graph::Series::PutMarkerForegroundColor ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x4b, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(690)
+inline _variant_t Graph::Series::GetMarkerForegroundColorIndex ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x4c, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(691)
+inline void Graph::Series::PutMarkerForegroundColorIndex ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x4c, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(692)
+inline _variant_t Graph::Series::GetMarkerStyle ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x48, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(693)
+inline void Graph::Series::PutMarkerStyle ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x48, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(694)
+inline _variant_t Graph::Series::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(695)
+inline void Graph::Series::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(696)
+inline _variant_t Graph::Series::GetPictureType ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xa1, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(697)
+inline void Graph::Series::PutPictureType ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xa1, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(698)
+inline _variant_t Graph::Series::GetPictureUnit ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xa2, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(699)
+inline void Graph::Series::PutPictureUnit ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xa2, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(700)
+inline _variant_t Graph::Series::GetSmooth ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xa3, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(701)
+inline void Graph::Series::PutSmooth ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xa3, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(702)
+inline _variant_t Graph::Series::GetType ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6c, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(703)
+inline void Graph::Series::PutType ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6c, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface SeriesCollection wrapper method implementations
+//
+
+#pragma implementation_key(704)
+inline _variant_t Graph::SeriesCollection::_NewEnum ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(705)
+inline _variant_t Graph::SeriesCollection::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(706)
+inline _variant_t Graph::SeriesCollection::Item ( const _variant_t & Index ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0xaa, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x000c", &Index);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(707)
+inline _variant_t Graph::SeriesCollection::GetCount ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x76, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(708)
+inline void Graph::SeriesCollection::PutCount ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x76, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(709)
+inline _variant_t Graph::SeriesCollection::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(710)
+inline void Graph::SeriesCollection::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(711)
+inline _variant_t Graph::SeriesCollection::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(712)
+inline void Graph::SeriesCollection::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface LegendEntry wrapper method implementations
+//
+
+#pragma implementation_key(713)
+inline _variant_t Graph::LegendEntry::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(714)
+inline _variant_t Graph::LegendEntry::Delete ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x75, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(715)
+inline _variant_t Graph::LegendEntry::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(716)
+inline void Graph::LegendEntry::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(717)
+inline _variant_t Graph::LegendEntry::GetFont ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x92, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(718)
+inline void Graph::LegendEntry::PutFont ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x92, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(719)
+inline _variant_t Graph::LegendEntry::GetIndex ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x1e6, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(720)
+inline void Graph::LegendEntry::PutIndex ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x1e6, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(721)
+inline _variant_t Graph::LegendEntry::GetLegendKey ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xae, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(722)
+inline void Graph::LegendEntry::PutLegendKey ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xae, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(723)
+inline _variant_t Graph::LegendEntry::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(724)
+inline void Graph::LegendEntry::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface LegendEntries wrapper method implementations
+//
+
+#pragma implementation_key(725)
+inline _variant_t Graph::LegendEntries::_NewEnum ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(726)
+inline _variant_t Graph::LegendEntries::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(727)
+inline _variant_t Graph::LegendEntries::Item ( const _variant_t & Index ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0xaa, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x000c", &Index);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(728)
+inline _variant_t Graph::LegendEntries::GetCount ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x76, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(729)
+inline void Graph::LegendEntries::PutCount ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x76, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(730)
+inline _variant_t Graph::LegendEntries::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(731)
+inline void Graph::LegendEntries::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(732)
+inline _variant_t Graph::LegendEntries::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(733)
+inline void Graph::LegendEntries::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface LegendKey wrapper method implementations
+//
+
+#pragma implementation_key(734)
+inline _variant_t Graph::LegendKey::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(735)
+inline _variant_t Graph::LegendKey::ClearFormats ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x70, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(736)
+inline _variant_t Graph::LegendKey::Delete ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x75, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(737)
+inline _variant_t Graph::LegendKey::GetBorder ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x80, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(738)
+inline void Graph::LegendKey::PutBorder ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x80, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(739)
+inline _variant_t Graph::LegendKey::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(740)
+inline void Graph::LegendKey::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(741)
+inline _variant_t Graph::LegendKey::GetInterior ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x81, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(742)
+inline void Graph::LegendKey::PutInterior ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x81, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(743)
+inline _variant_t Graph::LegendKey::GetInvertIfNegative ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x84, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(744)
+inline void Graph::LegendKey::PutInvertIfNegative ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x84, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(745)
+inline _variant_t Graph::LegendKey::GetMarkerBackgroundColor ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x49, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(746)
+inline void Graph::LegendKey::PutMarkerBackgroundColor ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x49, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(747)
+inline _variant_t Graph::LegendKey::GetMarkerBackgroundColorIndex ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x4a, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(748)
+inline void Graph::LegendKey::PutMarkerBackgroundColorIndex ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x4a, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(749)
+inline _variant_t Graph::LegendKey::GetMarkerForegroundColor ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x4b, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(750)
+inline void Graph::LegendKey::PutMarkerForegroundColor ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x4b, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(751)
+inline _variant_t Graph::LegendKey::GetMarkerForegroundColorIndex ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x4c, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(752)
+inline void Graph::LegendKey::PutMarkerForegroundColorIndex ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x4c, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(753)
+inline _variant_t Graph::LegendKey::GetMarkerStyle ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x48, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(754)
+inline void Graph::LegendKey::PutMarkerStyle ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x48, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(755)
+inline _variant_t Graph::LegendKey::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(756)
+inline void Graph::LegendKey::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(757)
+inline _variant_t Graph::LegendKey::GetSmooth ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xa3, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(758)
+inline void Graph::LegendKey::PutSmooth ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xa3, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface Trendline wrapper method implementations
+//
+
+#pragma implementation_key(759)
+inline _variant_t Graph::Trendline::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(760)
+inline _variant_t Graph::Trendline::ClearFormats ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x70, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(761)
+inline _variant_t Graph::Trendline::Delete ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x75, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(762)
+inline _variant_t Graph::Trendline::GetBackward ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xb9, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(763)
+inline void Graph::Trendline::PutBackward ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xb9, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(764)
+inline _variant_t Graph::Trendline::GetBorder ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x80, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(765)
+inline void Graph::Trendline::PutBorder ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x80, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(766)
+inline _variant_t Graph::Trendline::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(767)
+inline void Graph::Trendline::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(768)
+inline _variant_t Graph::Trendline::GetDataLabel ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x9e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(769)
+inline void Graph::Trendline::PutDataLabel ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x9e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(770)
+inline _variant_t Graph::Trendline::GetDisplayEquation ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xbe, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(771)
+inline void Graph::Trendline::PutDisplayEquation ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xbe, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(772)
+inline _variant_t Graph::Trendline::GetDisplayRSquared ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xbd, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(773)
+inline void Graph::Trendline::PutDisplayRSquared ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xbd, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(774)
+inline _variant_t Graph::Trendline::GetForward ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xbf, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(775)
+inline void Graph::Trendline::PutForward ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xbf, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(776)
+inline _variant_t Graph::Trendline::GetIndex ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x1e6, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(777)
+inline void Graph::Trendline::PutIndex ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x1e6, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(778)
+inline _variant_t Graph::Trendline::GetIntercept ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xba, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(779)
+inline void Graph::Trendline::PutIntercept ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xba, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(780)
+inline _variant_t Graph::Trendline::GetInterceptIsAuto ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xbb, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(781)
+inline void Graph::Trendline::PutInterceptIsAuto ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xbb, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(782)
+inline _variant_t Graph::Trendline::GetName ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6e, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(783)
+inline void Graph::Trendline::PutName ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6e, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(784)
+inline _variant_t Graph::Trendline::GetNameIsAuto ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xbc, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(785)
+inline void Graph::Trendline::PutNameIsAuto ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xbc, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(786)
+inline _variant_t Graph::Trendline::GetOrder ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xc0, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(787)
+inline void Graph::Trendline::PutOrder ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xc0, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(788)
+inline _variant_t Graph::Trendline::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(789)
+inline void Graph::Trendline::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(790)
+inline _variant_t Graph::Trendline::GetPeriod ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0xb8, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(791)
+inline void Graph::Trendline::PutPeriod ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0xb8, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(792)
+inline _variant_t Graph::Trendline::GetType ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x6c, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(793)
+inline void Graph::Trendline::PutType ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x6c, VT_VARIANT, &_val);
+}
+
+//
+// dispinterface Trendlines wrapper method implementations
+//
+
+#pragma implementation_key(794)
+inline _variant_t Graph::Trendlines::_NewEnum ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(795)
+inline _variant_t Graph::Trendlines::Add ( const _variant_t & Type, const _variant_t & Order, const _variant_t & Period, const _variant_t & Forward, const _variant_t & Backward, const _variant_t & Intercept, const _variant_t & DisplayEquation, const _variant_t & DisplayRSquared, const _variant_t & Name ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0xb5, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x080c\x080c\x080c\x080c\x080c\x080c\x080c\x080c\x080c", &Type, &Order, &Period, &Forward, &Backward, &Intercept, &DisplayEquation, &DisplayRSquared, &Name);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(796)
+inline _variant_t Graph::Trendlines::Application ( ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, NULL);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(797)
+inline _variant_t Graph::Trendlines::Item ( const _variant_t & Index ) {
+    VARIANT _result;
+    _com_dispatch_method(this, 0xaa, DISPATCH_METHOD, VT_VARIANT, (void*)&_result, 
+        L"\x080c", &Index);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(798)
+inline _variant_t Graph::Trendlines::GetCount ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x76, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(799)
+inline void Graph::Trendlines::PutCount ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x76, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(800)
+inline _variant_t Graph::Trendlines::GetCreator ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x95, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(801)
+inline void Graph::Trendlines::PutCreator ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x95, VT_VARIANT, &_val);
+}
+
+#pragma implementation_key(802)
+inline _variant_t Graph::Trendlines::GetParent ( ) {
+    VARIANT _result;
+    _com_dispatch_propget(this, 0x96, VT_VARIANT, (void*)&_result);
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(803)
+inline void Graph::Trendlines::PutParent ( const _variant_t & _val ) {
+    _com_dispatch_propput(this, 0x96, VT_VARIANT, &_val);
+}

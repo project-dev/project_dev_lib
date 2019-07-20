@@ -1,0 +1,87 @@
+■STLとDLLの相性問題
+■なぜ問題が発生するのか？
+例えば、std::stringをDLL関数に参照渡しをし、それをDLL関数内で変更を加えると、segmentation fault が発生してしまいます。
+これは、EXE側で確保したメモリをDLL側で解放してしまった（もしくは、その逆）ためです。
+通常のライブラリならば、オブジェクトに加える操作によって発生する内部的なメモリの確保・解放は、「コンテナライブラリのメモリ空間」で行われます。
+しかし、STLはインライン展開されますので、呼び出すコードにメモリ操作ルーチンが埋め込まれます。
+よって、メモリの確保・解放がDLLとEXEにまたがってしまうことがあるのです。
+
+■DllAllocator
+この問題を防ぐには、コンテナやstringがDLL・EXEともに同じメモリ空間を使うようにする必要があります。
+STLはすべてallocatorを使用してメモリを確保しますので、allocatorを独自に定義してやればよいことになります。
+このためには、まず、DLL内部でメモリの確保・解放する関数を用意します。
+この関数は、単純に内部でmalloc(), free()するだけでかまいません。
+もしくは、CRTを使用しないメモリ確保関数（CoTaskMemAlloc(), GlobalAlloc()）を使う手もあります。
+
+次に、std::allocatorからクラスを派生させ、allocate()とdeallocate()をオーバーライドして、先ほどの関数を呼んでやります。
+詳しくはソースコードをご覧ください。
+使い方は、typedef std::basic_string<TCHAR, std::char_traits<TCHAR>, DllAllocator<TCHAR> > String;のようにしてやれば、 このStringはDLL, EXE間で渡すことができるようになります。
+
+________________________________________________________
+DllAllocator.h 
+// DllAllocator.h
+#pragma once
+
+//#ifdef DLL_EXPORTS
+//#define DLL_API           __declspec(dllexport)
+//#else
+//#define DLL_API           __declspec(dllimport)
+//#endif
+
+#include <memory>   // std::allocator
+
+DLL_API void*   DllAllocate(size_t size);
+DLL_API void    DllFree(void* ptr);
+
+// STL allocator
+template < class T > struct DllAllocator : public std::allocator<T>{
+    template <class U> struct rebind    { typedef DllAllocator<U> other; };
+    DllAllocator () throw() {}
+    DllAllocator (const DllAllocator&) throw () {}
+    template <class U> DllAllocator(const DllAllocator<U>&) throw() {}
+    template <class U> DllAllocator& operator=(const DllAllocator<U>&) throw()  {}
+    // allocate
+    pointer allocate(size_type c, const void* hint = 0)
+    {
+        return static_cast<pointer>(DllAllocate(sizeof(T) * c));
+    }
+    // deallocate
+    void deallocate(pointer p, size_type n)
+    {
+        DllFree(p);
+    }
+};
+
+
+//typedef std::basic_string<TCHAR, std::char_traits<TCHAR>, DllAllocator<TCHAR> >    String;
+//typedef std::vector<int, DllAllocator<int> >    IntVector;
+
+________________________________________________________
+
+________________________________________________________
+DllAllocator.cpp 
+
+// DllAllocator.cpp
+#pragma once
+
+//#include "stdafx.h"
+#include <malloc.h>
+#include "DllAllocator.h"
+
+DLL_API void*   DllAllocate(size_t size)
+{
+    return ::malloc(size);
+}
+DLL_API void    DllFree(void* ptr)
+{
+    ::free(ptr);
+}
+________________________________________________________
+
+■そもそもSTLはバイナリをまたがるべきではない
+実際には、メモリに加え、クラスのバイナリ配置が一致しなくてはなりません。
+つまり、DLLとそれを使用するEXEを、同一のSTLを使い同一のコンパイラで作成する必要があります。
+しかし、そもそものDLLの目的から言って、これは仮定できないことです。
+DLLからエクスポートしたり、引数・返値として使われる型は、インタフェースかPOD型であるべきです。
+バイナリ標準が規定されていないC++の不十分な部分であることは否めません。
+

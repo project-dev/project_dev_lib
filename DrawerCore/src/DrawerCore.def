@@ -1,0 +1,7 @@
+; DrawerCore.def : DLL 用のモジュール パラメータ宣言
+
+LIBRARY      "DrawerCore"
+DESCRIPTION  'DrawerCore Windows Dynamic Link Library'
+
+EXPORTS
+    ; 明示的なエクスポートはここへ記述できます

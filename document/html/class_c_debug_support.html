@@ -1,0 +1,319 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=Shift_JIS">
+<title>Project D.E.V Libraly: クラス CDebugSupport</title>
+<link href="help.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 作成： Doxygen 1.4.1 -->
+<h1>クラス CDebugSupport</h1>デバッグサポートクラス  
+<a href="#_details">[詳細]</a>
+<p>
+<code>#include &lt;DebugSupport.h&gt;</code>
+<p>
+<a href="class_c_debug_support-members.html">すべてのメンバ一覧</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a0" doxytag="CDebugSupport::CDebugSupport"></a>
+&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_debug_support.html#a0">CDebugSupport</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">コンストラクタ <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a1" doxytag="CDebugSupport::~CDebugSupport"></a>
+virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_debug_support.html#a1">~CDebugSupport</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">デストラクタ <br></td></tr>
+<tr><td colspan="2"><br><h2>Static Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static char *WINAPI&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_debug_support.html#e0">GetLastErrorText</a> (DWORD dwID)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">GetLastError APIの戻り値に対応するメッセージを取得する.  <a href="#e0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="e1" doxytag="CDebugSupport::OutputSystemInfo"></a>
+static void WINAPI&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_debug_support.html#e1">OutputSystemInfo</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">OSやプロセッサ、GetDeviceCapsで取得できる情報を出力する. <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static void WINAPI&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_debug_support.html#e2">GetModuleVersionInfo</a> (HMODULE hMod, char *pszOutBuff)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">モジュールのバージョンを取得する  <a href="#e2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static void WINAPI&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_debug_support.html#e3">OutputModuleVer</a> (HMODULE hMod)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">モジュールのバージョンを出力する  <a href="#e3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static void WINAPI&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_debug_support.html#e4">OutputDebugLog</a> (char *pszMsg)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">デバッグログファイルに文字列を出力  <a href="#e4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static void WINAPI&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_debug_support.html#e5">OutputGetLastErrorMsg</a> (DWORD dwID)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">GetLastError APIの戻り値に対応するメッセージを出力する.  <a href="#e5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static bool WINAPI&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_debug_support.html#e6">GetDebugMode</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">デバッグモードを取得  <a href="#e6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static bool WINAPI&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_debug_support.html#e7">StartDebugMode</a> (char *pszLogFIlePath)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">デバッグの開始  <a href="#e7"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="e8" doxytag="CDebugSupport::EndDebugMode"></a>
+static void WINAPI&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_debug_support.html#e8">EndDebugMode</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">デバッグの終了 <br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>説明</h2>
+デバッグサポートクラス 
+<p>
+デバッグをサポートする為のクラスです。<br>
+<p>
+<dl compact><dt><b>作者:</b></dt><dd>Project D.E.V </dd></dl>
+
+<p>
+<hr><h2>関数</h2>
+<a class="anchor" name="e6" doxytag="CDebugSupport::GetDebugMode"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">bool CDebugSupport::GetDebugMode           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [static]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+デバッグモードを取得 
+<p>
+<dl compact><dt><b>戻り値:</b></dt><dd>デバッグ中の場合はTRUE </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="e0" doxytag="CDebugSupport::GetLastErrorText"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">char * CDebugSupport::GetLastErrorText           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">DWORD&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>dwID</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [static]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+GetLastError APIの戻り値に対応するメッセージを取得する. 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>dwID</em>&nbsp;</td><td>GetLastError APIの戻り値 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>GetLastError APIの戻り値に対応する文字列 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="e2" doxytag="CDebugSupport::GetModuleVersionInfo"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">void CDebugSupport::GetModuleVersionInfo           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">HMODULE&nbsp;</td>
+          <td class="mdname" nowrap> <em>hMod</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszOutBuff</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [static]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+モジュールのバージョンを取得する 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>hMod</em>&nbsp;</td><td>バージョンを取得するモジュールのハンドル </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pszOutBuff</em>&nbsp;</td><td>情報を取得するためのバッファ </td></tr>
+  </table>
+</dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="e4" doxytag="CDebugSupport::OutputDebugLog"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">void CDebugSupport::OutputDebugLog           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">char *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>pszMsg</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [static]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+デバッグログファイルに文字列を出力 
+<p>
+StartDebugModeでファイル名を指定しておく必要がある <dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszMsg</em>&nbsp;</td><td>ログファイルに出力する文字列 </td></tr>
+  </table>
+</dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="e5" doxytag="CDebugSupport::OutputGetLastErrorMsg"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">void CDebugSupport::OutputGetLastErrorMsg           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">DWORD&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>dwID</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [static]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+GetLastError APIの戻り値に対応するメッセージを出力する. 
+<p>
+OutputDebugStringで出力を行うため、モニタする必要がある <dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>dwID</em>&nbsp;</td><td>GetLastError APIの戻り値 </td></tr>
+  </table>
+</dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="e3" doxytag="CDebugSupport::OutputModuleVer"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">void CDebugSupport::OutputModuleVer           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">HMODULE&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>hMod</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [static]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+モジュールのバージョンを出力する 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>hMod</em>&nbsp;</td><td>バージョンを取得するモジュールのハンドル </td></tr>
+  </table>
+</dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="e7" doxytag="CDebugSupport::StartDebugMode"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">bool CDebugSupport::StartDebugMode           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">char *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>pszLogFIlePath</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [static]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+デバッグの開始 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszLogFIlePath</em>&nbsp;</td><td>ログ出力ファイルパス </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>デバッグモードを開始できた場合はTRUE </dd></dl>
+    </td>
+  </tr>
+</table>
+<hr size="1"><address style="align: right;"><small>Project D.E.V Libralyに対してFri Jan 21 17:15:14 2005に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.1 </small></address>
+</body>
+</html>

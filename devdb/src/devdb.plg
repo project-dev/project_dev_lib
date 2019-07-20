@@ -1,0 +1,158 @@
+<html>
+<body>
+<pre>
+<h1>ﾋﾞﾙﾄﾞのﾛｸﾞ</h1>
+<h3>
+--------------------構成: DBTool - Win32 Release--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP6C1.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /I "..\include" /I "..\..\project_dev_lib\release\include\devlib" /I "..\..\project_dev_lib\release\include\devmfc" /I "..\..\project_dev_lib\release\include\devdb" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"..\lib\Release/DBTool.pch" /Yu"stdafx.h" /Fo"..\lib\Release/" /Fd"..\lib\Release/" /FD /c 
+"M:\Develop\VC\SDT\src\MainFrm.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP6C1.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP6C2.tmp" を作成し、次の内容を記録します
+[
+devlib.lib devmfc.lib devdb.lib /nologo /subsystem:windows /incremental:no /pdb:"..\lib\Release/SDT.pdb" /machine:I386 /out:"..\bin\Release/SDT.exe" /libpath:"..\..\project_dev_lib\release\lib\release" 
+\Develop\VC\SDT\lib\Release\AoutCmpWnd.obj
+\Develop\VC\SDT\lib\Release\BaseCustPage.obj
+\Develop\VC\SDT\lib\Release\ConfDlg.obj
+\Develop\VC\SDT\lib\Release\DBBackupDlg.obj
+\Develop\VC\SDT\lib\Release\DBConnectBar.obj
+\Develop\VC\SDT\lib\Release\DBErasureDlg.obj
+\Develop\VC\SDT\lib\Release\DBListCtrl.obj
+\Develop\VC\SDT\lib\Release\DBRestoreDlg.obj
+\Develop\VC\SDT\lib\Release\DBTool.obj
+\Develop\VC\SDT\lib\Release\DBToolDoc.obj
+\Develop\VC\SDT\lib\Release\DBToolView.obj
+\Develop\VC\SDT\lib\Release\DBTreeCtrl.obj
+\Develop\VC\SDT\lib\Release\FuncTabView.obj
+\Develop\VC\SDT\lib\Release\HistCustPage.obj
+\Develop\VC\SDT\lib\Release\InfoDlg.obj
+\Develop\VC\SDT\lib\Release\LoginDlg.obj
+\Develop\VC\SDT\lib\Release\LoginSetNameInpDlg.obj
+\Develop\VC\SDT\lib\Release\MainFrm.obj
+\Develop\VC\SDT\lib\Release\ProcViewDlg.obj
+\Develop\VC\SDT\lib\Release\RestorSQLDlg.obj
+\Develop\VC\SDT\lib\Release\ResultView.obj
+\Develop\VC\SDT\lib\Release\SQLEdit.obj
+\Develop\VC\SDT\lib\Release\SQLHistDlg.obj
+\Develop\VC\SDT\lib\Release\SqlViewDlg.obj
+\Develop\VC\SDT\lib\Release\StdAfx.obj
+\Develop\VC\SDT\lib\Release\TableCreatorDlg.obj
+\Develop\VC\SDT\lib\Release\DBTool.res
+\Develop\VC\project_dev_lib\devjava\lib\Release\devjava.lib
+\Develop\VC\project_dev_lib\devlib\lib\Release\devlib.lib
+\Develop\VC\project_dev_lib\devmfc\lib\Release\devmfc.lib
+\Develop\VC\project_dev_lib\devdb\lib\Release\devdb.lib
+\Develop\VC\project_dev_lib\Release\lib\Release\devstaticlib.lib
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP6C2.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ｺﾝﾊﾟｲﾙ中...
+MainFrm.cpp
+ﾘﾝｸ中...
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP6C5.bat" を作成し、次の内容を記録します
+[
+@echo off
+copy /Y ..\..\project_dev_lib\release\bin\release\*.dll ..\bin\release
+..\..\_common\upx.exe -9 ..\bin\release\SDT.exe
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP6C5.bat" の作成中
+
+..\..\project_dev_lib\release\bin\release\devdb.dll
+..\..\project_dev_lib\release\bin\release\devgraph.dll
+..\..\project_dev_lib\release\bin\release\devjava.dll
+..\..\project_dev_lib\release\bin\release\devlib.dll
+..\..\project_dev_lib\release\bin\release\devmfc.dll
+..\..\project_dev_lib\release\bin\release\DrawerCore.dll
+        6 個のファイルをコピーしました。
+                       Ultimate Packer for eXecutables
+  Copyright (C) 1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007
+UPX 3.00w       Markus Oberhumer, Laszlo Molnar & John Reiser   Apr 27th 2007
+
+        File size         Ratio      Format      Name
+   --------------------   ------   -----------   -----------
+    176128 ->     62464   35.47%    win32/pe     SDT.exe
+
+Packed 1 file.
+
+
+
+<h3>結果</h3>
+SDT.exe - ｴﾗｰ 0、警告 0
+<h3>
+--------------------構成: DBTool - Win32 Debug--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP6C6.tmp" を作成し、次の内容を記録します
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\include" /I "..\..\project_dev_lib\release\include\devlib" /I "..\..\project_dev_lib\release\include\devmfc" /I "..\..\project_dev_lib\release\include\devdb" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"..\lib\Debug/" /Fp"..\lib\Debug/DBTool.pch" /Yu"stdafx.h" /Fo"..\lib\Debug/" /Fd"..\lib\Debug/" /FD /GZ /c 
+"M:\Develop\VC\SDT\src\MainFrm.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP6C6.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP6C7.tmp" を作成し、次の内容を記録します
+[
+devlib.lib devmfc.lib devdb.lib /nologo /subsystem:windows /incremental:yes /pdb:"..\lib\Debug/SDT.pdb" /debug /machine:I386 /out:"..\bin\Debug/SDT.exe" /pdbtype:sept /libpath:"..\..\project_dev_lib\release\lib\debug" 
+\Develop\VC\SDT\lib\Debug\AoutCmpWnd.obj
+\Develop\VC\SDT\lib\Debug\BaseCustPage.obj
+\Develop\VC\SDT\lib\Debug\ConfDlg.obj
+\Develop\VC\SDT\lib\Debug\DBBackupDlg.obj
+\Develop\VC\SDT\lib\Debug\DBConnectBar.obj
+\Develop\VC\SDT\lib\Debug\DBErasureDlg.obj
+\Develop\VC\SDT\lib\Debug\DBListCtrl.obj
+\Develop\VC\SDT\lib\Debug\DBRestoreDlg.obj
+\Develop\VC\SDT\lib\Debug\DBTool.obj
+\Develop\VC\SDT\lib\Debug\DBToolDoc.obj
+\Develop\VC\SDT\lib\Debug\DBToolView.obj
+\Develop\VC\SDT\lib\Debug\DBTreeCtrl.obj
+\Develop\VC\SDT\lib\Debug\FuncTabView.obj
+\Develop\VC\SDT\lib\Debug\HistCustPage.obj
+\Develop\VC\SDT\lib\Debug\InfoDlg.obj
+\Develop\VC\SDT\lib\Debug\LoginDlg.obj
+\Develop\VC\SDT\lib\Debug\LoginSetNameInpDlg.obj
+\Develop\VC\SDT\lib\Debug\MainFrm.obj
+\Develop\VC\SDT\lib\Debug\ProcViewDlg.obj
+\Develop\VC\SDT\lib\Debug\RestorSQLDlg.obj
+\Develop\VC\SDT\lib\Debug\ResultView.obj
+\Develop\VC\SDT\lib\Debug\SQLEdit.obj
+\Develop\VC\SDT\lib\Debug\SQLHistDlg.obj
+\Develop\VC\SDT\lib\Debug\SqlViewDlg.obj
+\Develop\VC\SDT\lib\Debug\StdAfx.obj
+\Develop\VC\SDT\lib\Debug\TableCreatorDlg.obj
+\Develop\VC\SDT\lib\Debug\DBTool.res
+\Develop\VC\project_dev_lib\devjava\lib\Debug\devjava.lib
+\Develop\VC\project_dev_lib\devlib\lib\Debug\devlib.lib
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\devmfc.lib
+\Develop\VC\project_dev_lib\devdb\lib\Debug\devdb.lib
+\Develop\VC\project_dev_lib\Release\lib\Debug\devstaticlib.lib
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP6C7.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ｺﾝﾊﾟｲﾙ中...
+MainFrm.cpp
+ﾘﾝｸ中...
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP6CA.bat" を作成し、次の内容を記録します
+[
+@echo off
+copy /Y ..\..\project_dev_lib\release\bin\debug\*.dll ..\bin\debug
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP6CA.bat" の作成中
+
+..\..\project_dev_lib\release\bin\debug\devdb.dll
+..\..\project_dev_lib\release\bin\debug\devgraph.dll
+..\..\project_dev_lib\release\bin\debug\devjava.dll
+..\..\project_dev_lib\release\bin\debug\devlib.dll
+..\..\project_dev_lib\release\bin\debug\devmfc.dll
+..\..\project_dev_lib\release\bin\debug\devMsof.dll
+..\..\project_dev_lib\release\bin\debug\DrawerCore.dll
+        7 個のファイルをコピーしました。
+
+
+
+<h3>結果</h3>
+SDT.exe - ｴﾗｰ 0、警告 0
+</pre>
+</body>
+</html>

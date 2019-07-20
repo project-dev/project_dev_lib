@@ -1,0 +1,27 @@
+// DevXMLObject.cpp: CDevXMLObject クラスのインプリメンテーション
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "devXML.h"
+#include "DevXMLObject.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// 構築/消滅
+//////////////////////////////////////////////////////////////////////
+
+CDevXMLObject::CDevXMLObject()
+{
+
+}
+
+CDevXMLObject::~CDevXMLObject()
+{
+
+}

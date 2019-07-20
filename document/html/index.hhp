@@ -1,0 +1,62 @@
+[OPTIONS]
+Compiled file=devlib.chm
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=main.html
+Index file=index.hhk
+Language=0x411 Japanese
+Title=Project D.E.V Libraly
+
+[WINDOWS]
+main="Project D.E.V Libraly","index.hhc","index.hhk","main.html","main.html",,,,,0x23520,,0x387e,,,,,,,,0
+
+[FILES]
+main.html
+files.html
+devlib_8h.html
+annotated.html
+functions.html
+functions_func.html
+functions_vars.html
+functions_enum.html
+functions_eval.html
+class_byte_array_output_stream.html
+class_byte_array_output_stream-members.html
+class_c_ado_database.html
+class_c_ado_database-members.html
+class_c_debug_support.html
+class_c_debug_support-members.html
+class_c_dev_string.html
+class_c_dev_string-members.html
+class_c_edit_ex.html
+class_c_edit_ex-members.html
+class_c_env_info.html
+class_c_env_info-members.html
+class_c_file_dialog_ex.html
+class_c_file_dialog_ex-members.html
+class_c_folder_dialog.html
+class_c_folder_dialog-members.html
+class_c_hwnd_tab_ctrl.html
+class_c_hwnd_tab_ctrl-members.html
+class_c_image_object.html
+class_c_image_object-members.html
+class_c_list_ctrl_ex.html
+class_c_list_ctrl_ex-members.html
+class_c_progress_status_bar.html
+class_c_progress_status_bar-members.html
+class_c_string_encode.html
+class_c_string_encode-members.html
+class_c_tab_view.html
+class_c_tab_view-members.html
+class_c_wnd_tab_ctrl.html
+class_c_wnd_tab_ctrl-members.html
+class_string_buffer.html
+class_string_buffer-members.html
+structtag_t_a_b_l_e_i_n_f_o.html
+structtag_t_a_b_l_e_i_n_f_o-members.html
+globals.html
+globals_func.html
+globals_type.html
+graph_legend.html

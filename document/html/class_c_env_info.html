@@ -1,0 +1,260 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=Shift_JIS">
+<title>Project D.E.V Libraly: クラス CEnvInfo</title>
+<link href="help.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 作成： Doxygen 1.4.1 -->
+<h1>クラス CEnvInfo</h1>環境周りの情報を扱うクラス  
+<a href="#_details">[詳細]</a>
+<p>
+<code>#include &lt;EnvInfo.h&gt;</code>
+<p>
+<a href="class_c_env_info-members.html">すべてのメンバ一覧</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Public 型</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_env_info.html#w8">eWIN_VER</a> { , <br>
+&nbsp;&nbsp;<a class="el" href="class_c_env_info.html#w8w1">WINNT3</a> =  0, 
+<a class="el" href="class_c_env_info.html#w8w2">WIN95</a>, 
+<a class="el" href="class_c_env_info.html#w8w3">WIN98</a>, 
+<a class="el" href="class_c_env_info.html#w8w4">WINME</a>, 
+<br>
+&nbsp;&nbsp;<a class="el" href="class_c_env_info.html#w8w5">WINNT4</a>, 
+<a class="el" href="class_c_env_info.html#w8w6">WIN2K</a>, 
+<a class="el" href="class_c_env_info.html#w8w7">WINXP</a>
+<br>
+ }</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Windowsのバージョンを表す列挙型.  <a href="class_c_env_info.html#w8">[詳細]</a><br></td></tr>
+<tr><td colspan="2"><br><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a0" doxytag="CEnvInfo::CEnvInfo"></a>
+&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_env_info.html#a0">CEnvInfo</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">コンストラクタ <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a1" doxytag="CEnvInfo::~CEnvInfo"></a>
+virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_env_info.html#a1">~CEnvInfo</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">デストラクタ <br></td></tr>
+<tr><td colspan="2"><br><h2>Static Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_env_info.html#e0">GetOSInfo</a> (char *pszOSName, DWORD &amp;dwBuild, char *pszCSD)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">OSのバージョンなどを文字列などで取得する.  <a href="#e0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_env_info.html#e1">GetProcesserInfo</a> (char *pszVender, char *pszType, char *pszLevel, char *pszRevison)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">プロセッサの情報を文字列で取得する  <a href="#e1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_env_info.html#e2">GetDeviceInfo</a> (HWND hWnd, PDEVICEINFO pDevInfo)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">GetDeviceCaps APIで取得できる情報をすべて取得する.  <a href="#e2"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>説明</h2>
+環境周りの情報を扱うクラス 
+<p>
+<dl compact><dt><b>作者:</b></dt><dd>Project D.E.V </dd></dl>
+
+<p>
+<hr><h2>列挙型</h2>
+<a class="anchor" name="w8" doxytag="CEnvInfo::eWIN_VER"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">enum <a class="el" href="class_c_env_info.html#w8">CEnvInfo::eWIN_VER</a>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Windowsのバージョンを表す列挙型. 
+<p>
+<dl compact><dt><b>列挙型の値: </b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" name="w8w1" doxytag="WINNT3"></a>WINNT3</em>&nbsp;</td><td>
+UNKNOW. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="w8w2" doxytag="WIN95"></a>WIN95</em>&nbsp;</td><td>
+Windows NT 3.x. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="w8w3" doxytag="WIN98"></a>WIN98</em>&nbsp;</td><td>
+Windows 95. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="w8w4" doxytag="WINME"></a>WINME</em>&nbsp;</td><td>
+Windows 98. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="w8w5" doxytag="WINNT4"></a>WINNT4</em>&nbsp;</td><td>
+Windows Me. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="w8w6" doxytag="WIN2K"></a>WIN2K</em>&nbsp;</td><td>
+Windows NT 4. </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="w8w7" doxytag="WINXP"></a>WINXP</em>&nbsp;</td><td>
+Windows XP以降. </td></tr>
+</table>
+</dl>
+    </td>
+  </tr>
+</table>
+<hr><h2>関数</h2>
+<a class="anchor" name="e2" doxytag="CEnvInfo::GetDeviceInfo"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">void CEnvInfo::GetDeviceInfo           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">HWND&nbsp;</td>
+          <td class="mdname" nowrap> <em>hWnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>PDEVICEINFO&nbsp;</td>
+          <td class="mdname" nowrap> <em>pDev</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [static]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+GetDeviceCaps APIで取得できる情報をすべて取得する. 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>hWnd</em>&nbsp;</td><td>ウィンドウハンドル </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pDev</em>&nbsp;</td><td>情報を取得するためのDEVICEINFO構造体のポインタ </td></tr>
+  </table>
+</dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="e0" doxytag="CEnvInfo::GetOSInfo"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int CEnvInfo::GetOSInfo           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszOSName</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>DWORD &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>dwBuild</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszCSD</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [static]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+OSのバージョンなどを文字列などで取得する. 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszOSName</em>&nbsp;</td><td>OS名(OUT) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>dwBuild</em>&nbsp;</td><td>ビルド番号(OUT) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pszCSD</em>&nbsp;</td><td>CSDバージョン(OUT) </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>OSの種別を表す値を返す(<a class="el" href="class_c_env_info.html#w8">CEnvInfo::eWIN_VER</a>の値) </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="e1" doxytag="CEnvInfo::GetProcesserInfo"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">void CEnvInfo::GetProcesserInfo           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszVender</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszType</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszLevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszRevison</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [static]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+プロセッサの情報を文字列で取得する 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszVender</em>&nbsp;</td><td>ベンダー(Out) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pszType</em>&nbsp;</td><td>タイプ(Out) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pszLevel</em>&nbsp;</td><td>レベル(Out) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pszRevison</em>&nbsp;</td><td>リビジョン(Out) </td></tr>
+  </table>
+</dl>
+    </td>
+  </tr>
+</table>
+<hr size="1"><address style="align: right;"><small>Project D.E.V Libralyに対してFri Jan 21 17:15:14 2005に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.1 </small></address>
+</body>
+</html>

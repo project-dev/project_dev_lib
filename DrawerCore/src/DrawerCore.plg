@@ -1,0 +1,41 @@
+<html>
+<body>
+<pre>
+<h1>ﾋﾞﾙﾄﾞのﾛｸﾞ</h1>
+<h3>
+--------------------構成: DrawerCore - Win32 Debug--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+一時ﾌｧｲﾙ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP4F9.tmp" を作成し、次の内容を記録します
+[
+Gdiplus.lib devlib.lib devmfc.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\lib\Debug/DrawerCore.pdb" /debug /machine:I386 /def:".\DrawerCore.def" /out:"..\bin\Debug/DrawerCore.dll" /implib:"..\lib\Debug/DrawerCore.lib" /pdbtype:sept /libpath:"..\..\..\_common\gdiplus" /libpath:"..\..\release\lib\debug" 
+\Other\project_dev_lib\DrawerCore\lib\Debug\DrawerConfig.obj
+\Other\project_dev_lib\DrawerCore\lib\Debug\DrawerCore.obj
+\Other\project_dev_lib\DrawerCore\lib\Debug\DrawerCore.res
+\Other\project_dev_lib\DrawerCore\lib\Debug\DrawerCtrl.obj
+\Other\project_dev_lib\DrawerCore\lib\Debug\DRawerEdit.obj
+\Other\project_dev_lib\DrawerCore\lib\Debug\DrawerPropDlg.obj
+\Other\project_dev_lib\DrawerCore\lib\Debug\DrawInfo.obj
+\Other\project_dev_lib\DrawerCore\lib\Debug\StdAfx.obj
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP4F9.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ﾘﾝｸ中...
+一時ﾌｧｲﾙ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP4FA.bat" を作成し、次の内容を記録します
+[
+@echo off
+copy /Y ..\lib\debug\drawercore.lib ..\..\release\lib\debug
+copy /Y ..\bin\debug\drawercore.dll ..\..\release\bin\debug
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP4FA.bat" の作成中
+
+        1 個のファイルをコピーしました。
+        1 個のファイルをコピーしました。
+
+
+
+<h3>結果</h3>
+DrawerCore.dll - ｴﾗｰ 0、警告 0
+</pre>
+</body>
+</html>

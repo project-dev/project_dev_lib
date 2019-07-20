@@ -1,0 +1,1604 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=Shift_JIS">
+<title>Project D.E.V Libraly: クラス CDevString</title>
+<link href="help.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 作成： Doxygen 1.4.1 -->
+<h1>クラス CDevString</h1>文字列を扱うクラスです 文字列を扱うクラスです。 MFCのCStringに似ています。  
+<a href="#_details">[詳細]</a>
+<p>
+<code>#include &lt;DevString.h&gt;</code>
+<p>
+<a href="class_c_dev_string-members.html">すべてのメンバ一覧</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a0" doxytag="CDevString::CDevString"></a>
+&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a0">CDevString</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">コンストラクタ <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a1" doxytag="CDevString::~CDevString"></a>
+virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a1">~CDevString</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">デストラクタ <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a2">CDevString</a> (<a class="el" href="class_c_dev_string.html">CDevString</a> &amp;strString)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">コピーコンストラクタ  <a href="#a2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a3">CDevString</a> (const char *pszText)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">コピーコンストラクタ  <a href="#a3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a4">CDevString</a> (char *pszText)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">コピーコンストラクタ  <a href="#a4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_c_dev_string.html">CDevString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a5">Left</a> (int nLen) const </td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">左からnLen文字取得する  <a href="#a5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_c_dev_string.html">CDevString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a6">Right</a> (int nLen) const </td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">右からnLen文字取得する  <a href="#a6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_c_dev_string.html">CDevString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a7">Mid</a> (int nLen) const </td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">nPosから後ろの文字取得する  <a href="#a7"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_c_dev_string.html">CDevString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a8">SubString</a> (int nStart, int nLen=-1) const </td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">nStartからnLenまでの範囲の文字列を取得する  <a href="#a8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_c_dev_string.html">CDevString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a9">LeftText</a> (int nLen)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">全角と半角を意識したLeft関数  <a href="#a9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_c_dev_string.html">CDevString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a10">RightText</a> (int nLen)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">全角と半角を意識したRight関数  <a href="#a10"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_c_dev_string.html">CDevString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a11">MidText</a> (int nLen)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">全角と半角を意識したMid関数  <a href="#a11"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_c_dev_string.html">CDevString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a12">SubStringText</a> (int nStart, int nLen=-1)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">全角と半角を意識したSubString関数  <a href="#a12"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a13" doxytag="CDevString::Trim"></a>
+void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a13">Trim</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">文字列の左右の半角空白を除去する <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a14" doxytag="CDevString::TrimLeft"></a>
+void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a14">TrimLeft</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">文字列の左の半角空白を除去する <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a15" doxytag="CDevString::TrimRight"></a>
+void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a15">TrimRight</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">文字列の右の半角空白を除去する <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a16" doxytag="CDevString::Empty"></a>
+void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a16">Empty</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">文字列を空にする <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a17" doxytag="CDevString::IsEmpty"></a>
+bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a17">IsEmpty</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">文字列が空かどうかのチェック <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a18">SetAt</a> (int nIndex, char ch)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">任意の位置に文字を設定する  <a href="#a18"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a19">Find</a> (char *pszFind, int nStart=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">文字列を検索する  <a href="#a19"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a20">Find</a> (const char *pszFind, int nStart=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">文字列を検索する  <a href="#a20"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a21">Find</a> (<a class="el" href="class_c_dev_string.html">CDevString</a> &amp;strFind, int nStart=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">文字列を検索する  <a href="#a21"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a22">ReverseFind</a> (char *pszFind)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">文字列を末尾から検索する  <a href="#a22"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a23">ReverseFind</a> (const char *pszFind)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">文字列を末尾から検索する  <a href="#a23"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a24">ReverseFind</a> (<a class="el" href="class_c_dev_string.html">CDevString</a> &amp;strFind)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">文字列を末尾から検索する  <a href="#a24"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a25">Replace</a> (const char *pszNew, const char *pszOld)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">最初に一致する文字列を置き換える  <a href="#a25"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a26">ReplaceAll</a> (const char *pszNew, const char *pszOld)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">一致する文字列をすべて置き換える  <a href="#a26"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a27">FindText</a> (char *pszFind, int nStart=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">全角半角を意識したFind関数  <a href="#a27"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a28">FindText</a> (const char *pszFind, int nStart=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">全角半角を意識したFind関数  <a href="#a28"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a29">FindText</a> (<a class="el" href="class_c_dev_string.html">CDevString</a> &amp;strFind, int nStart=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">全角半角を意識したFind関数  <a href="#a29"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a30">ReverseFindText</a> (char *pszFind)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">全角半角を意識したReverseFind関数  <a href="#a30"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a31">ReverseFindText</a> (const char *pszFind)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">全角半角を意識したReverseFind関数  <a href="#a31"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a32">ReverseFindText</a> (<a class="el" href="class_c_dev_string.html">CDevString</a> &amp;strFind)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">全角半角を意識したReverseFind関数  <a href="#a32"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a33">ReplaceText</a> (const char *pszNew, const char *pszOld, int nPos=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">全角半角を意識したReplace関数  <a href="#a33"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a34">ReplaceAllText</a> (const char *pszNew, const char *pszOld)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">全角半角を意識したReplaceAll関数  <a href="#a34"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a35">Compare</a> (const char *pszTarget1)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">文字列を比較する  <a href="#a35"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a36">CompareNoCase</a> (const char *pszTarget1)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">文字列を大文字小文字を区別せず比較する  <a href="#a36"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a37">GetLength</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">文字列の長さを取得する  <a href="#a37"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a38">GetBuffer</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">文字列をchar*型で取得する <dl compact><dt><b>注意:</b></dt><dd><a class="el" href="class_c_dev_string.html#a39">ReleaseBuffer()</a>関数で取得した戻り値を解放してください。 </dd></dl>
+ <a href="#a38"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a39" doxytag="CDevString::ReleaseBuffer"></a>
+void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a39">ReleaseBuffer</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">GetBufferで取得した文字列を解放する この関数を利用しない場合、次回のGetBuffer()かデストラクタで内部的に解放します. <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a40">GetAt</a> (int nIndex)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">任意の位置の文字を取得する  <a href="#a40"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a41">GetTextLength</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">全角半角を意識したGetLength関数  <a href="#a41"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a42">GetTextAt</a> (int nIndex, <a class="el" href="class_c_dev_string.html">CDevString</a> &amp;strAt)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">全角半角を意識したGetAt関数  <a href="#a42"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a43" doxytag="CDevString::operator="></a>
+<a class="el" href="class_c_dev_string.html">CDevString</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a43">operator=</a> (const char *pszText)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">代入オペレータ <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a44" doxytag="CDevString::operator="></a>
+<a class="el" href="class_c_dev_string.html">CDevString</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a44">operator=</a> (char *pszText)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">代入オペレータ <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a45" doxytag="CDevString::operator="></a>
+<a class="el" href="class_c_dev_string.html">CDevString</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a45">operator=</a> (char ch)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">代入オペレータ <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a46" doxytag="CDevString::operator="></a>
+<a class="el" href="class_c_dev_string.html">CDevString</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a46">operator=</a> (<a class="el" href="class_c_dev_string.html">CDevString</a> *strString)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">代入オペレータ <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a47" doxytag="CDevString::operator="></a>
+<a class="el" href="class_c_dev_string.html">CDevString</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a47">operator=</a> (<a class="el" href="class_c_dev_string.html">CDevString</a> &amp;strString)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">代入オペレータ <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a48" doxytag="CDevString::operator const char *"></a>
+&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a48">operator const char *</a> () const </td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">const charオペレータ <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a49" doxytag="CDevString::operator[]"></a>
+char&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a49">operator[]</a> (int nIndex)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">配列オペレータ <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a50" doxytag="CDevString::operator+="></a>
+<a class="el" href="class_c_dev_string.html">CDevString</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a50">operator+=</a> (const char *pszText)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">代入オペレータ <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a51" doxytag="CDevString::operator+="></a>
+<a class="el" href="class_c_dev_string.html">CDevString</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a51">operator+=</a> (char *pszText)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">代入オペレータ <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a52" doxytag="CDevString::operator+="></a>
+<a class="el" href="class_c_dev_string.html">CDevString</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a52">operator+=</a> (char ch)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">代入オペレータ <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a53" doxytag="CDevString::operator+="></a>
+<a class="el" href="class_c_dev_string.html">CDevString</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a53">operator+=</a> (<a class="el" href="class_c_dev_string.html">CDevString</a> *strString)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">代入オペレータ <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a54" doxytag="CDevString::operator+="></a>
+<a class="el" href="class_c_dev_string.html">CDevString</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_dev_string.html#a54">operator+=</a> (<a class="el" href="class_c_dev_string.html">CDevString</a> &amp;strString)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">代入オペレータ <br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>説明</h2>
+文字列を扱うクラスです 文字列を扱うクラスです。 MFCのCStringに似ています。 
+<p>
+<dl compact><dt><b>作者:</b></dt><dd>Project D.E.V </dd></dl>
+
+<p>
+<hr><h2>コンストラクタとデストラクタ</h2>
+<a class="anchor" name="a2" doxytag="CDevString::CDevString"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">CDevString::CDevString           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="class_c_dev_string.html">CDevString</a> &amp;&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>strString</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+コピーコンストラクタ 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>strString</em>&nbsp;</td><td>コピーするCDevString </td></tr>
+  </table>
+</dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a3" doxytag="CDevString::CDevString"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">CDevString::CDevString           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const char *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>pszText</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+コピーコンストラクタ 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszText</em>&nbsp;</td><td>コピーする文字列 </td></tr>
+  </table>
+</dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a4" doxytag="CDevString::CDevString"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">CDevString::CDevString           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">char *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>pszText</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+コピーコンストラクタ 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszText</em>&nbsp;</td><td>コピーする文字列 </td></tr>
+  </table>
+</dl>
+    </td>
+  </tr>
+</table>
+<hr><h2>関数</h2>
+<a class="anchor" name="a35" doxytag="CDevString::Compare"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int CDevString::Compare           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const char *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>pszTarget</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+文字列を比較する 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszTarget</em>&nbsp;</td><td>比較する文字 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>-1 pszTargetが小さい場合<br>
+0 同じ<br>
+1 pszTargetが大きい場合 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a36" doxytag="CDevString::CompareNoCase"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int CDevString::CompareNoCase           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const char *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>pszTarget</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+文字列を大文字小文字を区別せず比較する 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszTarget</em>&nbsp;</td><td>比較する文字 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>-1 pszTargetが小さい場合<br>
+0 同じ<br>
+1 pszTargetが大きい場合 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a21" doxytag="CDevString::Find"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int CDevString::Find           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="class_c_dev_string.html">CDevString</a> &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>strFind</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>nStart</em> = <code>0</code></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+文字列を検索する 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>strFind</em>&nbsp;</td><td>検索文字列 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nStart</em>&nbsp;</td><td>検索開始位置。 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>出現位置。見つからない場合は-1 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a20" doxytag="CDevString::Find"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int CDevString::Find           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszFind</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>nStart</em> = <code>0</code></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+文字列を検索する 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszFind</em>&nbsp;</td><td>検索文字列 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nStart</em>&nbsp;</td><td>検索開始位置。 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>出現位置。見つからない場合は-1 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a19" doxytag="CDevString::Find"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int CDevString::Find           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszFind</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>nStart</em> = <code>0</code></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+文字列を検索する 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszFind</em>&nbsp;</td><td>検索文字列 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nStart</em>&nbsp;</td><td>検索開始位置。 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>出現位置。見つからない場合は-1 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a29" doxytag="CDevString::FindText"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int CDevString::FindText           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="class_c_dev_string.html">CDevString</a> &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>strFind</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>nStart</em> = <code>0</code></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+全角半角を意識したFind関数 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>strFind</em>&nbsp;</td><td>検索文字列 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nStart</em>&nbsp;</td><td>検索開始位置。 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>出現位置。見つからない場合は-1 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a28" doxytag="CDevString::FindText"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int CDevString::FindText           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszFind</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>nStart</em> = <code>0</code></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+全角半角を意識したFind関数 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszFind</em>&nbsp;</td><td>検索文字列 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nStart</em>&nbsp;</td><td>検索開始位置。 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>出現位置。見つからない場合は-1 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a27" doxytag="CDevString::FindText"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int CDevString::FindText           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszFind</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>nStart</em> = <code>0</code></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+全角半角を意識したFind関数 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszFind</em>&nbsp;</td><td>検索文字列 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nStart</em>&nbsp;</td><td>検索開始位置。 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>出現位置。見つからない場合は-1 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a40" doxytag="CDevString::GetAt"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">char CDevString::GetAt           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>nIndex</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+任意の位置の文字を取得する 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>nIndex</em>&nbsp;</td><td>位置 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>文字 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a38" doxytag="CDevString::GetBuffer"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">char * CDevString::GetBuffer           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+文字列をchar*型で取得する <dl compact><dt><b>注意:</b></dt><dd><a class="el" href="class_c_dev_string.html#a39">ReleaseBuffer()</a>関数で取得した戻り値を解放してください。 </dd></dl>
+
+<p>
+<dl compact><dt><b>戻り値:</b></dt><dd>文字列 </dd></dl>
+<dl compact><dt><b>参照:</b></dt><dd><a class="el" href="class_c_dev_string.html#a39">CDevString::ReleaseBuffer()</a> </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a37" doxytag="CDevString::GetLength"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int CDevString::GetLength           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+文字列の長さを取得する 
+<p>
+<dl compact><dt><b>戻り値:</b></dt><dd>文字列の長さ </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a42" doxytag="CDevString::GetTextAt"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">bool CDevString::GetTextAt           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int&nbsp;</td>
+          <td class="mdname" nowrap> <em>nPos</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap><a class="el" href="class_c_dev_string.html">CDevString</a> &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>strRet</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+全角半角を意識したGetAt関数 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>nPos</em>&nbsp;</td><td>位置 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>strRet</em>&nbsp;</td><td>nPosの位置にある文字(OUT) </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>取得できた場合は true。そうでない場合は false </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a41" doxytag="CDevString::GetTextLength"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int CDevString::GetTextLength           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+全角半角を意識したGetLength関数 
+<p>
+<dl compact><dt><b>戻り値:</b></dt><dd>文字列の長さ </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a5" doxytag="CDevString::Left"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"><a class="el" href="class_c_dev_string.html">CDevString</a> CDevString::Left           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>nLen</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap> const</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+左からnLen文字取得する 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>nLen</em>&nbsp;</td><td>取得文字数 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>抜き出した文字列 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a9" doxytag="CDevString::LeftText"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"><a class="el" href="class_c_dev_string.html">CDevString</a> CDevString::LeftText           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>nLen</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+全角と半角を意識したLeft関数 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>nLen</em>&nbsp;</td><td>取得文字数 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>抜き出した文字列 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a7" doxytag="CDevString::Mid"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"><a class="el" href="class_c_dev_string.html">CDevString</a> CDevString::Mid           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>nPos</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap> const</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+nPosから後ろの文字取得する 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>nPos</em>&nbsp;</td><td>開始位置 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>抜き出した文字列 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a11" doxytag="CDevString::MidText"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"><a class="el" href="class_c_dev_string.html">CDevString</a> CDevString::MidText           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>nFirst</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+全角と半角を意識したMid関数 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>nFirst</em>&nbsp;</td><td>開始位置 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>抜き出した文字列 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a25" doxytag="CDevString::Replace"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int CDevString::Replace           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszNew</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>const char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszOld</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+最初に一致する文字列を置き換える 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszNew</em>&nbsp;</td><td>置き換え対象文字列 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pszOld</em>&nbsp;</td><td>置き換える文字列 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>置き換えた文字数。置き換えが発生しなかった場合は0 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a26" doxytag="CDevString::ReplaceAll"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int CDevString::ReplaceAll           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszNew</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>const char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszOld</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+一致する文字列をすべて置き換える 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszNew</em>&nbsp;</td><td>置き換え対象文字列 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pszOld</em>&nbsp;</td><td>置き換える文字列 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>置き換えた文字数。置き換えが発生しなかった場合は0 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a34" doxytag="CDevString::ReplaceAllText"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int CDevString::ReplaceAllText           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszNew</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>const char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszOld</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+全角半角を意識したReplaceAll関数 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszNew</em>&nbsp;</td><td>置き換え対象文字列 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pszOld</em>&nbsp;</td><td>置き換える文字列 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>置き換えた文字数。置き換えが発生しなかった場合は0 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a33" doxytag="CDevString::ReplaceText"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int CDevString::ReplaceText           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszNew</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>const char *&nbsp;</td>
+          <td class="mdname" nowrap> <em>pszOld</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>nFindPos</em> = <code>0</code></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+全角半角を意識したReplace関数 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszNew</em>&nbsp;</td><td>置き換え対象文字列 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pszOld</em>&nbsp;</td><td>置き換える文字列 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>置き換えた文字数。置き換えが発生しなかった場合は0 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a24" doxytag="CDevString::ReverseFind"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int CDevString::ReverseFind           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="class_c_dev_string.html">CDevString</a> &amp;&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>strFind</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+文字列を末尾から検索する 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>strFind</em>&nbsp;</td><td>検索文字列 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>出現位置。見つからない場合は-1 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a23" doxytag="CDevString::ReverseFind"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int CDevString::ReverseFind           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const char *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>pszFind</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+文字列を末尾から検索する 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszFind</em>&nbsp;</td><td>検索文字列 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>出現位置。見つからない場合は-1 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a22" doxytag="CDevString::ReverseFind"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int CDevString::ReverseFind           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">char *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>pszFind</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+文字列を末尾から検索する 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszFind</em>&nbsp;</td><td>検索文字列 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>出現位置。見つからない場合は-1 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a32" doxytag="CDevString::ReverseFindText"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int CDevString::ReverseFindText           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="class_c_dev_string.html">CDevString</a> &amp;&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>strFind</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+全角半角を意識したReverseFind関数 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>strFind</em>&nbsp;</td><td>検索文字列 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>出現位置。見つからない場合は-1 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a31" doxytag="CDevString::ReverseFindText"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int CDevString::ReverseFindText           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const char *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>pszFind</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+全角半角を意識したReverseFind関数 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszFind</em>&nbsp;</td><td>検索文字列 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>出現位置。見つからない場合は-1 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a30" doxytag="CDevString::ReverseFindText"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int CDevString::ReverseFindText           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">char *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>pszFind</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+全角半角を意識したReverseFind関数 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszFind</em>&nbsp;</td><td>検索文字列 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>出現位置。見つからない場合は-1 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a6" doxytag="CDevString::Right"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"><a class="el" href="class_c_dev_string.html">CDevString</a> CDevString::Right           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>nLen</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap> const</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+右からnLen文字取得する 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>nLen</em>&nbsp;</td><td>取得文字数 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>抜き出した文字列 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a10" doxytag="CDevString::RightText"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"><a class="el" href="class_c_dev_string.html">CDevString</a> CDevString::RightText           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>nLen</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+全角と半角を意識したRight関数 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>nLen</em>&nbsp;</td><td>取得文字数 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>抜き出した文字列 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a18" doxytag="CDevString::SetAt"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">void CDevString::SetAt           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int&nbsp;</td>
+          <td class="mdname" nowrap> <em>nIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>char&nbsp;</td>
+          <td class="mdname" nowrap> <em>ch</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+任意の位置に文字を設定する 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>nIndex</em>&nbsp;</td><td>位置 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>ch</em>&nbsp;</td><td>セットする文字 </td></tr>
+  </table>
+</dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a8" doxytag="CDevString::SubString"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"><a class="el" href="class_c_dev_string.html">CDevString</a> CDevString::SubString           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int&nbsp;</td>
+          <td class="mdname" nowrap> <em>nStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>nLen</em> = <code>-1</code></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"> const</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+nStartからnLenまでの範囲の文字列を取得する 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>nStart</em>&nbsp;</td><td>開始位置 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nLen</em>&nbsp;</td><td>長さ。-1の場合は末尾まで </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>抜き出した文字列 </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a12" doxytag="CDevString::SubStringText"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"><a class="el" href="class_c_dev_string.html">CDevString</a> CDevString::SubStringText           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int&nbsp;</td>
+          <td class="mdname" nowrap> <em>nFirst</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>nLen</em> = <code>-1</code></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+全角と半角を意識したSubString関数 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>nFirst</em>&nbsp;</td><td>開始位置 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nLen</em>&nbsp;</td><td>長さ </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>抜き出した文字列 </dd></dl>
+    </td>
+  </tr>
+</table>
+<hr size="1"><address style="align: right;"><small>Project D.E.V Libralyに対してFri Jan 21 17:15:14 2005に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.1 </small></address>
+</body>
+</html>

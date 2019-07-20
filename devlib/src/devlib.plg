@@ -1,0 +1,160 @@
+<html>
+<body>
+<pre>
+<h1>ﾋﾞﾙﾄﾞのﾛｸﾞ</h1>
+<h3>
+--------------------構成: devstaticlib - Win32 Release--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+一時ﾌｧｲﾙ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSPB7.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\release\include\devstaticlib" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/devstaticlib.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\Program\project_dev_lib\devstaticlib\src\IniFile.cpp"
+"F:\Program\project_dev_lib\devstaticlib\src\LogFile.cpp"
+"F:\Program\project_dev_lib\devstaticlib\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSPB7.tmp" 
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe -lib /nologo /out:"..\..\Release\lib\Release\devstaticlib.lib"  .\Release\IniFile.obj .\Release\LogFile.obj .\Release\StdAfx.obj " の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ｺﾝﾊﾟｲﾙ中...
+IniFile.cpp
+LogFile.cpp
+StdAfx.cpp
+ﾗｲﾌﾞﾗﾘを作成中...
+<h3>
+--------------------構成: devjava - Win32 Release--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+Creating command line "rc.exe /l 0x411 /fo"..\lib\Release/devjava.res" /d "NDEBUG" "F:\Program\project_dev_lib\devjava\src\devjava.rc"" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSPB8.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\release\include\devjava" /I "..\..\release\include\devstaticlib" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "DEVJAVA_EXPORTS" /FR"..\lib\Release/" /Fp"..\lib\Release/devjava.pch" /Yu"stdafx.h" /Fo"..\lib\Release/" /Fd"..\lib\Release/" /FD /c 
+"F:\Program\project_dev_lib\devjava\src\ByteArrayOutputStream.cpp"
+"F:\Program\project_dev_lib\devjava\src\devjava.cpp"
+"F:\Program\project_dev_lib\devjava\src\StringBuffer.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSPB8.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSPB9.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\release\include\devjava" /I "..\..\release\include\devstaticlib" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "DEVJAVA_EXPORTS" /FR"..\lib\Release/" /Fp"..\lib\Release/devjava.pch" /Yc"stdafx.h" /Fo"..\lib\Release/" /Fd"..\lib\Release/" /FD /c 
+"F:\Program\project_dev_lib\devjava\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSPB9.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSPBA.tmp" を作成し、次の内容を記録します
+[
+devstaticlib.lib /nologo /dll /incremental:no /pdb:"..\lib\Release/devjava.pdb" /machine:I386 /out:"..\..\Release\bin\Release/devjava.dll" /implib:"..\lib\Release/devjava.lib" /libpath:"..\..\release\lib\release" 
+\Program\project_dev_lib\devjava\lib\Release\ByteArrayOutputStream.obj
+\Program\project_dev_lib\devjava\lib\Release\devjava.obj
+\Program\project_dev_lib\devjava\lib\Release\StdAfx.obj
+\Program\project_dev_lib\devjava\lib\Release\StringBuffer.obj
+\Program\project_dev_lib\devjava\lib\Release\devjava.res
+\Program\project_dev_lib\Release\lib\Release\devstaticlib.lib
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSPBA.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ﾘｿｰｽをｺﾝﾊﾟｲﾙ中...
+ｺﾝﾊﾟｲﾙ中...
+StdAfx.cpp
+ｺﾝﾊﾟｲﾙ中...
+ByteArrayOutputStream.cpp
+devjava.cpp
+StringBuffer.cpp
+ｺｰﾄﾞを生成中...
+ﾘﾝｸ中...
+   ﾗｲﾌﾞﾗﾘ ..\lib\Release/devjava.lib とｵﾌﾞｼﾞｪｸﾄ ..\lib\Release/devjava.exp を作成中
+一時ﾌｧｲﾙ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSPBE.bat" を作成し、次の内容を記録します
+[
+@echo off
+..\..\..\_common\upx.exe -9 ..\..\Release\bin\release\devjava.dll
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSPBE.bat" の作成中
+
+                       Ultimate Packer for eXecutables
+  Copyright (C) 1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007
+UPX 3.00w       Markus Oberhumer, Laszlo Molnar & John Reiser   Apr 27th 2007
+
+        File size         Ratio      Format      Name
+   --------------------   ------   -----------   -----------
+     36864 ->     12288   33.33%    win32/pe     devjava.dll
+
+Packed 1 file.
+<h3>
+--------------------構成: devlib - Win32 Release--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+Creating command line "rc.exe /l 0x411 /fo"..\lib\Release/devlib.res" /d "NDEBUG" "F:\Program\project_dev_lib\devlib\src\devlib.rc"" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSPBF.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\release\include\devlib" /I "..\..\release\include\devjava" /I "..\..\release\include\devstaticlib" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "DEVLIB_EXPORTS" /FR"..\lib\Release/" /Fp"..\lib\Release/devlib.pch" /Yu"stdafx.h" /Fo"..\lib\Release/" /Fd"..\lib\Release/" /FD /c 
+"F:\Program\project_dev_lib\devlib\src\Cryptography.cpp"
+"F:\Program\project_dev_lib\devlib\src\DebugSupport.cpp"
+"F:\Program\project_dev_lib\devlib\src\devlib.cpp"
+"F:\Program\project_dev_lib\devlib\src\devlib_debug.cpp"
+"F:\Program\project_dev_lib\devlib\src\devlib_file.cpp"
+"F:\Program\project_dev_lib\devlib\src\devlib_main.cpp"
+"F:\Program\project_dev_lib\devlib\src\DevString.cpp"
+"F:\Program\project_dev_lib\devlib\src\EnvInfo.cpp"
+"F:\Program\project_dev_lib\devlib\src\FileDialogEx.cpp"
+"F:\Program\project_dev_lib\devlib\src\FolderDialog.cpp"
+"F:\Program\project_dev_lib\devlib\src\ImageObject.cpp"
+"F:\Program\project_dev_lib\devlib\src\StringEncode.cpp"
+"F:\Program\project_dev_lib\devmfc\src\AbstractWnd.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSPBF.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSPC0.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\release\include\devlib" /I "..\..\release\include\devjava" /I "..\..\release\include\devstaticlib" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "DEVLIB_EXPORTS" /FR"..\lib\Release/" /Fp"..\lib\Release/devlib.pch" /Yc"stdafx.h" /Fo"..\lib\Release/" /Fd"..\lib\Release/" /FD /c 
+"F:\Program\project_dev_lib\devlib\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSPC0.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSPC1.tmp" を作成し、次の内容を記録します
+[
+kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib Version.lib devjava.lib devstaticlib.lib /nologo /dll /incremental:no /pdb:"..\lib\Release/devlib.pdb" /machine:I386 /out:"..\..\Release\bin\Release/devlib.dll" /implib:"..\lib\Release/devlib.lib" /libpath:"..\..\release\lib\release" 
+\Program\project_dev_lib\devlib\lib\Release\Cryptography.obj
+\Program\project_dev_lib\devlib\lib\Release\DebugSupport.obj
+\Program\project_dev_lib\devlib\lib\Release\devlib.obj
+\Program\project_dev_lib\devlib\lib\Release\devlib_debug.obj
+\Program\project_dev_lib\devlib\lib\Release\devlib_file.obj
+\Program\project_dev_lib\devlib\lib\Release\devlib_main.obj
+\Program\project_dev_lib\devlib\lib\Release\DevString.obj
+\Program\project_dev_lib\devlib\lib\Release\EnvInfo.obj
+\Program\project_dev_lib\devlib\lib\Release\FileDialogEx.obj
+\Program\project_dev_lib\devlib\lib\Release\FolderDialog.obj
+\Program\project_dev_lib\devlib\lib\Release\ImageObject.obj
+\Program\project_dev_lib\devlib\lib\Release\StdAfx.obj
+\Program\project_dev_lib\devlib\lib\Release\StringEncode.obj
+\Program\project_dev_lib\devlib\lib\Release\devlib.res
+\Program\project_dev_lib\devlib\lib\Release\AbstractWnd.obj
+\Program\project_dev_lib\devjava\lib\Release\devjava.lib
+\Program\project_dev_lib\Release\lib\Release\devstaticlib.lib
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSPC1.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ﾘｿｰｽをｺﾝﾊﾟｲﾙ中...
+ｺﾝﾊﾟｲﾙ中...
+StdAfx.cpp
+ｺﾝﾊﾟｲﾙ中...
+Cryptography.cpp
+DebugSupport.cpp
+devlib.cpp
+devlib_debug.cpp
+devlib_file.cpp
+devlib_main.cpp
+DevString.cpp
+EnvInfo.cpp
+FileDialogEx.cpp
+FolderDialog.cpp
+ImageObject.cpp
+StringEncode.cpp
+AbstractWnd.cpp
+F:\Program\project_dev_lib\devmfc\src\AbstractWnd.cpp(2) : fatal error C1083: ｲﾝｸﾙｰﾄﾞ ﾌｧｲﾙがｵｰﾌﾟﾝできません。'AbstractWnd.h': No such file or directory
+ｺｰﾄﾞを生成中...
+cl.exe の実行ｴﾗｰ
+
+
+
+<h3>結果</h3>
+devlib.dll - ｴﾗｰ 1、警告 0
+</pre>
+</body>
+</html>

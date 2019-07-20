@@ -1,0 +1,172 @@
+/*
+	//参考：http://msds.m-stone.co.jp/msdsweb/doc/JP/i_sql.html
+	CString strSql;
+	switch(m_eDBType){
+	case SQLSERVER:
+		if(pszDBName){
+			strSql.Format("sp_tables @table_qualifier='%s'", pszDBName);
+		}else{
+			strSql.Format("sp_tables");
+		}
+		break;
+	case ACCESS:
+		strSql = "SELECT "
+				 "    '' AS TABLE_QUALIFIER "
+				 "   ,Owner AS TABLE_OWNER "
+				 "   ,Name AS TABLE_NAME "
+				 "   ,'T' AS TABLE_TYPE "
+				 " FROM MSysObjects "
+				 " WHERE Left([Name], 1) <> '~' "
+				 " AND Left([Name], 4) <> 'Msys' "
+				 " AND Type = 1 OR Type = 5"
+				 " ORDER BY Owner, Name ";
+		break;
+	case ODBC:
+		switch(m_eODBCType){
+		case ODBC_DB2:
+			strSql = "SELECT "
+					 "    '' AS TABLE_QUALIFIER "
+					 "   ,TABSCHEMA AS TABLE_OWNER"
+					 "   ,TABNAME AS TABLE_NAME"
+					 "   ,TYPE AS TABLE_TYPE"
+					 "FROM SYSCAT.TABLES "
+					 "WHERE TABSCHEMA <> 'SYSCAT' "
+					 "AND TABSCHEMA <> 'SYSIBM' "
+					 "AND TABSCHEMA <> 'SYSSTAT' "
+					 "ORDER BY TABSCHEMA, TABNAME";
+			break;
+		case ODBC_ORACLE:
+			strSql = "SELECT '', TABLE_NAME FROM TABS";
+			break;
+		case ODBC_ACCESS:
+#if 0
+			//問題があったときだけ使う
+			strSql = "SELECT Owner, Name FROM MSysObjects "
+					 "WHERE Left([Name], 1) <> '~' "
+					 "AND Left([Name], 4) <> 'Msys' "
+					 "AND Type = 1 OR Type = 5"
+					 "ORDER BY Owner, Name ";
+#else
+			if(pszDBName){
+				strSql.Format("sp_tables @table_qualifier='%s'", pszDBName);
+			}else{
+				strSql.Format("sp_tables");
+			}
+#endif
+			break;
+		case ODBC_SQLSERVER:
+#if 0
+			//問題があったときだけ使う
+			strSql = "SELECT "
+					 "    '' AS TABLE_QUALIFIER "
+					 "    u.name AS TABLE_OWNER "
+					 "   ,o.name AS TABLE_NAME "
+					 "   ,o.type AS TABLE_TYPE "
+					 "FROM sysobjects o "
+					 "LEFT JOIN sysusers u ON o.uid = u.uid"
+					 "WHERE o.type = 'U' OR o.type = 'V'"
+					 "ORDER BY u.name, o.name";
+#else
+			if(pszDBName){
+				strSql.Format("sp_tables @table_qualifier='%s'", pszDBName);
+			}else{
+				strSql.Format("sp_tables");
+			}
+#endif
+			break;
+		case ODBC_SYBASE:
+			strSql = "SELECT "
+					 "    '' AS TABLE_QUALIFIER "
+					 "    u.name AS TABLE_OWNER "
+					 "   ,o.name AS TABLE_NAME "
+					 "   ,o.type AS TABLE_TYPE"
+					 "FROM sysobjects o "
+					 "LEFT JOIN sysusers u ON o.uid = u.uid"
+					 "WHERE o.type = 'U' OR o.type = 'V'"
+					 "ORDER BY u.name, o.name";
+			break;
+		case ODBC_POSTGRESQL:
+			strSql = "SELECT "
+					 "    '' AS TABLE_QUALIFIER "
+					 "   ,'' AS TABLE_OWNER "
+					 "   ,c.relname AS TABLE_NAME"
+					 "   ,'T' AS TABLE_TYPE "
+					 "FROM (pg_class c LEFT JOIN pg_namespace n "
+					 "ON ((n.oid = c.relnamespace)))"
+					 "WHERE ((c.relkind = 'r'::\"char\") "
+					 "OR (c.relkind = 's'::\"char\") "
+					 "OR (c.relkind = 'v'::\"char\"))";
+			break;
+		}
+		break;
+	case ORACLE:
+		strSql = "SELECT '', TABLE_NAME FROM TABS";
+		break;
+	default:
+		break;
+	}
+
+	CComBSTR bSql = strSql;
+	_RecordsetPtr rs = NULL;
+	try{
+		m_pCommand->ActiveConnection = m_pConnect;
+		m_pCommand->CommandText = bSql.m_str;
+		m_pCommand->CommandType = adCmdUnknown;
+//		m_pCommand->Parameters = NULL;
+		m_pCommand->CommandTimeout = 30;
+		rs = m_pCommand->Execute(NULL, NULL, 0);
+	}catch(_com_error &e){
+		DispError(e.Description());
+		rs = NULL;
+	}
+	
+	if(rs == NULL){
+		return rs;
+	}
+
+	_variant_t val;
+	CString strVal;
+	while(rs->EndOfFile == VARIANT_FALSE){
+		pInfo = new TABLEINFO;
+		memset(pInfo, 0, sizeof(TABLEINFO));
+		
+		val = GetFieldValue(rs, "TABLE_QUALIFIER");
+		strVal = val.bstrVal;
+		strcpy(pInfo->szQualifier, strVal);
+	
+		val = GetFieldValue(rs, "TABLE_OWNER");
+		strVal = val.bstrVal;
+		strcpy(pInfo->szOwner, strVal);
+	
+		val = GetFieldValue(rs, "TABLE_NAME");
+		strVal = val.bstrVal;
+		strKey = strVal;
+		strcpy(pInfo->szTableName, strVal);
+	
+		val = GetFieldValue(rs, "TABLE_TYPE");
+		strVal = val.bstrVal;
+
+		if(!strVal.Compare("TABLE") || !strVal.Compare("T") || !strVal.Compare("U") || !strVal.Compare("")){
+			pInfo->nType = T_TABLE;
+
+		}else if(!strVal.Compare("SYSTEM TABLE")){
+			pInfo->nType = T_SYSTEMTABLE;
+		
+		}else if(!strVal.Compare("VIEW") || !strVal.Compare("V")){
+			pInfo->nType = T_VIEW;
+		
+		}else{
+			pInfo->nType = T_UNKNOW;
+		}
+		m_arrTableInfo.SetAt(strKey, pInfo);
+		rs->MoveNext();
+	}
+	
+	rs->Close();
+	m_pCommand->ActiveConnection = m_pConnect;
+	m_pCommand->CommandText = bSql.m_str;
+	m_pCommand->CommandType = adCmdUnknown;
+//	m_pCommand->Parameters = NULL;
+	m_pCommand->CommandTimeout = 30;
+	rs = m_pCommand->Execute(NULL, NULL, 0);
+*/

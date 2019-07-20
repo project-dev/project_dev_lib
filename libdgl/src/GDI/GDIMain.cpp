@@ -1,0 +1,28 @@
+// GDIMain.cpp: CGDIMain クラスのインプリメンテーション
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "GDIMain.h"
+#include <stdio.h>
+
+//////////////////////////////////////////////////////////////////////
+// 構築/消滅
+//////////////////////////////////////////////////////////////////////
+
+CGDIMain::CGDIMain(){
+
+}
+
+CGDIMain::~CGDIMain(){
+
+}
+
+bool CGDIMain::Initalize(){
+	m_objBackBuff.Create(this);
+	return true;
+}
+
+void CGDIMain::OnPaint(){
+//	CDGLMain::OnPaint();
+	m_objBackBuff.DrawDisp(0, 0, 0, 0);
+}

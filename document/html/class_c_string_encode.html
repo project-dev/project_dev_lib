@@ -1,0 +1,808 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=Shift_JIS">
+<title>Project D.E.V Libraly: クラス CStringEncode</title>
+<link href="help.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 作成： Doxygen 1.4.1 -->
+<h1>クラス CStringEncode</h1>文字列のエンコードを扱うクラス  
+<a href="#_details">[詳細]</a>
+<p>
+<code>#include &lt;StringEncode.h&gt;</code>
+<p>
+<a href="class_c_string_encode-members.html">すべてのメンバ一覧</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a0" doxytag="CStringEncode::CStringEncode"></a>
+&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_string_encode.html#a0">CStringEncode</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">コンストラクタ <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a1" doxytag="CStringEncode::~CStringEncode"></a>
+virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_string_encode.html#a1">~CStringEncode</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">デストラクタ <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_string_encode.html#a2">CheckCode</a> (char *pszBuff)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">文字コードのチェック  <a href="#a2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_string_encode.html#a3">toURL</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">URL文字列に変換します.  <a href="#a3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_string_encode.html#a4">decodeURL</a> (char *chars)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">URL文字をデコードします.  <a href="#a4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_string_encode.html#a5">toBASE64</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">BASE64にエンコード.  <a href="#a5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_string_encode.html#a6">decodeBASE64</a> (const char *base64s)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">BASE64形式の文字列をデコード.  <a href="#a6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_string_encode.html#a7">getBasebyte</a> (int pos)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">変換テーブル内に一致する場所を取得  <a href="#a7"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_string_encode.html#a8">sjis2utf8</a> (char *sjischars)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">SJISをUTF-8に変換します.  <a href="#a8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_string_encode.html#a9">toUTF8</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">UTF-8に変換します.  <a href="#a9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_string_encode.html#a10">toEUC</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">EUCに変換します.  <a href="#a10"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_string_encode.html#a11">toSJIS</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">SJISに変換します.  <a href="#a11"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_string_encode.html#a12">toJIS</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">JISに変換します.  <a href="#a12"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_string_encode.html#a13">ReleaseBuff</a> (char *pszBuff)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">xx2yyで取得したバッファの解放  <a href="#a13"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Static Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_string_encode.html#e0">euc2jis</a> (char *eucchars)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">EUCをJISに変換.  <a href="#e0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_string_encode.html#e1">euc2sjis</a> (char *eucchars)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">EUCをShift-JISに変換.  <a href="#e1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_string_encode.html#e2">jis2euc</a> (char *jischars)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">JISをEUCに変換に変換.  <a href="#e2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_string_encode.html#e3">jis2sjis</a> (char *jischars)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">JISをShift-JISに変換します.  <a href="#e3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_string_encode.html#e4">sjis2jis</a> (char *sjischars)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Shift-JISをJISに変換します.  <a href="#e4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_string_encode.html#e5">sjis2euc</a> (char *sjischars)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Shift-JISをEUCに変換します.  <a href="#e5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_string_encode.html#e6">utf82sjis</a> (char *utfchars)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">UTF-8をSJISに変換します.  <a href="#e6"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>説明</h2>
+文字列のエンコードを扱うクラス 
+<p>
+<dl compact><dt><b>作者:</b></dt><dd>Project D.E.V </dd></dl>
+
+<p>
+<hr><h2>関数</h2>
+<a class="anchor" name="a2" doxytag="CStringEncode::CheckCode"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">int CStringEncode::CheckCode           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">char *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>pszBuff</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+文字コードのチェック 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszBuff</em>&nbsp;</td><td>チェックする文字列 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>文字コード(CStringEncode::eCode) </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a6" doxytag="CStringEncode::decodeBASE64"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">char * CStringEncode::decodeBASE64           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const char *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>base64s</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+BASE64形式の文字列をデコード. 
+<p>
+問題があるときはnullを返します。現在、最後にゴミが入ります。 <dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>base64s</em>&nbsp;</td><td>エンコードされた文字列 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>変換後の文字列 </dd></dl>
+<dl compact><dt><b>注意:</b></dt><dd>不要になったら戻り値で返ってきたポインタをCStringEncode::ReleaseBuff関数で破棄する必要がある </dd></dl>
+<dl compact><dt><b>参照:</b></dt><dd><a class="el" href="class_c_string_encode.html#a13">CStringEncode::ReleaseBuff(char *pszBuff)</a> </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a4" doxytag="CStringEncode::decodeURL"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">char * CStringEncode::decodeURL           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">char *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>chars</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+URL文字をデコードします. 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>chars</em>&nbsp;</td><td>URL文字にエンコードされた文字列 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>変換後の文字列 </dd></dl>
+<dl compact><dt><b>注意:</b></dt><dd>不要になったら戻り値で返ってきたポインタをCStringEncode::ReleaseBuff関数で破棄する必要がある </dd></dl>
+<dl compact><dt><b>参照:</b></dt><dd><a class="el" href="class_c_string_encode.html#a13">CStringEncode::ReleaseBuff(char *pszBuff)</a> </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="e0" doxytag="CStringEncode::euc2jis"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">char * CStringEncode::euc2jis           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">char *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>eucchars</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [static]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+EUCをJISに変換. 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>eucchars</em>&nbsp;</td><td>文字列 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>変換後の文字列 </dd></dl>
+<dl compact><dt><b>注意:</b></dt><dd>不要になったら戻り値で返ってきたポインタをCStringEncode::ReleaseBuff関数で破棄する必要がある </dd></dl>
+<dl compact><dt><b>参照:</b></dt><dd><a class="el" href="class_c_string_encode.html#a13">CStringEncode::ReleaseBuff(char *pszBuff)</a> </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="e1" doxytag="CStringEncode::euc2sjis"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">char * CStringEncode::euc2sjis           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">char *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>eucchars</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [static]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+EUCをShift-JISに変換. 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>eucchars</em>&nbsp;</td><td>文字列 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>変換後の文字列 </dd></dl>
+<dl compact><dt><b>注意:</b></dt><dd>不要になったら戻り値で返ってきたポインタをCStringEncode::ReleaseBuff関数で破棄する必要がある </dd></dl>
+<dl compact><dt><b>参照:</b></dt><dd><a class="el" href="class_c_string_encode.html#a13">CStringEncode::ReleaseBuff(char *pszBuff)</a> </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a7" doxytag="CStringEncode::getBasebyte"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">char CStringEncode::getBasebyte           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>pos</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+変換テーブル内に一致する場所を取得 
+<p>
+問題があるときはnullを返します。現在、最後にゴミが入ります。 <dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pos</em>&nbsp;</td><td>位置 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>変換後の文字列 </dd></dl>
+<dl compact><dt><b>注意:</b></dt><dd>不要になったら戻り値で返ってきたポインタをCStringEncode::ReleaseBuff関数で破棄する必要がある </dd></dl>
+<dl compact><dt><b>参照:</b></dt><dd><a class="el" href="class_c_string_encode.html#a13">CStringEncode::ReleaseBuff(char *pszBuff)</a> </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="e2" doxytag="CStringEncode::jis2euc"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">char * CStringEncode::jis2euc           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">char *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>jischars</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [static]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+JISをEUCに変換に変換. 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>jischars</em>&nbsp;</td><td>文字列 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>変換後の文字列 </dd></dl>
+<dl compact><dt><b>注意:</b></dt><dd>不要になったら戻り値で返ってきたポインタをCStringEncode::ReleaseBuff関数で破棄する必要がある </dd></dl>
+<dl compact><dt><b>参照:</b></dt><dd><a class="el" href="class_c_string_encode.html#a13">CStringEncode::ReleaseBuff(char *pszBuff)</a> </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="e3" doxytag="CStringEncode::jis2sjis"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">char * CStringEncode::jis2sjis           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">char *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>jischars</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [static]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+JISをShift-JISに変換します. 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>jischars</em>&nbsp;</td><td>文字列 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>変換後の文字列 </dd></dl>
+<dl compact><dt><b>注意:</b></dt><dd>不要になったら戻り値で返ってきたポインタをCStringEncode::ReleaseBuff関数で破棄する必要がある </dd></dl>
+<dl compact><dt><b>参照:</b></dt><dd><a class="el" href="class_c_string_encode.html#a13">CStringEncode::ReleaseBuff(char *pszBuff)</a> </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a13" doxytag="CStringEncode::ReleaseBuff"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">void CStringEncode::ReleaseBuff           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">char *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>pszBuff</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+xx2yyで取得したバッファの解放 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pszBuff</em>&nbsp;</td><td>文字列 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>なし </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="e5" doxytag="CStringEncode::sjis2euc"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">char * CStringEncode::sjis2euc           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">char *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>sjischars</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [static]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Shift-JISをEUCに変換します. 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>sjischars</em>&nbsp;</td><td>文字列 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>変換後の文字列 </dd></dl>
+<dl compact><dt><b>注意:</b></dt><dd>不要になったら戻り値で返ってきたポインタをCStringEncode::ReleaseBuff関数で破棄する必要がある </dd></dl>
+<dl compact><dt><b>参照:</b></dt><dd><a class="el" href="class_c_string_encode.html#a13">CStringEncode::ReleaseBuff(char *pszBuff)</a> </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="e4" doxytag="CStringEncode::sjis2jis"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">char * CStringEncode::sjis2jis           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">char *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>sjischars</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [static]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Shift-JISをJISに変換します. 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>sjischars</em>&nbsp;</td><td>文字列 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>変換後の文字列 </dd></dl>
+<dl compact><dt><b>注意:</b></dt><dd>不要になったら戻り値で返ってきたポインタをCStringEncode::ReleaseBuff関数で破棄する必要がある </dd></dl>
+<dl compact><dt><b>参照:</b></dt><dd><a class="el" href="class_c_string_encode.html#a13">CStringEncode::ReleaseBuff(char *pszBuff)</a> </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a8" doxytag="CStringEncode::sjis2utf8"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">char * CStringEncode::sjis2utf8           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">char *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>sjischars</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+SJISをUTF-8に変換します. 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>sjischars</em>&nbsp;</td><td>文字列 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>変換後の文字列 </dd></dl>
+<dl compact><dt><b>注意:</b></dt><dd>不要になったら戻り値で返ってきたポインタをCStringEncode::ReleaseBuff関数で破棄する必要がある </dd></dl>
+<dl compact><dt><b>参照:</b></dt><dd><a class="el" href="class_c_string_encode.html#a13">CStringEncode::ReleaseBuff(char *pszBuff)</a> </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a5" doxytag="CStringEncode::toBASE64"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">char * CStringEncode::toBASE64           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+BASE64にエンコード. 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>chars</em>&nbsp;</td><td>エンコードされた文字列 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>変換後の文字列 </dd></dl>
+<dl compact><dt><b>注意:</b></dt><dd>不要になったら戻り値で返ってきたポインタをCStringEncode::ReleaseBuff関数で破棄する必要がある </dd></dl>
+<dl compact><dt><b>参照:</b></dt><dd><a class="el" href="class_c_string_encode.html#a13">CStringEncode::ReleaseBuff(char *pszBuff)</a> </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a10" doxytag="CStringEncode::toEUC"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">char * CStringEncode::toEUC           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+EUCに変換します. 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>なし</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>変換後の文字列 </dd></dl>
+<dl compact><dt><b>注意:</b></dt><dd>不要になったら戻り値で返ってきたポインタをCStringEncode::ReleaseBuff関数で破棄する必要がある </dd></dl>
+<dl compact><dt><b>参照:</b></dt><dd><a class="el" href="class_c_string_encode.html#a13">CStringEncode::ReleaseBuff(char *pszBuff)</a> </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a12" doxytag="CStringEncode::toJIS"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">char * CStringEncode::toJIS           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+JISに変換します. 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>なし</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>変換後の文字列 </dd></dl>
+<dl compact><dt><b>注意:</b></dt><dd>不要になったら戻り値で返ってきたポインタをCStringEncode::ReleaseBuff関数で破棄する必要がある </dd></dl>
+<dl compact><dt><b>参照:</b></dt><dd><a class="el" href="class_c_string_encode.html#a13">CStringEncode::ReleaseBuff(char *pszBuff)</a> </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a11" doxytag="CStringEncode::toSJIS"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">char * CStringEncode::toSJIS           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+SJISに変換します. 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>なし</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>変換後の文字列 </dd></dl>
+<dl compact><dt><b>注意:</b></dt><dd>不要になったら戻り値で返ってきたポインタをCStringEncode::ReleaseBuff関数で破棄する必要がある </dd></dl>
+<dl compact><dt><b>参照:</b></dt><dd><a class="el" href="class_c_string_encode.html#a13">CStringEncode::ReleaseBuff(char *pszBuff)</a> </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a3" doxytag="CStringEncode::toURL"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">char * CStringEncode::toURL           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+URL文字列に変換します. 
+<p>
+現在のバイト配列をURL(の付いたあれね)にエンコードします。<br>
+ エンコードできない場合はnullを返します。<br>
+ 半角スペースは "+" に変換します。<br>
+ '半角英数字 [A-Za-z0-9] および *-. の記号は変換しません。 <dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>なし</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>変換後の文字列 </dd></dl>
+<dl compact><dt><b>注意:</b></dt><dd>不要になったら戻り値で返ってきたポインタをCStringEncode::ReleaseBuff関数で破棄する必要がある </dd></dl>
+<dl compact><dt><b>参照:</b></dt><dd><a class="el" href="class_c_string_encode.html#a13">CStringEncode::ReleaseBuff(char *pszBuff)</a> </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a9" doxytag="CStringEncode::toUTF8"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">char * CStringEncode::toUTF8           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+UTF-8に変換します. 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>なし</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>変換後の文字列 </dd></dl>
+<dl compact><dt><b>注意:</b></dt><dd>不要になったら戻り値で返ってきたポインタをCStringEncode::ReleaseBuff関数で破棄する必要がある </dd></dl>
+<dl compact><dt><b>参照:</b></dt><dd><a class="el" href="class_c_string_encode.html#a13">CStringEncode::ReleaseBuff(char *pszBuff)</a> </dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="e6" doxytag="CStringEncode::utf82sjis"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">char * CStringEncode::utf82sjis           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">char *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>utfchars</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [static]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+UTF-8をSJISに変換します. 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>utfchars</em>&nbsp;</td><td>文字列 </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>戻り値:</b></dt><dd>変換後の文字列 </dd></dl>
+<dl compact><dt><b>注意:</b></dt><dd>不要になったら戻り値で返ってきたポインタをCStringEncode::ReleaseBuff関数で破棄する必要がある </dd></dl>
+<dl compact><dt><b>参照:</b></dt><dd><a class="el" href="class_c_string_encode.html#a13">CStringEncode::ReleaseBuff(char *pszBuff)</a> </dd></dl>
+    </td>
+  </tr>
+</table>
+<hr size="1"><address style="align: right;"><small>Project D.E.V Libralyに対してFri Jan 21 17:15:14 2005に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.1 </small></address>
+</body>
+</html>

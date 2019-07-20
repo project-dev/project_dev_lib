@@ -1,0 +1,53 @@
+<html>
+<body>
+<pre>
+<h1>ﾋﾞﾙﾄﾞのﾛｸﾞ</h1>
+<h3>
+--------------------構成: devgraph - Win32 Release--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+一時ﾌｧｲﾙ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1C2.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\release\include\devgraph" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /D "DEVGRAPG_EXPORTS" /Fo"..\lib\Release/" /Fd"..\lib\Release/" /FD /c 
+"D:\Other\project_dev_lib\devgraph\src\DevGDIPlus.cpp"
+"D:\Other\project_dev_lib\devgraph\src\DevImgFunc.cpp"
+"D:\Other\project_dev_lib\devgraph\src\DevImgTool.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1C2.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1C3.tmp" を作成し、次の内容を記録します
+[
+Gdiplus.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"..\lib\Release/devgraph.pdb" /machine:I386 /out:"..\bin\Release/devgraph.dll" /implib:"..\lib\Release/devgraph.lib" /libpath:"..\..\release\lib\gdiplus" 
+\Other\project_dev_lib\devgraph\lib\Release\DevGDIPlus.obj
+\Other\project_dev_lib\devgraph\lib\Release\devgraph.obj
+\Other\project_dev_lib\devgraph\lib\Release\DevImgFunc.obj
+\Other\project_dev_lib\devgraph\lib\Release\DevImgTool.obj
+\Other\project_dev_lib\devgraph\lib\Release\StdAfx.obj
+\Other\project_dev_lib\devgraph\lib\Release\devgraph.res
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1C3.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ｺﾝﾊﾟｲﾙ中...
+DevGDIPlus.cpp
+DevImgFunc.cpp
+DevImgTool.cpp
+ｺｰﾄﾞを生成中...
+ﾘﾝｸ中...
+   ﾗｲﾌﾞﾗﾘ ..\lib\Release/devgraph.lib とｵﾌﾞｼﾞｪｸﾄ ..\lib\Release/devgraph.exp を作成中
+一時ﾌｧｲﾙ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1C9.bat" を作成し、次の内容を記録します
+[
+@echo off
+copy /Y ..\lib\release\devgraph.lib ..\..\release\lib\release
+copy /Y ..\bin\release\devgraph.dll ..\..\release\bin\release
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1C9.bat" の作成中
+
+        1 個のファイルをコピーしました。
+        1 個のファイルをコピーしました。
+
+
+
+<h3>結果</h3>
+devgraph.dll - ｴﾗｰ 0、警告 0
+</pre>
+</body>
+</html>

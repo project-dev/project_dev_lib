@@ -1,0 +1,167 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# åxçê: Ç±ÇÃ‹∞∏ΩÕﬂ∞Ω Ãß≤Ÿ Çï“èWÇ‹ÇΩÇÕçÌèúÇµÇ»Ç¢Ç≈Ç≠ÇæÇ≥Ç¢!
+
+###############################################################################
+
+Project: "DrawerCore"=.\DrawerCore\src\DrawerCore.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name devstaticlib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "devMsof"=.\devMsof\src\devMsof.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name devstaticlib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "devdb"=.\devdb\src\devdb.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "devgraph"=.\devgraph\src\devgraph.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "devjava"=.\devjava\src\devjava.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name devstaticlib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "devlib"=.\devlib\src\devlib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name devjava
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name devstaticlib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "devlibsample"=.\devlibsample\devlibsample.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name devdb
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name devgraph
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name devjava
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name devlib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name devmfc
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name devMsof
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name DrawerCore
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name devstaticlib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "devmfc"=.\devmfc\src\devmfc.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name devstaticlib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "devstaticlib"=.\devstaticlib\src\devstaticlib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

@@ -1,0 +1,7 @@
+; devXML.def : DLL 用のモジュール パラメータ宣言
+
+LIBRARY      "devXML"
+DESCRIPTION  'devXML Windows Dynamic Link Library'
+
+EXPORTS
+    ; 明示的なエクスポートはここへ記述できます

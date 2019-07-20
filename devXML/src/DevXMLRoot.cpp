@@ -1,0 +1,27 @@
+// DevXMLRoot.cpp: CDevXMLRoot クラスのインプリメンテーション
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "devXML.h"
+#include "DevXMLRoot.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// 構築/消滅
+//////////////////////////////////////////////////////////////////////
+
+CDevXMLRoot::CDevXMLRoot()
+{
+
+}
+
+CDevXMLRoot::~CDevXMLRoot()
+{
+
+}
